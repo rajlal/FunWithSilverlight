@@ -1,0 +1,5 @@
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_10\AdvancedMedia\2-Playlist\Playlist.Web\bin\Playlist.Web.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_10\AdvancedMedia\2-Playlist\Playlist.Web\bin\Playlist.Web.pdb
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_10\AdvancedMedia\2-Playlist\Playlist.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_10\AdvancedMedia\2-Playlist\Playlist.Web\obj\Debug\Playlist.Web.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_10\AdvancedMedia\2-Playlist\Playlist.Web\obj\Debug\Playlist.Web.pdb

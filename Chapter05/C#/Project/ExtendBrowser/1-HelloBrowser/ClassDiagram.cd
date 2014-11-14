@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="System.Windows.Browser.BrowserInformation">
+    <Position X="2.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Browser.HtmlPage">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Browser.HtmlWindow" HideInheritanceLine="true">
+    <Position X="4.75" Y="0.5" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Browser.HtmlDocument" Collapsed="true">
+    <Position X="2.25" Y="4.25" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Browser.HtmlObject">
+    <Position X="2.25" Y="5.25" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Browser.ScriptObject">
+    <Position X="4.75" Y="4.25" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

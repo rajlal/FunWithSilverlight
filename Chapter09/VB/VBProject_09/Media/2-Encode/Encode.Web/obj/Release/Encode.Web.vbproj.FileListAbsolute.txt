@@ -1,0 +1,5 @@
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_09\Media\2-Encode\Encode.Web\bin\Encode.Web.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_09\Media\2-Encode\Encode.Web\bin\Encode.Web.pdb
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_09\Media\2-Encode\Encode.Web\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_09\Media\2-Encode\Encode.Web\obj\Release\Encode.Web.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_09\Media\2-Encode\Encode.Web\obj\Release\Encode.Web.pdb

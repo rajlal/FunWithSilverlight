@@ -1,0 +1,183 @@
+﻿<UserControl  x:Class="Animation.PageColorAnimation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="400" Height="300">
+    <Canvas Background="#EEEEEE">
+        <Canvas.Resources>
+            <Storyboard x:Name="myBasicStoryboard">
+                <ColorAnimation Storyboard.TargetName="shapeBegin" Storyboard.TargetProperty="Color" From="#B50C14" To="#46B70C" Duration="0:0:3" />
+                <ColorAnimation Storyboard.TargetName="shapeEnd" Storyboard.TargetProperty="Color" From="#E62020" To="#6FEA1E" Duration="0:0:3" />
+                <ColorAnimation Storyboard.TargetName="shapeBorderBegin" Storyboard.TargetProperty="Color" From="#6B1A11" To="#116B1C" Duration="0:0:3" />
+                <ColorAnimation Storyboard.TargetName="shapeBorderEnd" Storyboard.TargetProperty="Color" From="#6B1A11" To="#116B1C" Duration="0:0:3" />
+            </Storyboard>
+            <Storyboard x:Name="myRainbowStoryboard">
+                <ColorAnimation Storyboard.TargetName="rainbowRed" Storyboard.TargetProperty="(Ellipse.Fill).(SolidColorBrush.Color)" From="White" To="Red" Duration="0:0:5" />
+                <ColorAnimation Storyboard.TargetName="rainbowOrange" Storyboard.TargetProperty="(Ellipse.Fill).(SolidColorBrush.Color)" From="White" To="Orange" Duration="0:0:5" />
+                <ColorAnimation Storyboard.TargetName="rainbowYellow" Storyboard.TargetProperty="(Ellipse.Fill).(SolidColorBrush.Color)" From="White" To="Yellow" Duration="0:0:5" />
+                <ColorAnimation Storyboard.TargetName="rainbowGreen" Storyboard.TargetProperty="(Ellipse.Fill).(SolidColorBrush.Color)" From="White" To="Green" Duration="0:0:5" />
+                <ColorAnimation Storyboard.TargetName="rainbowBlue" Storyboard.TargetProperty="(Ellipse.Fill).(SolidColorBrush.Color)" From="White" To="Blue" Duration="0:0:5" />
+                <ColorAnimation Storyboard.TargetName="rainbowIndigo" Storyboard.TargetProperty="(Ellipse.Fill).(SolidColorBrush.Color)" From="White" To="Indigo" Duration="0:0:5" />
+                <ColorAnimation Storyboard.TargetName="rainbowViolet" Storyboard.TargetProperty="(Ellipse.Fill).(SolidColorBrush.Color)" From="White" To="Violet" Duration="0:0:5" />
+            </Storyboard>
+            <Storyboard x:Name="myGradientStoryboard">
+                <ColorAnimation Storyboard.TargetProperty="Color" Storyboard.TargetName="b1" Duration="0:0:1.5" From="Gray" To="Red" AutoReverse="True"/>
+                <ColorAnimation Storyboard.TargetProperty="Color" Storyboard.TargetName="b2" Duration="0:0:1.5" From="Gray" To="Blue" RepeatBehavior="Forever" />
+                <ColorAnimation Storyboard.TargetProperty="Color" Storyboard.TargetName="b3" Duration="0:0:1.5" From="Gray" To="Green" FillBehavior="HoldEnd" />
+                <ColorAnimation Storyboard.TargetProperty="Color" Storyboard.TargetName="b4" Duration="0:0:1.5" BeginTime="0:0:2" From="Gray" To="Yellow" FillBehavior="Stop" />
+            </Storyboard>
+        </Canvas.Resources>
+        <Canvas x:Name="CanvasBasic"  Canvas.Top="30" Canvas.Left="40" Height="200" Width="320" Background="AliceBlue"  Visibility="Visible">
+            <Polygon Points="60,30 110,90 60,150 260,100" StrokeThickness="6">
+                <Polygon.Stroke>
+                    <LinearGradientBrush StartPoint="0,.5" EndPoint="1,.5">
+                        <GradientStop x:Name="shapeBorderBegin" Color="#6B1A11" Offset="0.2" />
+                        <GradientStop x:Name="shapeBorderEnd" Color="#6B1A11" Offset="1.0" />
+                    </LinearGradientBrush>
+
+                </Polygon.Stroke>
+                <Polygon.Fill>
+                    <LinearGradientBrush StartPoint="1,.5" EndPoint="0,.5">
+                        <GradientStop  x:Name="shapeBegin" Color="#B50C14" Offset="0.2" />
+                        <GradientStop  x:Name="shapeEnd" Color="#E62020" Offset="1.0" />
+                    </LinearGradientBrush>
+
+                </Polygon.Fill>
+            </Polygon>
+        </Canvas>
+        <Canvas x:Name="CanvasRainbow"  Canvas.Top="30" Canvas.Left="40" Height="200" Width="320" Background="White"  Visibility="Collapsed">
+            <Ellipse x:Name="rainbowRed" Canvas.Top="40" Canvas.Left="60" Width="200" Height="200" Fill="White" >
+                <Ellipse.Clip>
+                    <RectangleGeometry Rect="0,0,200,100"></RectangleGeometry>
+                </Ellipse.Clip>
+            </Ellipse>
+            <Ellipse x:Name="rainbowOrange" Canvas.Top="45" Canvas.Left="65" Width="190" Height="190" Fill="White">
+            <Ellipse.Clip>
+                <RectangleGeometry Rect="0,0,200,95"></RectangleGeometry>
+            </Ellipse.Clip>
+            </Ellipse>
+            <Ellipse x:Name="rainbowYellow" Canvas.Top="50" Canvas.Left="70" Width="180" Height="180" Fill="White">
+            <Ellipse.Clip>
+                <RectangleGeometry Rect="0,0,200,90"></RectangleGeometry>
+            </Ellipse.Clip>
+            </Ellipse>
+            <Ellipse x:Name="rainbowGreen" Canvas.Top="55" Canvas.Left="75" Width="170" Height="170" Fill="White">
+            <Ellipse.Clip>
+                <RectangleGeometry Rect="0,0,200,85"></RectangleGeometry>
+            </Ellipse.Clip>
+            </Ellipse>
+            <Ellipse x:Name="rainbowBlue" Canvas.Top="60" Canvas.Left="80" Width="160" Height="160" Fill="White">
+            <Ellipse.Clip>
+                <RectangleGeometry Rect="0,0,200,80"></RectangleGeometry>
+            </Ellipse.Clip>
+            </Ellipse>
+            <Ellipse x:Name="rainbowIndigo" Canvas.Top="65" Canvas.Left="85" Width="150" Height="150" Fill="White">
+            <Ellipse.Clip>
+                <RectangleGeometry Rect="0,0,200,75"></RectangleGeometry>
+            </Ellipse.Clip>
+            </Ellipse>
+            <Ellipse x:Name="rainbowViolet" Canvas.Top="70" Canvas.Left="90" Width="140" Height="140" Fill="White">
+            <Ellipse.Clip>
+                <RectangleGeometry Rect="0,0,200,70"></RectangleGeometry>
+            </Ellipse.Clip>
+            </Ellipse>
+            <Ellipse x:Name="rainbowWhite" Canvas.Top="75" Canvas.Left="95" Width="130" Height="130" Fill="White">
+            <Ellipse.Clip>
+                <RectangleGeometry Rect="0,0,200,65"></RectangleGeometry>
+            </Ellipse.Clip>
+            </Ellipse>
+
+        </Canvas>
+
+        <Canvas x:Name="CanvasGradient"  Canvas.Top="30" Canvas.Left="40" Height="200" Width="320" Background="AliceBlue"  Visibility="Collapsed">
+                <Ellipse Width="90" Height="90" Canvas.Top="5" Canvas.Left="60" Cursor="Hand" ToolTipService.ToolTip="AutoReverse=True" MouseLeftButtonUp="Ellipse_MouseLeftButtonUp">
+                    <Ellipse.Fill>
+                        <RadialGradientBrush GradientOrigin="0.5,0.5" Center="0.5,0.5" RadiusX="0.95" RadiusY="0.95">
+                            <GradientStop x:Name="b1" Color="Gray" Offset="0.0" />
+                            <GradientStop Color="Black" Offset="1.0" />
+                        </RadialGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Ellipse Width="50" Height="30" Canvas.Top="7" Canvas.Left="80" Opacity="1">
+                    <Ellipse.Fill>
+                        <LinearGradientBrush StartPoint=".5,1" EndPoint=".5,0">
+                            <GradientStop Color="#00FFFFFF" Offset="0.00" />
+                            <GradientStop Color="#FFFFFFFF" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Ellipse Width="90" Height="90" Canvas.Top="5" Canvas.Left="160" Cursor="Hand"   ToolTipService.ToolTip="RepeatBehavior=Forever"  MouseLeftButtonUp="Ellipse_MouseLeftButtonUp" >
+                    <Ellipse.Fill>
+                        <RadialGradientBrush GradientOrigin="0.5,0.5" Center="0.5,0.5" RadiusX="0.95" RadiusY="0.95">
+                            <GradientStop x:Name="b2"  Color="Gray" Offset="0.0" />
+                            <GradientStop Color="Black" Offset="1.0" />
+                        </RadialGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Ellipse Width="50" Height="30" Canvas.Top="7" Canvas.Left="180" Opacity="1">
+                    <Ellipse.Fill>
+                        <LinearGradientBrush StartPoint=".5,1" EndPoint=".5,0">
+                            <GradientStop Color="#00FFFFFF" Offset="0.00" />
+                            <GradientStop Color="#FFFFFFFF" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Ellipse Width="90" Height="90" Canvas.Top="105" Canvas.Left="60" Cursor="Hand"   ToolTipService.ToolTip="FillBehavior=HoldEnd"  MouseLeftButtonUp="Ellipse_MouseLeftButtonUp">
+                    <Ellipse.Fill>
+                        <RadialGradientBrush GradientOrigin="0.5,0.5" Center="0.5,0.5" RadiusX="0.95" RadiusY="0.95" >
+                            <GradientStop x:Name="b3"  Color="Gray" Offset="0.0" />
+                            <GradientStop Color="Black" Offset="1.0" />
+                        </RadialGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Ellipse Width="50" Height="30" Canvas.Top="107" Canvas.Left="80" Opacity="1">
+                    <Ellipse.Fill>
+                        <LinearGradientBrush StartPoint=".5,1" EndPoint=".5,0">
+                            <GradientStop Color="#00FFFFFF" Offset="0.00" />
+                            <GradientStop Color="#FFFFFFFF" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Ellipse Width="90" Height="90" Canvas.Top="105" Canvas.Left="160" Cursor="Hand"   ToolTipService.ToolTip="FillBehavior=Stop BeginTime=0:0:2(delay 2 seconds)"  MouseLeftButtonUp="Ellipse_MouseLeftButtonUp">
+                    <Ellipse.Fill>
+                        <RadialGradientBrush GradientOrigin="0.5,0.5" Center="0.5,0.5" RadiusX="0.95" RadiusY="0.95">
+                            <GradientStop x:Name="b4"  Color="Gray" Offset="0.0" />
+                            <GradientStop Color="Black" Offset="1.0" />
+                        </RadialGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+                <Ellipse Width="50" Height="30" Canvas.Top="107" Canvas.Left="180" Opacity="1">
+                    <Ellipse.Fill>
+                        <LinearGradientBrush StartPoint=".5,1" EndPoint=".5,0">
+                            <GradientStop Color="#00FFFFFF" Offset="0.00" />
+                            <GradientStop Color="#FFFFFFFF" Offset="1.0" />
+                        </LinearGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+
+            </Canvas>
+
+  
+        <Border Canvas.Top="230" Canvas.Left="40" BorderBrush="Gray" BorderThickness="0" Height="20" Width="320" Background="White">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Padding="4,1,4,0"  Text="Basic" MouseLeftButtonUp="ShowBasic" ToolTipService.ToolTip="Basic Color Animation" Cursor="Hand" Foreground="DodgerBlue"/>
+                <TextBlock Padding="4,1,4,0"  Text="Gradient" MouseLeftButtonUp="ShowGradient" ToolTipService.ToolTip="Gradient Transform Animation" Cursor="Hand" Foreground="DodgerBlue"/>
+                <TextBlock Padding="4,1,0,0"  Text="Rainbow" MouseLeftButtonUp="ShowRainbow" ToolTipService.ToolTip="Rainbow Example" Cursor="Hand" Foreground="DodgerBlue"/>
+                <Canvas  Margin="122,0,0,0" >
+                    <Image x:Name="btnPlay" Canvas.Top="5" Canvas.Left="0" Width="8" Source="image/play.png" Cursor="Hand" MouseLeftButtonUp="btnPlay_MouseLeftButtonUp"></Image>
+                    <Image x:Name="btnPause" Canvas.Top="5" Canvas.Left="20" Width="8" Source="image/pause.png" Cursor="Hand"  MouseLeftButtonUp="btnPause_MouseLeftButtonUp"></Image>
+                    <Image x:Name="btnStop" Canvas.Top="6" Canvas.Left="40" Width="7" Source="image/stop.png" Cursor="Hand"  MouseLeftButtonUp="btnStop_MouseLeftButtonUp"></Image>
+                </Canvas>
+            </StackPanel>
+        </Border>
+        <Border Canvas.Left="0" Canvas.Top="280" Width="400" Background="#F1EDED" BorderBrush="Silver" BorderThickness=".5" >
+            <Grid ShowGridLines="False" x:Name="StatusGrid">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="180"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock  x:Name="StatusBar" Margin="2" Grid.Column="0" Text="Basic Color Animation" VerticalAlignment="Center"></TextBlock>
+                <TextBlock x:Name="StatusInfo"  Margin="2" Grid.Column="1" Text="Animation TargetProperty: Color" TextAlignment="Right" HorizontalAlignment="Right" VerticalAlignment="Center"></TextBlock>
+            </Grid>
+        </Border>
+    </Canvas>
+</UserControl>

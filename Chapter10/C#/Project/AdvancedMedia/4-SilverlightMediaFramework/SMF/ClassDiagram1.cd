@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SMF.App" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAEAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMF.index" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>index.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMF.PageSMFPlayer">
+    <Position X="4" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAQAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PageSMFPlayer.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMF.PageSMFProgressive" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PageSMFProgressive.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SMF.PageSMFSmooth" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PageSMFSmooth.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Microsoft.SilverlightMediaFramework.Core.SMFPlayer">
+    <Position X="0.5" Y="2.5" Width="3.25" />
+    <Members>
+      <Property Name="ActiveAdaptiveMediaPlugin" Hidden="true" />
+      <Property Name="ActiveHeuristicsPlugin" Hidden="true" />
+      <Property Name="ActiveLiveMediaPlugin" Hidden="true" />
+      <Property Name="ActiveMediaPlugin" Hidden="true" />
+      <Property Name="AllowFullScreenPinning" Hidden="true" />
+      <Property Name="AllowSpaceBarToggle" Hidden="true" />
+      <Property Name="AudioStreamSelectionElement" Hidden="true" />
+      <Property Name="AvailableAudioStreams" Hidden="true" />
+      <Property Name="AvailableCaptionStreams" Hidden="true" />
+      <Property Name="AvailableVideoBitrates" Hidden="true" />
+      <Property Name="BitrateGraphElement" Hidden="true" />
+      <Property Name="CaptionDisplayToggleElement" Hidden="true" />
+      <Property Name="CaptionsPresenterElement" Hidden="true" />
+      <Property Name="CaptionsVisibility" Hidden="true" />
+      <Property Name="ChaptersDisplayToggleElement" Hidden="true" />
+      <Property Name="ChapterSelectionElement" Hidden="true" />
+      <Property Name="ChaptersVisibility" Hidden="true" />
+      <Property Name="ContinuousPlay" Hidden="true" />
+      <Property Name="ControlStripToggleElement" Hidden="true" />
+      <Property Name="DroppedFramesPerSecond" Hidden="true" />
+      <Property Name="EnableCachedComposition" Hidden="true" />
+      <Property Name="EnableSync" Hidden="true" />
+      <Property Name="EndPosition" Hidden="true" />
+      <Property Name="EstimatedLiveDuration" Hidden="true" />
+      <Property Name="FastForwardButtonBehavior" Hidden="true" />
+      <Property Name="FastForwardElement" Hidden="true" />
+      <Property Name="FramerateGraphElement" Hidden="true" />
+      <Property Name="FullScreenToggleElement" Hidden="true" />
+      <Property Name="GlobalConfigMetadata" Hidden="true" />
+      <Property Name="GraphToggleElement" Hidden="true" />
+      <Property Name="HeuristicsPluginRequiredMetadata" Hidden="true" />
+      <Property Name="HeuristicsPriority" Hidden="true" />
+      <Property Name="HideChaptersElement" Hidden="true" />
+      <Property Name="HidePlaylistElement" Hidden="true" />
+      <Property Name="IsMediaAdaptive" Hidden="true" />
+      <Property Name="IsMediaLive" Hidden="true" />
+      <Property Name="IsMuted" Hidden="true" />
+      <Property Name="IsPositionLive" Hidden="true" />
+      <Property Name="IsPosterVisible" Hidden="true" />
+      <Property Name="IsRetrying" Hidden="true" />
+      <Property Name="IsScrubbing" Hidden="true" />
+      <Property Name="IsSlowMotionEnabled" Hidden="true" />
+      <Property Name="IsStartPositionOffset" Hidden="true" />
+      <Property Name="LivePosition" Hidden="true" />
+      <Property Name="LivePositionText" Hidden="true" />
+      <Property Name="Logger" Hidden="true" />
+      <Property Name="LoggingConsoleVisibility" Hidden="true" />
+      <Property Name="LoggingDisplayElement" Hidden="true" />
+      <Property Name="LogLevel" Hidden="true" />
+      <Property Name="LogWriters" Hidden="true" />
+      <Property Name="MarkerProvider" Hidden="true" />
+      <Property Name="MaxBitrateLimiterElement" Hidden="true" />
+      <Property Name="MaximumPlaybackBitrate" Hidden="true" />
+      <Property Name="MediaPresenterElement" Hidden="true" />
+      <Property Name="MediaTitleContent" Hidden="true" />
+      <Property Name="NextChapterElement" Hidden="true" />
+      <Property Name="NextPlaylistItemElement" Hidden="true" />
+      <Property Name="PlaybackBitrate" Hidden="true" />
+      <Property Name="PlaybackPosition" Hidden="true" />
+      <Property Name="PlaybackPositionDatabinding" Hidden="true" />
+      <Property Name="PlayElement" Hidden="true" />
+      <Property Name="PlayerGraphVisibility" Hidden="true" />
+      <Property Name="PlayerId" Hidden="true" />
+      <Property Name="PlayerRoot" Hidden="true" />
+      <Property Name="PlaylistDisplayToggleElement" Hidden="true" />
+      <Property Name="PlaylistSelectionElement" Hidden="true" />
+      <Property Name="PlaylistVisibility" Hidden="true" />
+      <Property Name="PlaySpeedManager" Hidden="true" />
+      <Property Name="PlaySpeedState" Hidden="true" />
+      <Property Name="PlayState" Hidden="true" />
+      <Property Name="PositionLiveBuffer" Hidden="true" />
+      <Property Name="PreviousChapterElement" Hidden="true" />
+      <Property Name="PreviousPlaylistItemElement" Hidden="true" />
+      <Property Name="RelativeMediaPluginPosition" Hidden="true" />
+      <Property Name="RenderedFramesPerSecond" Hidden="true" />
+      <Property Name="ReplayElement" Hidden="true" />
+      <Property Name="ReplayOffset" Hidden="true" />
+      <Property Name="RetryDuration" Hidden="true" />
+      <Property Name="RetryInterval" Hidden="true" />
+      <Property Name="RewindButtonBehavior" Hidden="true" />
+      <Property Name="RewindElement" Hidden="true" />
+      <Property Name="ScriptableName" Hidden="true" />
+      <Property Name="SeekToLiveElement" Hidden="true" />
+      <Property Name="SeekWhileScrubbing" Hidden="true" />
+      <Property Name="SelectedAudioStream" Hidden="true" />
+      <Property Name="SelectedCaptionStream" Hidden="true" />
+      <Property Name="ShowChaptersElement" Hidden="true" />
+      <Property Name="ShowPlaylistElement" Hidden="true" />
+      <Property Name="SlowMotionElement" Hidden="true" />
+      <Property Name="StartMuted" Hidden="true" />
+      <Property Name="StartPosition" Hidden="true" />
+      <Property Name="TimelineElement" Hidden="true" />
+      <Property Name="TimelineMarkers" Hidden="true" />
+      <Property Name="TimelineMarkerSelectionElement" Hidden="true" />
+      <Property Name="VersionInformationElement" Hidden="true" />
+      <Property Name="VersionInformationVisibility" Hidden="true" />
+      <Property Name="VideoHeight" Hidden="true" />
+      <Property Name="VideoWidth" Hidden="true" />
+      <Property Name="VisibleCaptions" Hidden="true" />
+      <Property Name="VolumeElement" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Events" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Microsoft.SilverlightMediaFramework.Core.Media.PlaylistItem">
+    <Position X="4" Y="2.5" Width="2.5" />
+    <Members>
+      <Property Name="InterstitialAdvertisements" Hidden="true" />
+      <Property Name="JumpToLive" Hidden="true" />
+      <Property Name="LicenseAcquirer" Hidden="true" />
+      <Property Name="LiveDvrRequired" Hidden="true" />
+      <Property Name="MarkerResource" Hidden="true" />
+      <Property Name="MediaPluginRequiredMetadata" Hidden="true" />
+      <Property Name="PostRollAdvertisement" Hidden="true" />
+      <Property Name="PreRollAdvertisement" Hidden="true" />
+      <Property Name="SelectedAudioStreamLanguage" Hidden="true" />
+      <Property Name="SelectedAudioStreamName" Hidden="true" />
+      <Property Name="SelectedCaptionStreamLanguage" Hidden="true" />
+      <Property Name="SelectedCaptionStreamName" Hidden="true" />
+      <Property Name="StartPosition" Hidden="true" />
+      <Property Name="StreamSource" Hidden="true" />
+      <Property Name="ThumbSource" Hidden="true" />
+      <Property Name="ThumbSourceText" Hidden="true" />
+      <Property Name="TimelineMarkers" Hidden="true" />
+      <Property Name="Title" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Microsoft.SilverlightMediaFramework.Core.Logging.Logger">
+    <Position X="6.75" Y="2.75" Width="2" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

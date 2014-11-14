@@ -1,0 +1,1 @@
+D:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_08\WebServices\4-NetRIAService\NetRIAService.Web\NetRIAService.Web.vbproj,634680232333119469,My Project\AssemblyInfo.vb,ResourceService.vb,SilverlightResource.Designer.vb,

@@ -1,0 +1,64 @@
+﻿<UserControl x:Class="AdoDataServiceClient.PageRead"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:data="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Data"
+    Width="400" Height="300">
+    <Grid x:Name="LayoutRoot" Background="AliceBlue" Margin="0" VerticalAlignment="Top" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30" />
+            <RowDefinition Height="30" />
+            <RowDefinition Height="180" />
+            <RowDefinition Height="10" />
+            <RowDefinition Height="60" />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row ="0" Margin="20,0,0,0" Text="READ" FontWeight="Bold" FontSize="14" VerticalAlignment="Center"></TextBlock>
+        <StackPanel  Margin="20,0,0,0"  Orientation="Horizontal" Grid.Row="1" VerticalAlignment="Center">
+            <ComboBox Name="cmbResourceType"  Width="100" Height ="25">
+                <ComboBoxItem IsSelected="True">
+                    <TextBlock>Books</TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock>Blogs</TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock>Tutorials</TextBlock>
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    <TextBlock>Video</TextBlock>
+                </ComboBoxItem>
+            </ComboBox>
+            <Button Content="Look up" Name="getResources"  
+                    Height="25" Width="120" Click="getResources_Click" />
+        </StackPanel>
+        <data:DataGrid  Margin="20,10,10,0" x:Name="resourceGrid" IsReadOnly="True" Grid.Row="2"  Width="360" Height="170" AutoGenerateColumns="False" ItemsSource="{Binding}" HorizontalAlignment="Left">
+            <data:DataGrid.Columns>
+                <data:DataGridTemplateColumn Width="90" Header="Image">
+                    <data:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Image Width="80" Height="60" Source="{Binding Image}" ImageFailed="ResourceImageFailed"/>
+                        </DataTemplate>
+                    </data:DataGridTemplateColumn.CellTemplate>
+                </data:DataGridTemplateColumn>
+                <data:DataGridTextColumn Width="100" Binding="{Binding Title}" Header="Title" />
+                <data:DataGridTextColumn Width="100" Binding="{Binding Author}" Header="Author" />
+                <data:DataGridTemplateColumn Width="50" Header="URL" >
+                    <data:DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <HyperlinkButton NavigateUri="{Binding URL}" TargetName="_blank" ToolTipService.ToolTip="Click to visit the website"  VerticalAlignment="Center" HorizontalAlignment="Center">
+                                <TextBlock Margin="0" Text="Web"></TextBlock>
+                            </HyperlinkButton>
+                        </DataTemplate>
+                    </data:DataGridTemplateColumn.CellTemplate>
+                </data:DataGridTemplateColumn>
+            </data:DataGrid.Columns>
+        </data:DataGrid>
+        <TextBlock x:Name="messageTextBlock" Text="" Margin="20,0,0,0" Grid.Row="3" FontFamily="Calibri" />
+        <StackPanel Orientation="Horizontal" Grid.Row="4" VerticalAlignment="Center" >
+            <HyperlinkButton Margin="10,0,0,0" FontSize="14" Content="Home:" Click="Home_Click" Foreground="DodgerBlue" ></HyperlinkButton>
+            <HyperlinkButton Margin="20,0,0,0" FontSize="14" Content="CREATE" Click="Create_Click" Foreground="DodgerBlue" ></HyperlinkButton>
+            <HyperlinkButton Margin="20,0,0,0" FontSize="14" Content="READ" Click="Read_Click" Foreground="DodgerBlue" ></HyperlinkButton>
+            <HyperlinkButton Margin="20,0,0,0" FontSize="14" Content="UPDATE" Click="Update_Click" Foreground="DodgerBlue" ></HyperlinkButton>
+            <HyperlinkButton Margin="20,0,0,0" FontSize="14" Content="DELETE" Click="Delete_Click" Foreground="DodgerBlue" ></HyperlinkButton>
+        </StackPanel>
+    </Grid>
+</UserControl>

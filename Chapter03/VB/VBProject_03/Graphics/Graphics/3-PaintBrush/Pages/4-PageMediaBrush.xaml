@@ -1,0 +1,75 @@
+﻿<UserControl x:Class="PaintBrushes.PageMediaBrush"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="400" Height="300">
+    <Canvas Background="#EEEEEE">
+        <Border x:Name="BorderDynamicItem" Canvas.Top="30" Canvas.Left="50" BorderBrush="Gray" BorderThickness="0" Height="200" Width="300" Background="White">
+            <Canvas x:Name="DynamicItemContainer" Background="AliceBlue">
+                <Canvas x:Name="CanvasBorder" Visibility="Visible">
+                    <Border Canvas.Top="40" Canvas.Left="40" BorderThickness="10" >
+                    <Border.BorderBrush>
+                        <ImageBrush ImageSource="files/silverlighticon.png" Stretch="Fill">
+                        </ImageBrush>
+                    </Border.BorderBrush>
+                    <Rectangle Width="80" Height="80" Fill="Silver"></Rectangle>
+                </Border>
+                <Border Canvas.Top="40" Canvas.Left="160" BorderThickness="10" >
+                    <Border.BorderBrush>
+                        <VideoBrush SourceName="myMedia"  Stretch="UniformToFill">
+                        </VideoBrush>
+                    </Border.BorderBrush>
+                    <Rectangle Width="80" Height="80" Fill="Silver"></Rectangle>
+                </Border>
+            </Canvas>
+                <Canvas x:Name="CanvasText" Visibility="Collapsed"></Canvas>
+                <Canvas x:Name="CanvasShape" Visibility="Collapsed" >
+                    <Polygon Points="40,40 100,100 40,160 240,100"  StrokeThickness="6">
+                        <Polygon.Stroke>
+                            <ImageBrush ImageSource="files/silverlighticon.png" Stretch="Fill">
+                            </ImageBrush>
+                        </Polygon.Stroke>
+                        <Polygon.Fill>
+                            <VideoBrush SourceName="myMedia"  Stretch="UniformToFill">
+                            </VideoBrush>
+                        </Polygon.Fill>
+                    </Polygon>
+                </Canvas>
+                <Canvas x:Name="CanvasControl" Visibility="Collapsed" >
+                    <ListBox Canvas.Top="20" Canvas.Left="60" Width="180">
+                        <ListBox.Foreground>
+                            <ImageBrush ImageSource="files/silverlighticon.png" Stretch="Fill">
+                            </ImageBrush>
+                        </ListBox.Foreground>
+                        <ListBox.Background>
+                            <VideoBrush SourceName="myMedia"  Stretch="UniformToFill">
+                            </VideoBrush>
+                        </ListBox.Background>
+                        <TextBlock FontSize="20">Item Number 1</TextBlock>
+                        <TextBlock FontSize="20">Item Number 2</TextBlock>
+                        <TextBlock FontSize="20">Item Number 3</TextBlock>
+                        <TextBlock FontSize="20">Item Number 4</TextBlock>
+                    </ListBox>
+                </Canvas>
+            </Canvas>
+        </Border>
+        <MediaElement x:Name="myMedia" Source="files/silverlightanimated.wmv" IsHitTestVisible="False" AutoPlay="True" Opacity="0"></MediaElement>
+        <Border Canvas.Top="230" Canvas.Left="50" BorderBrush="Gray" BorderThickness="0" Height="20" Width="300" Background="White">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Border" Cursor="Hand" Foreground="DodgerBlue" Padding="4,1,4,0"  MouseLeftButtonUp="ShowBorder" ToolTipService.ToolTip="Media Brush to BORDER using BorderBrush" />
+                <TextBlock Text="Text" Cursor="Hand" Foreground="DodgerBlue" Padding="4,1,4,0"  MouseLeftButtonUp="ShowImageBrush" ToolTipService.ToolTip="Media Brush to TEXT using Foreground" />
+                <TextBlock Text="Shape" Cursor="Hand" Foreground="DodgerBlue" Padding="4,1,4,0"  MouseLeftButtonUp="ShowShapeBrush" ToolTipService.ToolTip="Media Brush to Shape using Stroke, Fill" />
+                <TextBlock Text="Controls" Cursor="Hand" Foreground="DodgerBlue" Padding="4,1,4,0"  MouseLeftButtonUp="ShowControlBrush" ToolTipService.ToolTip="Media Brush to CONTROL using Foreground/Background" />
+            </StackPanel>
+        </Border>
+        <Border Canvas.Left="0" Canvas.Top="280" Width="400" Background="#F1EDED" BorderBrush="Silver" BorderThickness=".5" >
+            <Grid ShowGridLines="False" x:Name="StatusGrid">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="320"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock  x:Name="StatusBar" Margin="2" Grid.Column="0" Text="Status" VerticalAlignment="Center"></TextBlock>
+                <TextBlock x:Name="StatusThickness"  Margin="2" Grid.Column="1" Text="" TextAlignment="Right" HorizontalAlignment="Right" VerticalAlignment="Center"></TextBlock>
+            </Grid>
+        </Border>
+    </Canvas>
+</UserControl>

@@ -1,0 +1,1 @@
+Run the 2-MediaPlayerControl.aspx in ASP.NET project AdvMediaPlayer.Web

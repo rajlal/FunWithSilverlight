@@ -1,0 +1,209 @@
+﻿<UserControl  x:Class="AdvancedShapes.PageShapes"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="400" Height="300" >
+    <Canvas Background="#EEEEEE">
+        <Border x:Name="BorderDynamicItem" Canvas.Top="29" Canvas.Left="39" BorderBrush="Black" BorderThickness="1" Height="202" Width="322" Background="White">
+            <Canvas x:Name="DynamicItemContainer" Margin="0" Background="White" MouseMove="DynamicItemContainer_MouseMove" Width="320" Height="200">
+                <Canvas x:Name='CanvasGridLine' Canvas.Left='0' Canvas.Top='0' Opacity="1">
+                <TextBlock   Text="1 unit=20 px" FontSize="9" FontFamily="Verdana"  Canvas.Top="-15" Canvas.Left="120"></TextBlock>
+                <TextBlock  Text="0,0" FontSize="9" FontFamily="Verdana"  Canvas.Top="-15" Canvas.Left="-15"></TextBlock>
+                <TextBlock  Text="320,0" FontSize="9" FontFamily="Verdana"  Canvas.Top="-15" Canvas.Left="300"></TextBlock>
+                <TextBlock  Text="0,200" FontSize="9" FontFamily="Verdana"  Canvas.Top="200" Canvas.Left="-15"></TextBlock>
+                <TextBlock x:Name="c4" Text="320,200" FontSize="9" FontFamily="Verdana" Canvas.Top="200" Canvas.Left="300"></TextBlock>
+                <Line X1="20" Y1="0" X2="20" Y2="200" Stroke="#CCCCFF" StrokeThickness="1" ToolTipService.ToolTip="Gridline X:20/ Y:0-200" MouseEnter="Line_MouseEnter" MouseLeave="Line_MouseLeave"/>
+                <Line  X1="40" Y1="0" X2="40" Y2="200" Stroke="#CCCCFF" StrokeThickness="1" ToolTipService.ToolTip="Gridline X:40/ Y:0-200" MouseEnter="Line_MouseEnter" MouseLeave="Line_MouseLeave" />
+                <Line  X1="60" Y1="0" X2="60" Y2="200" Stroke="#CCCCFF" StrokeThickness="1" ToolTipService.ToolTip="Gridline X:60/ Y:0-200" MouseEnter="Line_MouseEnter" MouseLeave="Line_MouseLeave" />
+                <Line X1="80" Y1="0" X2="80" Y2="200" Stroke="#CCCCFF" StrokeThickness="1" ToolTipService.ToolTip="Gridline X:80/ Y:0-200" MouseEnter="Line_MouseEnter" MouseLeave="Line_MouseLeave" />
+                <Line X1="100" Y1="0" X2="100" Y2="200" Stroke="#CCCCFF" StrokeThickness="1" ToolTipService.ToolTip="Gridline X:100/ Y:0-200" MouseEnter="Line_MouseEnter" MouseLeave="Line_MouseLeave" />
+                <Line  X1="120" Y1="0" X2="120" Y2="200" Stroke="#CCCCFF" StrokeThickness="1" ToolTipService.ToolTip="Gridline X:120/ Y:0-200" MouseEnter="Line_MouseEnter" MouseLeave="Line_MouseLeave" />
+                <Line  X1="140" Y1="0" X2="140" Y2="200" Stroke="#CCCCFF" StrokeThickness="1" ToolTipService.ToolTip="Gridline X:140/ Y:0-200" MouseEnter="Line_MouseEnter" MouseLeave="Line_MouseLeave" />
+                <Line X1="160" Y1="0" X2="160" Y2="200" Stroke="#CCCCFF" StrokeThickness="1" ToolTipService.ToolTip="Gridline X:160/ Y:0-200" MouseEnter="Line_MouseEnter" MouseLeave="Line_MouseLeave" />
+                <Line  X1="180" Y1="0" X2="180" Y2="200" Stroke="#CCCCFF" StrokeThickness="1" ToolTipService.ToolTip="Gridline X:180/ Y:0-200" MouseEnter="Line_MouseEnter" MouseLeave="Line_MouseLeave" />
+                <Line  X1="200" Y1="0" X2="200" Y2="200" Stroke="#CCCCFF" StrokeThickness="1" ToolTipService.ToolTip="Gridline X:200/ Y:0-200" MouseEnter="Line_MouseEnter" MouseLeave="Line_MouseLeave" />
+                <Line X1="220" Y1="0" X2="220" Y2="200" Stroke="#CCCCFF" StrokeThickness="1" ToolTipService.ToolTip="Gridline X:220/ Y:0-200" MouseEnter="Line_MouseEnter" MouseLeave="Line_MouseLeave" />
+                <Line  X1="240" Y1="0" X2="240" Y2="200" Stroke="#CCCCFF" StrokeThickness="1" ToolTipService.ToolTip="Gridline X:240/ Y:0-200" MouseEnter="Line_MouseEnter" MouseLeave="Line_MouseLeave" />
+                <Line  X1="260" Y1="0" X2="260" Y2="200" Stroke="#CCCCFF" StrokeThickness="1" ToolTipService.ToolTip="Gridline X:260/ Y:0-200" MouseEnter="Line_MouseEnter" MouseLeave="Line_MouseLeave" />
+                <Line X1="280" Y1="0" X2="280" Y2="200" Stroke="#CCCCFF" StrokeThickness="1" ToolTipService.ToolTip="Gridline X:280/ Y:0-200" MouseEnter="Line_MouseEnter" MouseLeave="Line_MouseLeave" />
+                <Line  X1="300" Y1="0" X2="300" Y2="200" Stroke="#CCCCFF" StrokeThickness="1" ToolTipService.ToolTip="Gridline X:300/ Y:0-200" MouseEnter="Line_MouseEnter" MouseLeave="Line_MouseLeave" />
+                <Line  X1="0" Y1="20" X2="320" Y2="20" Stroke="#CCCCFF" StrokeThickness="1"  ToolTipService.ToolTip="Gridline X:0-320/ Y:20" MouseEnter="Line_MouseEnter" MouseLeave="Line_MouseLeave"/>
+                <Line  X1="0" Y1="40" X2="320" Y2="40" Stroke="#CCCCFF" StrokeThickness="1"  ToolTipService.ToolTip="Gridline X:0-320/ Y:40" MouseEnter="Line_MouseEnter" MouseLeave="Line_MouseLeave"/>
+                <Line  X1="0" Y1="60" X2="320" Y2="60" Stroke="#CCCCFF" StrokeThickness="1"  ToolTipService.ToolTip="Gridline X:0-320/ Y:60" MouseEnter="Line_MouseEnter" MouseLeave="Line_MouseLeave"/>
+                <Line  X1="0" Y1="80" X2="320" Y2="80" Stroke="#CCCCFF" StrokeThickness="1"  ToolTipService.ToolTip="Gridline X:0-320/ Y:80" MouseEnter="Line_MouseEnter" MouseLeave="Line_MouseLeave"/>
+                <Line  X1="0" Y1="100" X2="320" Y2="100" Stroke="#CCCCFF" StrokeThickness="1"  ToolTipService.ToolTip="Gridline X:0-320/ Y:100" MouseEnter="Line_MouseEnter" MouseLeave="Line_MouseLeave"/>
+                <Line  X1="0" Y1="120" X2="320" Y2="120" Stroke="#CCCCFF" StrokeThickness="1"  ToolTipService.ToolTip="Gridline X:0-320/ Y:120" MouseEnter="Line_MouseEnter" MouseLeave="Line_MouseLeave"/>
+                <Line  X1="0" Y1="140" X2="320" Y2="140" Stroke="#CCCCFF" StrokeThickness="1"  ToolTipService.ToolTip="Gridline X:0-320/ Y:140" MouseEnter="Line_MouseEnter" MouseLeave="Line_MouseLeave"/>
+                <Line  X1="0" Y1="160" X2="320" Y2="160" Stroke="#CCCCFF" StrokeThickness="1"  ToolTipService.ToolTip="Gridline X:0-320/ Y:160" MouseEnter="Line_MouseEnter" MouseLeave="Line_MouseLeave"/>
+                <Line  X1="0" Y1="180" X2="320" Y2="180" Stroke="#CCCCFF" StrokeThickness="1"  ToolTipService.ToolTip="Gridline X:0-320/ Y:180" MouseEnter="Line_MouseEnter" MouseLeave="Line_MouseLeave"/>
+                </Canvas>     
+                <Canvas x:Name='CanvasPolyLine' Canvas.Left='0' Canvas.Top='0' Visibility="Visible">
+                    <Polyline  Cursor='Hand' ToolTipService.ToolTip='Points=40,40 20,40 20,60, 40,60 40,80 20,80' Points="40,40 20,40 20,60, 40,60 40,80 20,80 " Stroke="DodgerBlue" StrokeThickness="2" MouseMove="Polyline_Mousemove"  />
+                    <Polyline  Cursor='Hand' ToolTipService.ToolTip='Points=60,40 60,80' Points="60,40 60,80" Stroke="DodgerBlue" StrokeThickness="2"   MouseMove="Polyline_Mousemove" />
+                    <Polyline  Cursor='Hand' ToolTipService.ToolTip='Points=80,40 80,80 100,80' Points="80,40 80,80 100,80" Stroke="DodgerBlue" StrokeThickness="2"   MouseMove="Polyline_Mousemove" />
+                    <Polyline  Cursor='Hand' ToolTipService.ToolTip='Points=100,40 120,80 140,40' Points="100,40 120,80 140,40" Stroke="DodgerBlue" StrokeThickness="2"   MouseMove="Polyline_Mousemove" />
+                    <Polyline  Cursor='Hand' ToolTipService.ToolTip='Points=180,40 160,40 160,80 180,80' Points="180,40 160,40 160,80 180,80" Stroke="DodgerBlue" StrokeThickness="2"   MouseMove="Polyline_Mousemove" />
+                    <Polyline  Cursor='Hand' ToolTipService.ToolTip='Points=180,40 160,40 160,80 180,80' Points="180,40 160,40 160,80 180,80" Stroke="DodgerBlue" StrokeThickness="2"   MouseMove="Polyline_Mousemove" />
+                    <Polyline  Cursor='Hand' ToolTipService.ToolTip='Points=160,60 180,60' Points="160,60 180,60" Stroke="DodgerBlue" StrokeThickness="2"   MouseMove="Polyline_Mousemove"  />
+                    <Polyline  Cursor='Hand' ToolTipService.ToolTip='Points=200,80 200,40 220,40 220,60 200,60 220,80' Points="200,80 200,40 220,40 220,60 200,60 220,80" Stroke="DodgerBlue" StrokeThickness="2"   MouseMove="Polyline_Mousemove" />
+                    <TextBlock Canvas.Top="84" Canvas.Left="20" FontSize="14">PolyLine</TextBlock>
+                </Canvas>
+                <Canvas x:Name='CanvasLinePath' Canvas.Left='0' Canvas.Top='0' Visibility="Visible">
+                    <Path x:Name='l_light' Stroke='SteelBlue' StrokeThickness='2'  MouseMove="Path_Mousemove"   Data='M 140,120 v 40 h 20'  Cursor='Hand' ToolTipService.ToolTip='Data=M 140,120 v 40 h 20' />
+                    <Path x:Name='i_light' Stroke='SteelBlue' StrokeThickness='2'  MouseMove="Path_Mousemove"  Data='M 180,120 v 40'  Cursor='Hand' ToolTipService.ToolTip='Data=M 180,120 v 40' />
+                    <Path x:Name='g_light' Stroke='SteelBlue' StrokeThickness='2'  MouseMove="Path_Mousemove"   Data='M 220,120 h-20 v40 h20 v-20 h-10'  Cursor='Hand' ToolTipService.ToolTip='Data=M 220,120 h-20 v40 h20 v-20 h-10' />
+                    <Path x:Name='h_light' Stroke='SteelBlue' StrokeThickness='2'  MouseMove="Path_Mousemove"  Data='M 240,120 v40'  Cursor='Hand' ToolTipService.ToolTip='Data=M 240,120 v40' />
+                    <Path x:Name='h1_light' Stroke='SteelBlue' StrokeThickness='2'  MouseMove="Path_Mousemove"   Data='M 240,140 h20'  Cursor='Hand' ToolTipService.ToolTip='Data=M 240,140 h20' />
+                    <Path x:Name='h2_light' Stroke='SteelBlue' StrokeThickness='2'  MouseMove="Path_Mousemove"   Data='M 260,120 v40'  Cursor='Hand' ToolTipService.ToolTip='Data=M 260,120 v40' />
+                    <Path x:Name='t_light' Stroke='SteelBlue' StrokeThickness='2'  MouseMove="Path_Mousemove"   Data='M 290,120 v40'  Cursor='Hand' ToolTipService.ToolTip='Data=M 290,120 v40' />
+                    <Path x:Name='t2_light' Stroke='SteelBlue' StrokeThickness='2'  MouseMove="Path_Mousemove"  Data='M 280,120 h20'  Cursor='Hand' ToolTipService.ToolTip='Data=M 280,120 h20' />
+                    <TextBlock Canvas.Top="164" Canvas.Left="140" FontSize="14">LinePath</TextBlock>
+                </Canvas>
+                <Canvas x:Name='CanvasGeometry' Canvas.Left='0' Canvas.Top='0' Visibility="Collapsed">
+                    <Path Fill="DodgerBlue" Stroke="Black" StrokeThickness="1" ToolTipService.ToolTip="RectangleGeometry"  MouseMove="RG_Path_MouseMove" Cursor="Hand">
+                        <Path.Data>
+                            <RectangleGeometry Rect="40,20,80,60"  />
+                        </Path.Data>
+                    </Path>
+                    <Path Fill="DodgerBlue" Stroke="Black" StrokeThickness="1" ToolTipService.ToolTip="EllipseGeometry" MouseMove="EG_Path_MouseMove" Cursor="Hand">
+                        <Path.Data>
+                            <EllipseGeometry Center="80,140" RadiusX="40" RadiusY="40" />
+                        </Path.Data>
+                    </Path>
+                    <Path Stroke="Black" StrokeThickness="1" Fill="DodgerBlue" ToolTipService.ToolTip="Composite Geometry"  MouseMove="CG_Path_MouseMove" Cursor="Hand">
+                        <Path.Data>
+                            <GeometryGroup FillRule="EvenOdd">
+                                <EllipseGeometry Center="230,100" RadiusX="60" RadiusY="60" />
+                                <EllipseGeometry Center="260,100" RadiusX="30" RadiusY="30" />
+                                <RectangleGeometry Rect="170,100,120,60" />
+                            </GeometryGroup>
+                        </Path.Data>
+                    </Path>
+                </Canvas>
+                <Canvas x:Name='CanvasCurve' Canvas.Left='0' Canvas.Top='0' Visibility="Collapsed">
+                    <Path Stroke="Black" Fill="DodgerBlue" Data="M 20,80 C 40,20 120,20 140,80" Opacity=".5" Cursor="Hand" ToolTipService.ToolTip="M 20,80 C 40,20 120,20 140,80" MouseMove="Curve_MouseMove" />
+                    <Polyline  Cursor='Hand' Points="20,80 40,20 120,20 140,80" Stroke="DodgerBlue" StrokeThickness="2" StrokeDashArray="2,1"/>
+                    <TextBlock Canvas.Left="25" Canvas.Top="80" Text="Cubic Bezier Curve"></TextBlock>
+
+                    <Path Stroke="Black" Fill="DodgerBlue" Data="M 180,80 S 240,20 300,80" Opacity=".5" Cursor="Hand" ToolTipService.ToolTip="M 180,80 S 240,20 300,80" MouseMove="Curve_MouseMove"/>
+                    <Polyline  Cursor='Hand' Points="180,80 240,20 300,80" Stroke="DodgerBlue" StrokeThickness="2" StrokeDashArray="2,1"/>
+                    <TextBlock Canvas.Left="180" Canvas.Top="80" Text="Smooth Cubic Bezier"></TextBlock>
+                    
+                    <Path Stroke="Black" Fill="DodgerBlue" Data="M 20,180 Q 80,120 140,180" Opacity=".5" Cursor="Hand" ToolTipService.ToolTip="M 20,180 Q 80,120 140,180" MouseMove="Curve_MouseMove"/>
+                    <Polyline  Cursor='Hand' Points="20,180 80,120 140,180 " Stroke="DodgerBlue" StrokeThickness="2" StrokeDashArray="2,1"/>
+                    <TextBlock Canvas.Left="20" Canvas.Top="180" Text="Quadratic Bezier Curve"></TextBlock>
+                
+                    <Path Stroke="Black" Fill="DodgerBlue" Data="M 180,180 T 210,140 300,180" Opacity=".5" Cursor="Hand" ToolTipService.ToolTip="M 180,180 T 210,140 300,180" MouseMove="Curve_MouseMove"/>
+                    <Polyline  Cursor='Hand' Points="180,180 210,140 300,180" Stroke="DodgerBlue" StrokeThickness="2" StrokeDashArray="2,1"/>
+                    <TextBlock Canvas.Left="180" Canvas.Top="180" Text="Smooth Quadratic Bezier"></TextBlock>
+                </Canvas>
+                <Canvas x:Name="CanvasArc" Canvas.Left='0' Canvas.Top='0' Visibility="Collapsed">
+                    <Path Stroke="Black" StrokeThickness="2" Fill="DodgerBlue" >
+                        <Path.Data>
+                            <PathGeometry>
+                                <PathGeometry.Figures >
+                                    <PathFigure StartPoint="40,40">
+                                        <PathFigure.Segments >
+                                            <ArcSegment Size="50,25" RotationAngle="0"  IsLargeArc="False" SweepDirection="Clockwise"  Point="120,40" />
+                                        </PathFigure.Segments>
+                                    </PathFigure>
+                                    <PathFigure StartPoint="200,60" >
+                                        <PathFigure.Segments>
+                                            <ArcSegment Size="50,25" RotationAngle="0"  IsLargeArc="True" SweepDirection="Clockwise"  Point="280,60"  />
+                                        </PathFigure.Segments>
+                                    </PathFigure>
+                                    <PathFigure StartPoint="40,160" >
+                                        <PathFigure.Segments >
+                                            <ArcSegment Size="25,25" RotationAngle="0"  IsLargeArc="True" SweepDirection="Clockwise"  Point="120,160" />
+                                        </PathFigure.Segments>
+                                    </PathFigure>
+                                    <PathFigure StartPoint="200,140" >
+                                        <PathFigure.Segments>
+                                            <ArcSegment Size="50,25" RotationAngle="0"  IsLargeArc="False" SweepDirection="Counterclockwise"  Point="280,140" />
+                                        </PathFigure.Segments>
+                                    </PathFigure>
+                                 </PathGeometry.Figures>
+                            </PathGeometry>
+                        </Path.Data>
+                    </Path>
+                    <TextBlock Canvas.Left="25" Canvas.Top="60" FontFamily="Verdana" FontSize="10" >IsLargeArc=False <LineBreak/>SweepDirection=Clockwise</TextBlock>
+                    <TextBlock Canvas.Left="180" Canvas.Top="60" FontFamily="Verdana" FontSize="10" Text="IsLargeArc=True"></TextBlock>
+                    <TextBlock Canvas.Left="20" Canvas.Top="160" FontFamily="Verdana" FontSize="10" >IsLargeArc=True <LineBreak/>Size Changed</TextBlock>
+                    <TextBlock Canvas.Left="160" Canvas.Top="160" FontFamily="Verdana" FontSize="10">IsLargeArc=False<LineBreak/> SweepDirection=Counterclock</TextBlock>
+
+                </Canvas>
+                <Canvas x:Name="CanvasYinYan" Canvas.Left='0' Canvas.Top='0' Visibility="Collapsed">
+                    <Ellipse x:Name="MainE" Width="160" Height="160" Fill="White" Stroke="Black" Canvas.Left="80" Canvas.Top= "20" Opacity="1" Cursor="Hand" MouseEnter="Ellipse_MouseEnter" MouseLeave="Ellipse_MouseLeave"></Ellipse>
+                    <Path x:Name="YYp1" Stroke="Black" StrokeThickness="1" Fill="Black" Opacity="1" Cursor="Hand" MouseEnter="YYp1_MouseEnter" MouseLeave="YYp1_MouseLeave">
+                        <Path.Data>
+                            <PathGeometry>
+                                <PathGeometry.Figures >
+                                    <PathFigure StartPoint="80,100" >
+                                        <PathFigure.Segments >
+                                            <ArcSegment Size="25,25" RotationAngle="0"  IsLargeArc="True" SweepDirection="Clockwise"  Point="160,100" />
+                                        </PathFigure.Segments>
+                                    </PathFigure>
+                                  </PathGeometry.Figures>
+                            </PathGeometry>
+                        </Path.Data>
+                    </Path>
+                    <Path x:Name="YYp2" Stroke="Black" StrokeThickness="2" Fill="Black" Opacity="1"  Cursor="Hand" MouseEnter="YYp2_MouseEnter" MouseLeave="YYp2_MouseLeave">
+                        <Path.Data>
+                            <PathGeometry>
+                                <PathGeometry.Figures >
+                                    <PathFigure StartPoint="80,100" >
+                                        <PathFigure.Segments >
+                                            <ArcSegment Size="25,25" RotationAngle="0"  IsLargeArc="True" SweepDirection="Counterclockwise"  Point="240,100" />
+                                        </PathFigure.Segments>
+                                    </PathFigure>
+                                </PathGeometry.Figures>
+                            </PathGeometry>
+                        </Path.Data>
+                    </Path>
+                    <Path x:Name="YYp3"  Stroke="Black" StrokeThickness="2" Fill="White" Opacity="1"  Cursor="Hand" MouseEnter="YYp3_MouseEnter" MouseLeave="YYp3_MouseLeave" >
+                        <Path.Data>
+                            <PathGeometry>
+                                <PathGeometry.Figures >
+                                    <PathFigure StartPoint="160,100" >
+                                        <PathFigure.Segments >
+                                            <ArcSegment Size="25,25" RotationAngle="0"  IsLargeArc="True" SweepDirection="Counterclockwise"  Point="240,100" />
+                                        </PathFigure.Segments>
+                                    </PathFigure>
+                                </PathGeometry.Figures>
+                            </PathGeometry>
+                        </Path.Data>
+                    </Path>
+                    <TextBlock Canvas.Top="180" Canvas.Left="100">1 Ellipse and 3 Arcs</TextBlock>
+                </Canvas>
+            </Canvas>
+        </Border>
+
+        <Border Canvas.Top="250" Canvas.Left="40" BorderBrush="Gray" BorderThickness="0" Height="20" Width="320" Background="White">
+            <StackPanel Orientation="Horizontal">
+               
+                 <TextBlock x:Name="Lines" Padding="3,2,3,0"  Text="Lines" MouseLeftButtonUp="Lines_MouseLeftButtonUp" ToolTipService.ToolTip="Connected Lines: Mousehover for details" Cursor="Hand" Foreground="DodgerBlue"/>
+                <TextBlock x:Name="Curves" Padding="3,2,3,0"  Text="Curve" MouseLeftButtonUp="Curve_MouseLeftButtonUp" ToolTipService.ToolTip="Different supported Curves" Cursor="Hand" Foreground="DodgerBlue"/>
+                <TextBlock x:Name="Geometry" Padding="3,2,3,0"  Text="Geometry" MouseLeftButtonUp="Geometry_MouseLeftButtonUp" ToolTipService.ToolTip="Rectangular, Ellipse and Composite Geometry" Cursor="Hand" Foreground="DodgerBlue"/>
+                <TextBlock x:Name="Arcs" Padding="3,2,3,0"  Text="Arcs" MouseLeftButtonUp="Arc_MouseLeftButtonUp" ToolTipService.ToolTip="ArcSegment with different Settings" Cursor="Hand" Foreground="DodgerBlue"/>
+                <TextBlock x:Name="YinYan" Padding="3,2,68,0"  Text="YinYan" MouseLeftButtonUp="YinYan_MouseLeftButtonUp" ToolTipService.ToolTip="Yin Yan symbol using Geometry" Cursor="Hand" Foreground="DodgerBlue"/>
+               
+                <CheckBox x:Name="chkGrid" Click="gridCheck_Click" IsChecked="true" Margin="2" ToolTipService.ToolTip="Show Gridlines" Cursor="Hand">
+                    <CheckBox.Content>
+                        <Image x:Name="ImageBlank" Source="image/gridicon.png" Margin="1" Width="14" Height="12" Cursor="Hand" MouseLeftButtonUp="Clear_MouseLeftButtonUp" ToolTipService.ToolTip="Show / Hide Gridlines"></Image>
+                    </CheckBox.Content>
+                </CheckBox>
+            </StackPanel>
+        </Border>
+
+        <Border Canvas.Left="0" Canvas.Top="280" Width="400" Background="#F1EDED" BorderBrush="Silver" BorderThickness=".5" >
+            <Grid ShowGridLines="False" x:Name="StatusGrid">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="320"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock  x:Name="StatusBar" Margin="2" Grid.Column="0" Text="Connected Lines: Mousehover for details" VerticalAlignment="Center"></TextBlock>
+                <TextBlock x:Name="StatusXY"  Margin="2" Grid.Column="1" Text="" TextAlignment="Right" HorizontalAlignment="Right" VerticalAlignment="Center"></TextBlock>
+            </Grid>
+        </Border>
+    </Canvas>
+
+</UserControl>

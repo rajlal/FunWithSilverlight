@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SlideshowCustomControl", "SlideshowCustomControl\SlideshowCustomControl.csproj", "{842FFF80-82E6-4BDE-A0BA-ED9D7DF1333C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCustomControl", "TestApp\TestCustomControl.csproj", "{606ADB2F-F5A3-4310-BFD5-48F6D81B5E00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{842FFF80-82E6-4BDE-A0BA-ED9D7DF1333C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{842FFF80-82E6-4BDE-A0BA-ED9D7DF1333C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{842FFF80-82E6-4BDE-A0BA-ED9D7DF1333C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{842FFF80-82E6-4BDE-A0BA-ED9D7DF1333C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{606ADB2F-F5A3-4310-BFD5-48F6D81B5E00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{606ADB2F-F5A3-4310-BFD5-48F6D81B5E00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{606ADB2F-F5A3-4310-BFD5-48F6D81B5E00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{606ADB2F-F5A3-4310-BFD5-48F6D81B5E00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

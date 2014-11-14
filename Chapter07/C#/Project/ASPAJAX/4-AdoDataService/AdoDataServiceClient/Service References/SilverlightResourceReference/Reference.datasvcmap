@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="73af84fd-efc8-4b58-b6b8-24ee9fd6f2bf" xmlns="urn:schemas-microsoft-com:xml-dataservicemap">
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:52356/SilverlightResourceDataService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.edmx" MetadataType="Edmx" ID="9c12ef0b-2519-4f2b-94c6-1457cf6ee22b" SourceId="1" SourceUrl="http://localhost:52356/SilverlightResourceDataService.svc" />
+  </Metadata>
+  <Extensions />
+</ReferenceGroup>

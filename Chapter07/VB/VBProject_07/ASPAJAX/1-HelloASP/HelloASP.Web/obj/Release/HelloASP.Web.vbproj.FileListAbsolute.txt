@@ -1,0 +1,6 @@
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_07\ASPAJAX\1-HelloASP\HelloASP.Web\bin\1-HelloASP.Web.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_07\ASPAJAX\1-HelloASP\HelloASP.Web\bin\1-HelloASP.Web.pdb
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_07\ASPAJAX\1-HelloASP\HelloASP.Web\bin\System.Web.Silverlight.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_07\ASPAJAX\1-HelloASP\HelloASP.Web\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_07\ASPAJAX\1-HelloASP\HelloASP.Web\obj\Release\1-HelloASP.Web.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_07\ASPAJAX\1-HelloASP\HelloASP.Web\obj\Release\1-HelloASP.Web.pdb

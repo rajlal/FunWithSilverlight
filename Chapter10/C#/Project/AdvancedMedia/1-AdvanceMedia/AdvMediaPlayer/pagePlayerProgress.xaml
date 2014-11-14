@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="AdvMediaPlayer.pagePlayerProgress"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+
+        <Canvas
+   xmlns="http://schemas.microsoft.com/client/2007"
+   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+   Width="400" Height="300"
+   Background="#EEEEEE"
+   x:Name="Page" >
+
+        <Canvas x:Name="canvasMedia" Margin="0" Background="AliceBlue" Canvas.Top="0" Canvas.Left="0"  Height="280" Width="400" Visibility="Visible" >
+            <MediaElement AutoPlay="False" Visibility="Collapsed" Name="Media" Width="400" Height="280" Source="Butterfly.wmv" Stretch="Fill" CurrentStateChanged="Media_CurrentStateChanged" BufferingProgressChanged="Media_BufferingProgressChanged"></MediaElement>
+            <Image x:Name="btnPlaybig"  Canvas.Top="80"  Canvas.Left="150"   Width="100" Source="image/Playbig.png" Cursor="Hand"  ToolTipService.ToolTip="Play" MouseLeftButtonUp="Image_MouseLeftButtonUp"></Image>
+        </Canvas>
+       
+            <Canvas Width="60" Height="20" Canvas.Left="0" Canvas.Top="280" x:Name="btnPlayPause">
+            <Image x:Name="btnPlay" Canvas.Top="4" Canvas.Left="5" Width="8" Source="image/play.png" Cursor="Hand"  ToolTipService.ToolTip="Play" MouseLeftButtonUp="btnPlay_MouseLeftButtonUp"></Image>
+            <Image x:Name="btnPause" Canvas.Top="5" Canvas.Left="25" Width="6" Source="image/pause.png" Cursor="Hand"   ToolTipService.ToolTip="Pause" MouseLeftButtonUp="btnPause_MouseLeftButtonUp"></Image>
+            <Image x:Name="btnStop" Canvas.Top="5" Canvas.Left="45" Width="6" Source="image/stop.png"  ToolTipService.ToolTip="Stop" Cursor="Hand"  MouseLeftButtonUp="btnStop_MouseLeftButtonUp"></Image>
+
+
+        </Canvas>
+
+            <Canvas Width="340" Height="20" Canvas.Left="60" Canvas.Top="280" 
+      x:Name="canvasProgress">
+
+            <ProgressBar Cursor="Hand"  MouseLeftButtonUp="ProgressBar_MouseLeftButtonUp"  BorderBrush="AliceBlue" Canvas.Left="8.5" Canvas.Top="6" Name="ProgressBar" Value="0" Maximum="240" Height="8" Width="240" />
+                <Ellipse Width="16" Height="16" Stroke="AliceBlue" Canvas.Top="2" 
+         Canvas.Left="0"  x:Name="scrubBar">
+                    <Ellipse.Fill>
+                        <RadialGradientBrush>
+                        <GradientStop Color="#4977D6" Offset="0"/>
+                            <GradientStop Color="AliceBlue" Offset="1"/>
+                        </RadialGradientBrush>
+                    </Ellipse.Fill>
+                </Ellipse>
+            </Canvas>
+
+            <TextBlock Width="80" Height="20" Text="00:00/00:00" TextWrapping="Wrap" 
+      Canvas.Left="318" Canvas.Top="282" x:Name="StatusPosition"/>
+    </Canvas>
+
+</UserControl>

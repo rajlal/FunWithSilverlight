@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ArgumentException" xml:space="preserve">
+    <value>Instance de TimeCode attendue.</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="errorNonSmoothStreamingServer" xml:space="preserve">
+    <value>{0}. Nécessite que la sortie soit hébergée sur un serveur Web exécutant IIS 7.0 avec le gestionnaire de diffusion en continu lisse installé et un modèle Silverlight qui prend en charge la diffusion en continu lisse.</value>
+    <comment>user tries to play back an adaptive streaming file from a server that doesnt support adaptive streaming</comment>
+  </data>
+  <data name="Smpte12MBadFormat" xml:space="preserve">
+    <value>Le code horaire fourni ne figure pas dans le format correct.</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="Smpte12MOutOfRange" xml:space="preserve">
+    <value>Le code horaire fourni ne figure pas dans l'intervalle attendu.</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="Smpte12MOverflowException" xml:space="preserve">
+    <value>Le code horaire résultant se trouve en dehors de l'intervalle attendu pour MaxValue.</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="Smpte12M_2398_BadFormat" xml:space="preserve">
+    <value>La valeur d'image de code horaire se trouve en dehors de l'intervalle attendu pour SMPTE 23.98 IVTC.</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="Smpte12M_24_BadFormat" xml:space="preserve">
+    <value>La valeur d'image de code horaire se trouve en dehors de l'intervalle attendu pour SMPTE 24 ips Film Sync.</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="Smpte12M_25_BadFormat" xml:space="preserve">
+    <value>La valeur d'image de code horaire se trouve en dehors de l'intervalle attendu pour SMPTE 25 ips PAL.</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="Smpte12M_2997_Drop_BadFormat" xml:space="preserve">
+    <value>La valeur d'image de code horaire se trouve en dehors de l'intervalle attendu pour SMPTE 29.97 DropFrame.</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="Smpte12M_2997_NonDrop_BadFormat" xml:space="preserve">
+    <value>La valeur d'image de code horaire se trouve en dehors de l'intervalle attendu pour SMTPE 29.97 NonDrop.</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="Smpte12M_30_BadFormat" xml:space="preserve">
+    <value>La valeur d'image de code horaire se trouve en dehors de l'intervalle attendu pour SMPTE 30 ips.</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="tipChapters" xml:space="preserve">
+    <value>Basculer vers la liste des chapitres (C)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipClosedCaptions" xml:space="preserve">
+    <value>Afficher/Masquer les sous-titres (L)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipFullScreen" xml:space="preserve">
+    <value>Basculer vers la lecture plein écran (F)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipMute" xml:space="preserve">
+    <value>Muet (M)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipNextMarker" xml:space="preserve">
+    <value>Prochain marqueur (N)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipOffline" xml:space="preserve">
+    <value>Rendre le lecteur disponible hors connexion (D)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipPlaylist" xml:space="preserve">
+    <value>Basculer vers la liste de lecture (V)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipPlayPause" xml:space="preserve">
+    <value>Lecture/Pause (P)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipPopout" xml:space="preserve">
+    <value>Afficher le lecteur dans une fenêtre séparée (X)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipPreviousMarker" xml:space="preserve">
+    <value>Marqueur précédent (B)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipSeekSlider" xml:space="preserve">
+    <value>Rech. dans le temps</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipStop" xml:space="preserve">
+    <value>Arrêter (A)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipVolumeDown" xml:space="preserve">
+    <value>Baisser le volume (J)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipVolumeSlider" xml:space="preserve">
+    <value>Curseur du volume</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipVolumeUp" xml:space="preserve">
+    <value>Monter le volume (K)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipFrameStepBackwards" xml:space="preserve">
+    <value>Reculer d'une image (I)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipFrameStepForwards" xml:space="preserve">
+    <value>Avancer d'une image (O)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="errorOfflineInterrupted" xml:space="preserve">
+    <value>Consultation hors connexion interrompue par une perte de réseau</value>
+    <comment>user disconnects network before offline completed</comment>
+  </data>
+  <data name="errorInvalidPlaylist" xml:space="preserve">
+    <value>Liste de lecture non valide</value>
+    <comment>playlist incorrect exception string</comment>
+  </data>
+  <data name="errorInvalidPlaylistNode" xml:space="preserve">
+    <value>Liste de lecture non valide : nœud inattendu : {0} dans {1}</value>
+    <comment>playlist incorrect exception string</comment>
+  </data>
+  <data name="errorValueOutOfRange" xml:space="preserve">
+    <value>Valeur attendue dans l'intervalle {0} à {1}, {2} trouvé</value>
+    <comment>value out of range error</comment>
+  </data>
+  <data name="errorInvalidMedia" xml:space="preserve">
+    <value>Impossible d'ouvrir le fichier multimédia {0}</value>
+    <comment>error cant start/open file</comment>
+  </data>
+  <data name="readerChapters" xml:space="preserve">
+    <value>Afficher la bascule des chapitres</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerClosedCaptions" xml:space="preserve">
+    <value>Bascule des sous-titres</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerFrameStepBackwards" xml:space="preserve">
+    <value>Reculer d'une image</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerFrameStepForwards" xml:space="preserve">
+    <value>Avancer d'une image</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerFullScreen" xml:space="preserve">
+    <value>Bascule de plein écran</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerMute" xml:space="preserve">
+    <value>Bascule Muet</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerNextMarker" xml:space="preserve">
+    <value>Atteindre le prochain marqueur</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerOffline" xml:space="preserve">
+    <value>Rendre le lecteur disponible hors connexion</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerPlaylist" xml:space="preserve">
+    <value>Afficher la bascule de liste de lecture</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerPlayPause" xml:space="preserve">
+    <value>Bascule de mise en pause</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerPopout" xml:space="preserve">
+    <value>Afficher le lecteur dans une fenêtre séparée</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerPreviousMarker" xml:space="preserve">
+    <value>Atteindre le marqueur précédent</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerSeekSlider" xml:space="preserve">
+    <value>Rech. dans le temps</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerStop" xml:space="preserve">
+    <value>!YJnlu!§tõp !!</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerVolumeDown" xml:space="preserve">
+    <value>Baisser le volume</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerVolumeSlider" xml:space="preserve">
+    <value>Régler le volume</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerVolumeUp" xml:space="preserve">
+    <value>Monter le volume</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerHour" xml:space="preserve">
+    <value>une heure</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerHours" xml:space="preserve">
+    <value>{0} heures</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerMinute" xml:space="preserve">
+    <value>une minute</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerMinutes" xml:space="preserve">
+    <value>{0} minutes</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerPlaylistItem" xml:space="preserve">
+    <value>élément de liste de lecture {0}. {1}.</value>
+    <comment>screen reader text (playlist file and title)</comment>
+  </data>
+  <data name="readerSecond" xml:space="preserve">
+    <value>une seconde</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerSeconds" xml:space="preserve">
+    <value>{0} secondes</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerChapterItem" xml:space="preserve">
+    <value>{0} {1}</value>
+    <comment>screen reader text (chapter time and title)</comment>
+  </data>
+  <data name="readerPlugIn" xml:space="preserve">
+    <value>Affich. graphiques</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="tipPlugIn" xml:space="preserve">
+    <value>Aff. graphiques (G)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="textOfflineProgressPrompt" xml:space="preserve">
+    <value>Téléchargement de contenu pour la lecture hors ligne</value>
+    <comment>Offline download dialog progress text</comment>
+  </data>
+  <data name="buttonOfflineProgressFinish" xml:space="preserve">
+    <value>Terminer</value>
+    <comment>Offline download dialog finish button text</comment>
+  </data>
+  <data name="tipOfflineProgressFinish" xml:space="preserve">
+    <value>Cliquez sur Terminer pour terminer l'installation hors ligne</value>
+    <comment>Offline download dialog finish prompt tool tip</comment>
+  </data>
+  <data name="readerOfflineProgressFinish" xml:space="preserve">
+    <value>Cliquez sur le bouton Terminer pour terminer l'installation hors ligne</value>
+    <comment>Offline download dialog finish button automation text</comment>
+  </data>
+  <data name="buttonOfflineProgressCancel" xml:space="preserve">
+    <value>!iWqAR!Çæñçèl !!!</value>
+    <comment>Offline download dialog cancel button tooltip</comment>
+  </data>
+  <data name="tipOfflineProgressCancel" xml:space="preserve">
+    <value>Cliquez sur le bouton Annuler pour terminer l'installation hors ligne</value>
+    <comment>Offline download dialog finish button tooltip</comment>
+  </data>
+  <data name="readerOfflineProgressCancel" xml:space="preserve">
+    <value>Cliquez sur le bouton Annuler pour arrêter l'installation hors ligne</value>
+    <comment>Offline download dialog cancel button automation text</comment>
+  </data>
+  <data name="textOfflineFinishPrompt" xml:space="preserve">
+    <value>Cliquez sur Terminer pour terminer l'installation hors ligne</value>
+    <comment>Offline download dialog finish prompt text</comment>
+  </data>
+  <data name="textOfflineProgressXOFYFormat" xml:space="preserve">
+    <value>{0} de {1}</value>
+  </data>
+  <data name="captionsCaptions" xml:space="preserve">
+    <value>Légendes {0}</value>
+    <comment>captions language</comment>
+  </data>
+  <data name="captionsDescriptive" xml:space="preserve">
+    <value>{0} description</value>
+    <comment>captions descriptive</comment>
+  </data>
+  <data name="captionsDownloading" xml:space="preserve">
+    <value>Téléchargement des légendes {0}</value>
+    <comment>downloading captions message</comment>
+  </data>
+  <data name="captionsSubtitles" xml:space="preserve">
+    <value>Sous-titres {0}</value>
+    <comment>captions subtitles</comment>
+  </data>
+</root>

@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="System.Windows.Markup.XamlReader">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Media.Imaging.BitmapImage">
+    <Position X="8" Y="0.5" Width="2.25" />
+    <Members>
+      <Field Name="UriSourceProperty" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Controls.Image" HideInheritanceLine="true">
+    <Position X="5.75" Y="0.5" Width="2" />
+    <Members>
+      <Field Name="SourceProperty" Hidden="true" />
+      <Field Name="StretchProperty" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Controls.MediaElement">
+    <Position X="0.5" Y="4.25" Width="2" />
+    <Members>
+      <Field Name="AttributesProperty" Hidden="true" />
+      <Property Name="AudioStreamCount" Hidden="true" />
+      <Field Name="AudioStreamCountProperty" Hidden="true" />
+      <Property Name="AudioStreamIndex" Hidden="true" />
+      <Field Name="AudioStreamIndexProperty" Hidden="true" />
+      <Field Name="AutoPlayProperty" Hidden="true" />
+      <Field Name="BalanceProperty" Hidden="true" />
+      <Property Name="BufferingProgress" Hidden="true" />
+      <Field Name="BufferingProgressProperty" Hidden="true" />
+      <Property Name="BufferingTime" Hidden="true" />
+      <Field Name="BufferingTimeProperty" Hidden="true" />
+      <Property Name="CanPause" Hidden="true" />
+      <Field Name="CanPauseProperty" Hidden="true" />
+      <Property Name="CanSeek" Hidden="true" />
+      <Field Name="CanSeekProperty" Hidden="true" />
+      <Field Name="CurrentStateProperty" Hidden="true" />
+      <Property Name="DownloadProgressOffset" Hidden="true" />
+      <Field Name="DownloadProgressOffsetProperty" Hidden="true" />
+      <Field Name="DownloadProgressProperty" Hidden="true" />
+      <Property Name="DroppedFramesPerSecond" Hidden="true" />
+      <Field Name="DroppedFramesPerSecondProperty" Hidden="true" />
+      <Property Name="IsMuted" Hidden="true" />
+      <Field Name="IsMutedProperty" Hidden="true" />
+      <Property Name="LicenseAcquirer" Hidden="true" />
+      <Property Name="Markers" Hidden="true" />
+      <Property Name="NaturalDuration" Hidden="true" />
+      <Field Name="NaturalDurationProperty" Hidden="true" />
+      <Property Name="NaturalVideoHeight" Hidden="true" />
+      <Field Name="NaturalVideoHeightProperty" Hidden="true" />
+      <Property Name="NaturalVideoWidth" Hidden="true" />
+      <Field Name="NaturalVideoWidthProperty" Hidden="true" />
+      <Field Name="PositionProperty" Hidden="true" />
+      <Property Name="RenderedFramesPerSecond" Hidden="true" />
+      <Field Name="RenderedFramesPerSecondProperty" Hidden="true" />
+      <Field Name="SourceProperty" Hidden="true" />
+      <Field Name="StretchProperty" Hidden="true" />
+      <Field Name="VolumeProperty" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Events" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Media.FontFamily">
+    <Position X="7.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Xml.XmlReader">
+    <Position X="4" Y="4.5" Width="2.25" />
+    <Members>
+      <Method Name="IsName" Hidden="true" />
+      <Method Name="IsNameToken" Hidden="true" />
+      <Method Name="IsStartElement" Hidden="true" />
+      <Method Name="ReadContentAs" Hidden="true" />
+      <Method Name="ReadContentAsBase64" Hidden="true" />
+      <Method Name="ReadContentAsBinHex" Hidden="true" />
+      <Method Name="ReadContentAsBoolean" Hidden="true" />
+      <Method Name="ReadContentAsDateTime" Hidden="true" />
+      <Method Name="ReadContentAsDecimal" Hidden="true" />
+      <Method Name="ReadContentAsDouble" Hidden="true" />
+      <Method Name="ReadContentAsFloat" Hidden="true" />
+      <Method Name="ReadContentAsInt" Hidden="true" />
+      <Method Name="ReadContentAsLong" Hidden="true" />
+      <Method Name="ReadContentAsObject" Hidden="true" />
+      <Method Name="ReadContentAsString" Hidden="true" />
+      <Method Name="ReadElementContentAs" Hidden="true" />
+      <Method Name="ReadElementContentAsBase64" Hidden="true" />
+      <Method Name="ReadElementContentAsBinHex" Hidden="true" />
+      <Method Name="ReadElementContentAsBoolean" Hidden="true" />
+      <Method Name="ReadElementContentAsDateTime" Hidden="true" />
+      <Method Name="ReadElementContentAsDecimal" Hidden="true" />
+      <Method Name="ReadElementContentAsDouble" Hidden="true" />
+      <Method Name="ReadElementContentAsFloat" Hidden="true" />
+      <Method Name="ReadElementContentAsInt" Hidden="true" />
+      <Method Name="ReadElementContentAsLong" Hidden="true" />
+      <Method Name="ReadElementContentAsObject" Hidden="true" />
+      <Method Name="ReadElementContentAsString" Hidden="true" />
+      <Method Name="ReadEndElement" Hidden="true" />
+      <Method Name="ReadInnerXml" Hidden="true" />
+      <Method Name="ReadOuterXml" Hidden="true" />
+      <Method Name="ReadStartElement" Hidden="true" />
+      <Method Name="ReadSubtree" Hidden="true" />
+      <Method Name="ReadToDescendant" Hidden="true" />
+      <Method Name="ReadToFollowing" Hidden="true" />
+      <Method Name="ReadToNextSibling" Hidden="true" />
+      <Method Name="ReadValueChunk" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

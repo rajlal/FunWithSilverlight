@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ArgumentException" xml:space="preserve">
+    <value>TimeCode가 있어야 합니다.</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="errorNonSmoothStreamingServer" xml:space="preserve">
+    <value>{0}. 출력은 IIS 7.0을 실행하는 웹 서버에서 호스팅되어야 하며, 웹 서버에는 부드러운 스트리밍 처리기가 설치되어 있고 부드러운 스트리밍 기능을 지원하는 Silverlight 템플릿이 있어야 합니다</value>
+    <comment>user tries to play back an adaptive streaming file from a server that doesnt support adaptive streaming</comment>
+  </data>
+  <data name="Smpte12MBadFormat" xml:space="preserve">
+    <value>지정한 시간 코드가 올바른 형식이 아닙니다.</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="Smpte12MOutOfRange" xml:space="preserve">
+    <value>지정한 시간 코드가 범위를 벗어납니다.</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="Smpte12MOverflowException" xml:space="preserve">
+    <value>결과 시간 코드가 MaxValue의 예상 범위를 벗어납니다.</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="Smpte12M_2398_BadFormat" xml:space="preserve">
+    <value>시간 코드 프레임 값이 SMPTE 23.98 IVTC의 예상 범위를 벗어납니다.</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="Smpte12M_24_BadFormat" xml:space="preserve">
+    <value>시간 코드 프레임 값이 SMPTE 24fps Film Sync의 예상 범위를 벗어납니다.</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="Smpte12M_25_BadFormat" xml:space="preserve">
+    <value>시간 코드 프레임 값이 SMPTE 25fps PAL의 예상 범위를 벗어납니다.</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="Smpte12M_2997_Drop_BadFormat" xml:space="preserve">
+    <value>시간 코드 프레임 값이 SMPTE 29.97 DropFram의 예상 범위를 벗어납니다.</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="Smpte12M_2997_NonDrop_BadFormat" xml:space="preserve">
+    <value>시간 코드 프레임 값이 SMTPE 29.97 NonDrop의 예상 범위를 벗어납니다.</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="Smpte12M_30_BadFormat" xml:space="preserve">
+    <value>시간 코드 프레임 값이 SMPTE 30fps의 예상 범위를 벗어납니다.</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="tipChapters" xml:space="preserve">
+    <value>챕터 목록 토글(C)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipClosedCaptions" xml:space="preserve">
+    <value>선택 캡션 표시/숨기기(L)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipFullScreen" xml:space="preserve">
+    <value>전체 화면 재생 토글(F)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipMute" xml:space="preserve">
+    <value>음소거(M)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipNextMarker" xml:space="preserve">
+    <value>다음 마커(N)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipOffline" xml:space="preserve">
+    <value>플레이어를 오프라인 사용 가능으로 설정(D)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipPlaylist" xml:space="preserve">
+    <value>재생 목록 토글(V)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipPlayPause" xml:space="preserve">
+    <value>재생/일시 중지(P)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipPopout" xml:space="preserve">
+    <value>별도의 창에 플레이어 표시(X)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipPreviousMarker" xml:space="preserve">
+    <value>이전 마커(B)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipSeekSlider" xml:space="preserve">
+    <value>검색 속도</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipStop" xml:space="preserve">
+    <value>중지(S)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipVolumeDown" xml:space="preserve">
+    <value>볼륨 낮춤(J)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipVolumeSlider" xml:space="preserve">
+    <value>볼륨 슬라이더</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipVolumeUp" xml:space="preserve">
+    <value>볼륨 높임(K)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipFrameStepBackwards" xml:space="preserve">
+    <value>한 프레임씩 뒤로 이동(I)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipFrameStepForwards" xml:space="preserve">
+    <value>한 프레임씩 앞으로 이동(O)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="errorOfflineInterrupted" xml:space="preserve">
+    <value>네트워크 손실로 인해 오프라인 전환 작업 중단</value>
+    <comment>user disconnects network before offline completed</comment>
+  </data>
+  <data name="errorInvalidPlaylist" xml:space="preserve">
+    <value>잘못된 재생 목록</value>
+    <comment>playlist incorrect exception string</comment>
+  </data>
+  <data name="errorInvalidPlaylistNode" xml:space="preserve">
+    <value>잘못된 재생 목록 {1}에 예기치 않은 노드 {0}이(가) 있습니다.</value>
+    <comment>playlist incorrect exception string</comment>
+  </data>
+  <data name="errorValueOutOfRange" xml:space="preserve">
+    <value>{0}에서 {1} 사이의 값이 필요한데 {2}이(가) 있습니다.</value>
+    <comment>value out of range error</comment>
+  </data>
+  <data name="errorInvalidMedia" xml:space="preserve">
+    <value>미디어 파일 {0}을(를) 열 수 없습니다.</value>
+    <comment>error cant start/open file</comment>
+  </data>
+  <data name="readerChapters" xml:space="preserve">
+    <value>챕터 표시 토글</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerClosedCaptions" xml:space="preserve">
+    <value>선택 캡션 토글</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerFrameStepBackwards" xml:space="preserve">
+    <value>한 프레임씩 뒤로 이동</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerFrameStepForwards" xml:space="preserve">
+    <value>한 프레임씩 앞으로 이동</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerFullScreen" xml:space="preserve">
+    <value>전체 화면 토글</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerMute" xml:space="preserve">
+    <value>음소거 토글</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerNextMarker" xml:space="preserve">
+    <value>다음 마커로 건너뛰기</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerOffline" xml:space="preserve">
+    <value>플레이어를 오프라인 사용 가능으로 설정</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerPlaylist" xml:space="preserve">
+    <value>재생 목록 표시 토글</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerPlayPause" xml:space="preserve">
+    <value>재생 일시 중지 토글</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerPopout" xml:space="preserve">
+    <value>별도의 창에 플레이어 표시</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerPreviousMarker" xml:space="preserve">
+    <value>이전 마커로 건너뛰기</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerSeekSlider" xml:space="preserve">
+    <value>검색 속도</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerStop" xml:space="preserve">
+    <value>중지</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerVolumeDown" xml:space="preserve">
+    <value>볼륨 낮춤</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerVolumeSlider" xml:space="preserve">
+    <value>볼륨 설정</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerVolumeUp" xml:space="preserve">
+    <value>볼륨 높임</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerHour" xml:space="preserve">
+    <value>1시간</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerHours" xml:space="preserve">
+    <value>{0}시간</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerMinute" xml:space="preserve">
+    <value>1분</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerMinutes" xml:space="preserve">
+    <value>{0}분</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerPlaylistItem" xml:space="preserve">
+    <value>재생 목록 항목 {0}. {1}.</value>
+    <comment>screen reader text (playlist file and title)</comment>
+  </data>
+  <data name="readerSecond" xml:space="preserve">
+    <value>1초</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerSeconds" xml:space="preserve">
+    <value>{0}초</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerChapterItem" xml:space="preserve">
+    <value>{0} {1}</value>
+    <comment>screen reader text (chapter time and title)</comment>
+  </data>
+  <data name="readerPlugIn" xml:space="preserve">
+    <value>그래프 표시</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="tipPlugIn" xml:space="preserve">
+    <value>그래프 표시(G)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="textOfflineProgressPrompt" xml:space="preserve">
+    <value>오프라인으로 재생할 콘텐츠를 다운로드하는 중</value>
+    <comment>Offline download dialog progress text</comment>
+  </data>
+  <data name="buttonOfflineProgressFinish" xml:space="preserve">
+    <value>완료</value>
+    <comment>Offline download dialog finish button text</comment>
+  </data>
+  <data name="tipOfflineProgressFinish" xml:space="preserve">
+    <value>[마침]을 클릭하여 오프라인 설치를 완료합니다.</value>
+    <comment>Offline download dialog finish prompt tool tip</comment>
+  </data>
+  <data name="readerOfflineProgressFinish" xml:space="preserve">
+    <value>[마침] 단추를 클릭하여 오프라인 설치를 완료합니다.</value>
+    <comment>Offline download dialog finish button automation text</comment>
+  </data>
+  <data name="buttonOfflineProgressCancel" xml:space="preserve">
+    <value>!iWqAR!윜Cancel !!!</value>
+    <comment>Offline download dialog cancel button tooltip</comment>
+  </data>
+  <data name="tipOfflineProgressCancel" xml:space="preserve">
+    <value>[취소] 단추를 클릭하여 오프라인 설치를 완료합니다.</value>
+    <comment>Offline download dialog finish button tooltip</comment>
+  </data>
+  <data name="readerOfflineProgressCancel" xml:space="preserve">
+    <value>[취소] 단추를 클릭하여 오프라인 설치를 중지합니다.</value>
+    <comment>Offline download dialog cancel button automation text</comment>
+  </data>
+  <data name="textOfflineFinishPrompt" xml:space="preserve">
+    <value>[마침]을 클릭하여 오프라인 설치를 완료합니다.</value>
+    <comment>Offline download dialog finish prompt text</comment>
+  </data>
+  <data name="textOfflineProgressXOFYFormat" xml:space="preserve">
+    <value>{0} / {1}</value>
+  </data>
+  <data name="captionsCaptions" xml:space="preserve">
+    <value>{0} 캡션</value>
+    <comment>captions language</comment>
+  </data>
+  <data name="captionsDescriptive" xml:space="preserve">
+    <value>{0} 설명</value>
+    <comment>captions descriptive</comment>
+  </data>
+  <data name="captionsDownloading" xml:space="preserve">
+    <value>{0} 캡션을 다운로드하는 중</value>
+    <comment>downloading captions message</comment>
+  </data>
+  <data name="captionsSubtitles" xml:space="preserve">
+    <value>{0} 자막</value>
+    <comment>captions subtitles</comment>
+  </data>
+</root>

@@ -1,0 +1,5 @@
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_09\Media\3-MediaMarkers\Markers.Web\bin\Markers.Web.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_09\Media\3-MediaMarkers\Markers.Web\bin\Markers.Web.pdb
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_09\Media\3-MediaMarkers\Markers.Web\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_09\Media\3-MediaMarkers\Markers.Web\obj\Release\Markers.Web.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_09\Media\3-MediaMarkers\Markers.Web\obj\Release\Markers.Web.pdb

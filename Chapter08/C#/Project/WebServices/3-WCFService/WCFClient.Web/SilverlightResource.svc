@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="WCFClient.Web.SilverlightResource" CodeBehind="SilverlightResource.svc.cs" %>

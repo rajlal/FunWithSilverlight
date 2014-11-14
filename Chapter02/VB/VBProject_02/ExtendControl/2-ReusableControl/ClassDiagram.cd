@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="System.Windows.FrameworkElement" Collapsed="true">
+    <Position X="6.75" Y="8" Width="1.5" />
+    <Members>
+      <Property Name="ActualHeight" Hidden="true" />
+      <Property Name="ActualWidth" Hidden="true" />
+      <Property Name="HorizontalAlignment" Hidden="true" />
+      <Property Name="MaxHeight" Hidden="true" />
+      <Property Name="MaxWidth" Hidden="true" />
+      <Property Name="MinHeight" Hidden="true" />
+      <Property Name="MinWidth" Hidden="true" />
+      <Property Name="VerticalAlignment" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ReusableControl.App" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAEAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ReusableControl.Page" Collapsed="true" HideInheritanceLine="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Page.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ReusableControl.PageThumbnails" HideInheritanceLine="true">
+    <Position X="0.5" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QACAAAAAAAAAAAAAAAARAAECAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\1-UserControl-Thumbnail\PageThumbnails.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ReusableControl.Thumbnail" HideInheritanceLine="true">
+    <Position X="6.75" Y="3" Width="2.25" />
+    <Members>
+      <Field Name="ToolTipFlag" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAEAAAAgAAAgAAAAAAACABAAAAAIAAA=</HashCode>
+      <FileName>Pages\1-UserControl-Thumbnail\Thumbnail.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ReusableControl.ThumbnailData">
+    <Position X="2.75" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\1-UserControl-Thumbnail\Thumbnail.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ReusableControl.PageSlide" Collapsed="true" HideInheritanceLine="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QACAAAAAAAAAAAAAAAARAAECAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\2-UserControl-Slideshow\PageSlide.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ReusableControl.Slide" Collapsed="true" HideInheritanceLine="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAEIAQAAAAIIAAAACCAAAAAAAAIAAMACBABCQAoAA=</HashCode>
+      <FileName>Pages\2-UserControl-Slideshow\Slide.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ReusableControl.Slides" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\2-UserControl-Slideshow\Slide.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ReusableControl.SlideImagesList" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\2-UserControl-Slideshow\Slide.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Windows.Controls.UserControl">
+    <Position X="5" Y="7" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Controls.Control" Collapsed="true">
+    <Position X="6.75" Y="7" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Events" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

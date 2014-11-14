@@ -1,0 +1,54 @@
+﻿<UserControl x:Class="SlideShow.Slide"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    > 
+    <UserControl.Resources>
+        <!--Thumbs Title -->
+        <Style x:Key="SlideStyle" TargetType="TextBlock">
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="0 0 0 0"/>
+            <Setter Property="Margin" Value="2"/>
+            <Setter Property="FontFamily" Value="Verdana"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Foreground" Value="Gray"/>
+            
+        </Style>
+    </UserControl.Resources>
+    <Canvas x:Name="Root" Background="#EEEEEE">
+        <Border x:Name="SlideBorder" BorderBrush="#265C5C5C" BorderThickness="1,0,1,1" Canvas.Left="00" Canvas.Top="00" Background="White">
+            <!-- Slideshow Image -->
+            <Grid x:Name="SlideGrid" ShowGridLines="False" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="35"/>
+                </Grid.RowDefinitions>
+                <Image  Grid.Row="0"
+                        x:Name="SlideImage"
+                        ImageFailed="SlideImage_ImageFailed"
+                        Margin="0"
+                        Stretch="Fill" 
+                        Source="Images/_Default.jpg"
+                        Cursor="Hand"
+                        MouseLeftButtonUp="SlideImage_MouseLeftButtonUp"
+                       />
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                        <ColumnDefinition></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <!--<Image Grid.Column="0" Source="Images/play.jpg" Stretch="None" HorizontalAlignment="Left" Margin="4" Cursor="Hand" x:Name="PlayButton" MouseLeftButtonUp="PlayButton_MouseLeftButtonUp"/>-->
+                    <Image Grid.Column="1" Source="Images/_leftarrow.jpg" Stretch="None" HorizontalAlignment="Right" Margin="2" Cursor="Hand" x:Name="LeftButton" MouseLeftButtonUp="LeftButton_MouseLeftButtonUp"/>
+                    <TextBlock Grid.Column="2" x:Name="SlideTitle" Text="{Binding MainTitle}" Style="{StaticResource SlideStyle}" Margin="8"></TextBlock>
+                    <Image Grid.Column="3" Source="Images/_rightarrow.jpg" Stretch="None" HorizontalAlignment="Left" Margin="2" Cursor="Hand" x:Name="RightButton" MouseLeftButtonUp="RightButton_MouseLeftButtonUp"/>
+                    <Image Grid.Column="4" Source="Images/_fullscreen.jpg" Stretch="None" HorizontalAlignment="Right" Margin="4" Cursor="Hand" x:Name="FullscreenButton" MouseLeftButtonUp="FullscreenButton_MouseLeftButtonUp"/>
+                </Grid>
+            </Grid>
+        </Border>
+    </Canvas>
+</UserControl>
+
+    

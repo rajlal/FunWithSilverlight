@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="CustomizeControl.PageLogin"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="400" Height="300">
+    <Grid x:Name="LayoutRoot" Background="AliceBlue">
+        <Border x:Name="LoginBox" Width="316" Height="218" Margin="20" BorderBrush="Black" BorderThickness="1" Background="White">
+            <StackPanel x:Name="StackLayout" Margin="5">
+                <Image Source="Files/LoginForm.png"></Image>
+                <Border Width="286" Height="180">
+                    <StackPanel x:Name="Login">
+                    <TextBlock Text="Username" ></TextBlock>
+                    <TextBox></TextBox>
+                    <TextBlock Text="Password" ></TextBlock>
+                    <PasswordBox ></PasswordBox>
+                    <Button Content="Login" ></Button>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>
+    

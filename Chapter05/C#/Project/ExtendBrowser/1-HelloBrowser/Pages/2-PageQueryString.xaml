@@ -1,0 +1,24 @@
+﻿<UserControl x:Class="HelloBrowser.PageQueryString"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="400" Height="300">
+    <Canvas Background="AliceBlue" Loaded="Canvas_Loaded">
+        <Border x:Name="BorderDynamicItem" Canvas.Top="30" Canvas.Left="50" BorderBrush="Gray" BorderThickness="0" Height="200" Width="300" Background="White">
+            <Canvas x:Name="DynamicItemContainer">
+                <HyperlinkButton FontSize="14" Content="Home " Canvas.Top="10" Canvas.Left="10"  Click="URL_Click" Foreground="DodgerBlue" MouseEnter="URL_MouseEnter" MouseLeave="URL_MouseLeave"></HyperlinkButton>
+                <HyperlinkButton FontSize="14" Content="Books " Canvas.Top="10" Canvas.Left="80" Click="URL_Category_Click" Foreground="DodgerBlue" MouseEnter="URL_Category_MouseEnter" MouseLeave="URL_Category_MouseLeave"></HyperlinkButton>
+                <HyperlinkButton FontSize="14" Content="Silverlight How To" Canvas.Top="10" Canvas.Left="150" Click="URL_SubCategory_Click" Foreground="DodgerBlue" MouseEnter="URL_SubCategory_MouseEnter" MouseLeave="URL_SubCategory_MouseLeave"></HyperlinkButton>
+                <TextBlock TextWrapping="Wrap" x:Name="txtQueryString" FontSize="14" Canvas.Top="50" Canvas.Left="20" Width="220" >Home</TextBlock>
+            </Canvas>
+        </Border>
+        <Border Canvas.Left="0" Canvas.Top="280" Width="400" Background="#F1EDED" BorderBrush="Silver" BorderThickness=".5" >
+            <Grid ShowGridLines="False" x:Name="StatusGrid">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+               
+                </Grid.ColumnDefinitions>
+                <TextBlock  x:Name="StatusBar" Margin="2" Grid.Column="0" Text="Get Query String" VerticalAlignment="Center"></TextBlock>
+             </Grid>
+        </Border>
+    </Canvas>
+</UserControl>

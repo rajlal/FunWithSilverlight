@@ -1,0 +1,17 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="SMF" EntryPointType="SMF.App" RuntimeVersion="4.0.50826.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="SMF" Source="SMF.dll" />
+    <AssemblyPart x:Name="Microsoft.SilverlightMediaFramework.Core" Source="Microsoft.SilverlightMediaFramework.Core.dll" />
+    <AssemblyPart x:Name="Microsoft.SilverlightMediaFramework.Plugins" Source="Microsoft.SilverlightMediaFramework.Plugins.dll" />
+    <AssemblyPart x:Name="Microsoft.SilverlightMediaFramework.Plugins.Progressive" Source="Microsoft.SilverlightMediaFramework.Plugins.Progressive.dll" />
+    <AssemblyPart x:Name="Microsoft.SilverlightMediaFramework.Plugins.SmoothStreaming" Source="Microsoft.SilverlightMediaFramework.Plugins.SmoothStreaming.dll" />
+    <AssemblyPart x:Name="Microsoft.SilverlightMediaFramework.Utilities" Source="Microsoft.SilverlightMediaFramework.Utilities.dll" />
+    <AssemblyPart x:Name="Microsoft.Web.Media.SmoothStreaming" Source="Microsoft.Web.Media.SmoothStreaming.dll" />
+    <AssemblyPart x:Name="System.Windows.Controls.Data.Input" Source="System.Windows.Controls.Data.Input.dll" />
+    <AssemblyPart x:Name="System.ComponentModel.Composition" Source="System.ComponentModel.Composition.dll" />
+    <AssemblyPart x:Name="System.Xml.Linq" Source="System.Xml.Linq.dll" />
+    <AssemblyPart x:Name="System.Xml.Serialization" Source="System.Xml.Serialization.dll" />
+    <AssemblyPart x:Name="System.ComponentModel.Composition.Initialization" Source="System.ComponentModel.Composition.Initialization.dll" />
+    <AssemblyPart x:Name="System.ComponentModel.DataAnnotations" Source="System.ComponentModel.DataAnnotations.dll" />
+  </Deployment.Parts>
+</Deployment>

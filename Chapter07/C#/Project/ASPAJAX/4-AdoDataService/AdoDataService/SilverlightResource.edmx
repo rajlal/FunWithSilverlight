@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="2.0" xmlns:edmx="http://schemas.microsoft.com/ado/2008/10/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="SilverlightResourceModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+        <EntityContainer Name="SilverlightResourceModelStoreContainer">
+          <EntitySet Name="Resource" EntityType="SilverlightResourceModel.Store.Resource" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="ResourceType" EntityType="SilverlightResourceModel.Store.ResourceType" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <EntitySet Name="sysdiagrams" EntityType="SilverlightResourceModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+          <AssociationSet Name="FK_Resource_ResourceType" Association="SilverlightResourceModel.Store.FK_Resource_ResourceType">
+            <End Role="ResourceType" EntitySet="ResourceType" />
+            <End Role="Resource" EntitySet="Resource" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Resource">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Title" Type="nvarchar" MaxLength="150" />
+          <Property Name="Author" Type="nvarchar" MaxLength="50" />
+          <Property Name="Image" Type="nvarchar" MaxLength="150" />
+          <Property Name="URL" Type="nvarchar" MaxLength="250" />
+          <Property Name="ResourceId" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ResourceType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <Association Name="FK_Resource_ResourceType">
+          <End Role="ResourceType" Type="SilverlightResourceModel.Store.ResourceType" Multiplicity="1" />
+          <End Role="Resource" Type="SilverlightResourceModel.Store.Resource" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ResourceType">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Resource">
+              <PropertyRef Name="ResourceId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="SilverlightResourceModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+        <EntityContainer Name="SilverlightResourceEntities">
+          <EntitySet Name="Resource" EntityType="SilverlightResourceModel.Resource" />
+          <EntitySet Name="ResourceType" EntityType="SilverlightResourceModel.ResourceType" />
+          <EntitySet Name="sysdiagrams" EntityType="SilverlightResourceModel.sysdiagrams" />
+          <AssociationSet Name="FK_Resource_ResourceType" Association="SilverlightResourceModel.FK_Resource_ResourceType">
+            <End Role="ResourceType" EntitySet="ResourceType" />
+            <End Role="Resource" EntitySet="Resource" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Resource">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="Author" Type="String" MaxLength="50" Unicode="true" FixedLength="false" />
+          <Property Name="Image" Type="String" MaxLength="150" Unicode="true" FixedLength="false" />
+          <Property Name="URL" Type="String" MaxLength="250" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="ResourceType" Relationship="SilverlightResourceModel.FK_Resource_ResourceType" FromRole="Resource" ToRole="ResourceType" />
+        </EntityType>
+        <EntityType Name="ResourceType">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Name" Type="String" MaxLength="10" Unicode="true" FixedLength="true" />
+          <NavigationProperty Name="Resource" Relationship="SilverlightResourceModel.FK_Resource_ResourceType" FromRole="ResourceType" ToRole="Resource" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" Nullable="false" MaxLength="128" Unicode="true" FixedLength="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <Association Name="FK_Resource_ResourceType">
+          <End Role="ResourceType" Type="SilverlightResourceModel.ResourceType" Multiplicity="1" />
+          <End Role="Resource" Type="SilverlightResourceModel.Resource" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="SilverlightResourceModelStoreContainer" CdmEntityContainer="SilverlightResourceEntities">
+          <EntitySetMapping Name="Resource">
+            <EntityTypeMapping TypeName="IsTypeOf(SilverlightResourceModel.Resource)">
+              <MappingFragment StoreEntitySet="Resource">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Author" ColumnName="Author" />
+                <ScalarProperty Name="Image" ColumnName="Image" />
+                <ScalarProperty Name="URL" ColumnName="URL" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ResourceType">
+            <EntityTypeMapping TypeName="IsTypeOf(SilverlightResourceModel.ResourceType)">
+              <MappingFragment StoreEntitySet="ResourceType">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="IsTypeOf(SilverlightResourceModel.sysdiagrams)">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="FK_Resource_ResourceType" TypeName="SilverlightResourceModel.FK_Resource_ResourceType" StoreEntitySet="Resource">
+            <EndProperty Name="ResourceType">
+              <ScalarProperty Name="Id" ColumnName="ResourceId" />
+            </EndProperty>
+            <EndProperty Name="Resource">
+              <ScalarProperty Name="Id" ColumnName="Id" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer>
+    <edmx:Connection>
+      <DesignerInfoPropertySet xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram Name="SilverlightResource" xmlns="http://schemas.microsoft.com/ado/2008/10/edmx">
+        <EntityTypeShape EntityType="SilverlightResourceModel.Resource" Width="1.5" PointX="3" PointY="0.875" Height="2.1725878906250005" IsExpanded="true" />
+        <EntityTypeShape EntityType="SilverlightResourceModel.ResourceType" Width="1.5" PointX="0.75" PointY="1.25" Height="1.5956835937500002" IsExpanded="true" />
+        <EntityTypeShape EntityType="SilverlightResourceModel.sysdiagrams" Width="1.5" PointX="0.75" PointY="4.75" Height="1.9802864583333335" IsExpanded="true" />
+        <AssociationConnector Association="SilverlightResourceModel.FK_Resource_ResourceType" ManuallyRouted="false">
+          <ConnectorPoint PointX="2.25" PointY="2.0478417968750002" />
+          <ConnectorPoint PointX="3" PointY="2.0478417968750002" /></AssociationConnector></Diagram></edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="NetRIAService.Web.SilverlightResourceEntities">
+    <Position X="6" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAIAAAAAAAAAAQQAQAAAAAAAAAACAAAAAAAQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NetRIAService.Web.Resource" Collapsed="true">
+    <Position X="6.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAEAEAAkAAoAABwAAABKAACBQAAIAABgAUAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NetRIAService.Web.ResourceType" Collapsed="true">
+    <Position X="7" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAIAAAAAAAAAAAIAQABAAEQAAAAAAAAAAUAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Web.DomainServices.LinqToEntities.LinqToEntitiesDomainService&lt;TContext&gt;">
+    <Position X="0.5" Y="0.75" Width="2.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Web.DomainServices.DomainService">
+    <Position X="3.5" Y="0.75" Width="2" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

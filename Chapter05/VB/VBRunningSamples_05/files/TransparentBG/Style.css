@@ -1,0 +1,44 @@
+﻿ html {
+	    height: 100%;
+	    overflow: auto;
+	    font-family: Arial, Helvetica, Sans-Serif; 
+	    font-size: 12px;
+	
+    }
+    body {
+	    padding: 0;
+	    margin: 0;
+	    background-image:url('bg.png');
+	    background-repeat: repeat;
+    }
+    h1
+    {
+       font-size:14; 
+    }
+     div.Content
+        {
+            clear: both;
+            margin: auto;
+            padding-top:2px;
+            padding-bottom:2px;
+            width: 405px;           
+            text-align:left;
+        }
+        div.ApplicationContainer
+        {
+            clear: both;
+            margin: auto;
+            width: 400px;           
+            height: 300px;
+        }
+        div.ContentHelp
+        {
+            clear: both;
+            margin: auto;
+            width:400px;           
+         
+            text-align:left;
+            padding-top:5px;
+            text-indent:5px;
+            padding-bottom:5px;
+        }

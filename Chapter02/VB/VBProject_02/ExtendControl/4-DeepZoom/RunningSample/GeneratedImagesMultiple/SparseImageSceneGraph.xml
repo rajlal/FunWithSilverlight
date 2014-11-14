@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<SceneGraph version="1">
+  <AspectRatio>1.13152146803763</AspectRatio>
+  <SceneNode>
+    <FileName>S:\Main\Projects\Chapter 01\RIA\7-DeepZoom\Wonders\Source Images\colosseum_in_rome.jpg</FileName>
+    <x>0</x>
+    <y>1.20412519452092E-16</y>
+    <Width>0.40067601397812</Width>
+    <Height>0.266088079180468</Height>
+    <ZOrder>1</ZOrder>
+  </SceneNode>
+  <SceneNode>
+    <FileName>S:\Main\Projects\Chapter 01\RIA\7-DeepZoom\Wonders\Source Images\goldengatebridge.jpg</FileName>
+    <x>0.666666666666665</x>
+    <y>0.266088079180468</y>
+    <Width>0.333333333333335</Width>
+    <Height>0.282880367009408</Height>
+    <ZOrder>2</ZOrder>
+  </SceneNode>
+  <SceneNode>
+    <FileName>S:\Main\Projects\Chapter 01\RIA\7-DeepZoom\Wonders\Source Images\grand_canyon.jpg</FileName>
+    <x>0.380043612956733</x>
+    <y>0</y>
+    <Width>0.352739324922316</Width>
+    <Height>0.266088079180468</Height>
+    <ZOrder>3</ZOrder>
+  </SceneNode>
+  <SceneNode>
+    <FileName>S:\Main\Projects\Chapter 01\RIA\7-DeepZoom\Wonders\Source Images\greatwallofchina.jpg</FileName>
+    <x>0</x>
+    <y>0.266088079180468</y>
+    <Width>0.333333333333333</Width>
+    <Height>0.282880367009408</Height>
+    <ZOrder>4</ZOrder>
+  </SceneNode>
+  <SceneNode>
+    <FileName>S:\Main\Projects\Chapter 01\RIA\7-DeepZoom\Wonders\Source Images\greatyramid.jpg</FileName>
+    <x>0.333333333333333</x>
+    <y>0.266088079180468</y>
+    <Width>0.333333333333332</Width>
+    <Height>0.282880367009408</Height>
+    <ZOrder>5</ZOrder>
+  </SceneNode>
+  <SceneNode>
+    <FileName>S:\Main\Projects\Chapter 01\RIA\7-DeepZoom\Wonders\Source Images\mount everest.jpg</FileName>
+    <x>2.12832938399163E-16</x>
+    <y>0.548968446189876</y>
+    <Width>1</Width>
+    <Height>0.451031553810124</Height>
+    <ZOrder>6</ZOrder>
+  </SceneNode>
+  <SceneNode>
+    <FileName>S:\Main\Projects\Chapter 01\RIA\7-DeepZoom\Wonders\Source Images\taj_mahal.jpg</FileName>
+    <x>0.71461898757029</x>
+    <y>1.20412519452092E-16</y>
+    <Width>0.28538101242971</Width>
+    <Height>0.266088079180468</Height>
+    <ZOrder>7</ZOrder>
+  </SceneNode>
+</SceneGraph>

@@ -1,0 +1,43 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimationVB", "AnimationVB\AnimationVB.vbproj", "{12949CE1-358F-439E-9810-9E4F8C5B8B60}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "AnimationVB", "..\", "{1F3BF5D7-662D-44D4-8039-A821E7A81893}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/Chapter 04"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\AnimationVB\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Chapter 04\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Chapter 04"
+		Release.AspNetCompiler.PhysicalPath = "..\..\AnimationVB\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Chapter 04\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "58341"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{12949CE1-358F-439E-9810-9E4F8C5B8B60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12949CE1-358F-439E-9810-9E4F8C5B8B60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12949CE1-358F-439E-9810-9E4F8C5B8B60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12949CE1-358F-439E-9810-9E4F8C5B8B60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F3BF5D7-662D-44D4-8039-A821E7A81893}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F3BF5D7-662D-44D4-8039-A821E7A81893}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F3BF5D7-662D-44D4-8039-A821E7A81893}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F3BF5D7-662D-44D4-8039-A821E7A81893}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

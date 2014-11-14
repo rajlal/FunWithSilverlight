@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ArgumentException" xml:space="preserve">
+    <value>需要 TimeCode 的实例。</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="errorNonSmoothStreamingServer" xml:space="preserve">
+    <value>{0}。要求在运行 IIS 7.0 的 Web 服务器上承载输出，且装有平滑流式处理程序并具有支持平滑流式处理的 Silverlight 模板。</value>
+    <comment>user tries to play back an adaptive streaming file from a server that doesnt support adaptive streaming</comment>
+  </data>
+  <data name="Smpte12MBadFormat" xml:space="preserve">
+    <value>所提供的时间代码的格式不正确。</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="Smpte12MOutOfRange" xml:space="preserve">
+    <value>所提供的时间代码不在预期范围内。</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="Smpte12MOverflowException" xml:space="preserve">
+    <value>生成的时间代码不在 MaxValue 的预期范围内。</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="Smpte12M_2398_BadFormat" xml:space="preserve">
+    <value>时间代码帧值不在 SMPTE 23.98 IVTC 的预期范围内。</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="Smpte12M_24_BadFormat" xml:space="preserve">
+    <value>时间代码帧值不在 SMPTE 24fps Film Sync 的预期范围内。</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="Smpte12M_25_BadFormat" xml:space="preserve">
+    <value>时间代码帧值不在 SMPTE 25fps PAL 的预期范围内。</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="Smpte12M_2997_Drop_BadFormat" xml:space="preserve">
+    <value>时间代码帧值不在 SMPTE 29.97 DropFrame 的预期范围内。</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="Smpte12M_2997_NonDrop_BadFormat" xml:space="preserve">
+    <value>时间代码帧值不在 SMTPE 29.97 NonDrop 的预期范围内。</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="Smpte12M_30_BadFormat" xml:space="preserve">
+    <value>时间代码帧值不在 SMPTE 30fps 的预期范围内。</value>
+    <comment>timecode error</comment>
+  </data>
+  <data name="tipChapters" xml:space="preserve">
+    <value>切换章节列表(C)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipClosedCaptions" xml:space="preserve">
+    <value>显示/隐藏字幕(L)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipFullScreen" xml:space="preserve">
+    <value>切换全屏播放(F)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipMute" xml:space="preserve">
+    <value>静音(M)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipNextMarker" xml:space="preserve">
+    <value>下一标记(N)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipOffline" xml:space="preserve">
+    <value>使播放器可脱机使用(D)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipPlaylist" xml:space="preserve">
+    <value>切换播放列表(V)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipPlayPause" xml:space="preserve">
+    <value>播放/暂停(P)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipPopout" xml:space="preserve">
+    <value>在单独的窗口中显示播放器(X)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipPreviousMarker" xml:space="preserve">
+    <value>上一标记(B)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipSeekSlider" xml:space="preserve">
+    <value>按时间搜寻</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipStop" xml:space="preserve">
+    <value>停止(S)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipVolumeDown" xml:space="preserve">
+    <value>降低音量(J)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipVolumeSlider" xml:space="preserve">
+    <value>音量滑块</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipVolumeUp" xml:space="preserve">
+    <value>增加音量(K)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipFrameStepBackwards" xml:space="preserve">
+    <value>回退一帧(I)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="tipFrameStepForwards" xml:space="preserve">
+    <value>前进一帧(O)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="errorOfflineInterrupted" xml:space="preserve">
+    <value>因网络遗失造成脱机中断</value>
+    <comment>user disconnects network before offline completed</comment>
+  </data>
+  <data name="errorInvalidPlaylist" xml:space="preserve">
+    <value>播放列表无效</value>
+    <comment>playlist incorrect exception string</comment>
+  </data>
+  <data name="errorInvalidPlaylistNode" xml:space="preserve">
+    <value>播放列表无效: {1} 中出现意外节点 {0}</value>
+    <comment>playlist incorrect exception string</comment>
+  </data>
+  <data name="errorValueOutOfRange" xml:space="preserve">
+    <value>需要 {0} 到 {1} 范围内的值，找到 {2}</value>
+    <comment>value out of range error</comment>
+  </data>
+  <data name="errorInvalidMedia" xml:space="preserve">
+    <value>无法打开媒体文件 {0}</value>
+    <comment>error cant start/open file</comment>
+  </data>
+  <data name="readerChapters" xml:space="preserve">
+    <value>显示章节切换</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerClosedCaptions" xml:space="preserve">
+    <value>隐藏字幕切换</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerFrameStepBackwards" xml:space="preserve">
+    <value>回退一帧</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerFrameStepForwards" xml:space="preserve">
+    <value>前进一帧</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerFullScreen" xml:space="preserve">
+    <value>全屏切换</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerMute" xml:space="preserve">
+    <value>静音切换</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerNextMarker" xml:space="preserve">
+    <value>跳到下一标记</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerOffline" xml:space="preserve">
+    <value>使播放器可脱机使用</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerPlaylist" xml:space="preserve">
+    <value>显示播放列表切换</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerPlayPause" xml:space="preserve">
+    <value>播放/暂停切换</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerPopout" xml:space="preserve">
+    <value>在单独的窗口中显示播放器</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerPreviousMarker" xml:space="preserve">
+    <value>跳到上一标记</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerSeekSlider" xml:space="preserve">
+    <value>按时间搜寻</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerStop" xml:space="preserve">
+    <value>停止</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerVolumeDown" xml:space="preserve">
+    <value>降低音量</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerVolumeSlider" xml:space="preserve">
+    <value>设置音量</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerVolumeUp" xml:space="preserve">
+    <value>增加音量</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerHour" xml:space="preserve">
+    <value>1 小时</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerHours" xml:space="preserve">
+    <value>{0} 小时</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerMinute" xml:space="preserve">
+    <value>1 分钟</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerMinutes" xml:space="preserve">
+    <value>{0} 分钟</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerPlaylistItem" xml:space="preserve">
+    <value>播放列表项目 {0}。{1}。</value>
+    <comment>screen reader text (playlist file and title)</comment>
+  </data>
+  <data name="readerSecond" xml:space="preserve">
+    <value>1 秒</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerSeconds" xml:space="preserve">
+    <value>{0} 秒</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="readerChapterItem" xml:space="preserve">
+    <value>{0} {1}</value>
+    <comment>screen reader text (chapter time and title)</comment>
+  </data>
+  <data name="readerPlugIn" xml:space="preserve">
+    <value>显示图形</value>
+    <comment>screen reader text</comment>
+  </data>
+  <data name="tipPlugIn" xml:space="preserve">
+    <value>显示图形(G)</value>
+    <comment>player button tip text</comment>
+  </data>
+  <data name="textOfflineProgressPrompt" xml:space="preserve">
+    <value>正在下载内容以供脱机播放</value>
+    <comment>Offline download dialog progress text</comment>
+  </data>
+  <data name="buttonOfflineProgressFinish" xml:space="preserve">
+    <value>完成</value>
+    <comment>Offline download dialog finish button text</comment>
+  </data>
+  <data name="tipOfflineProgressFinish" xml:space="preserve">
+    <value>单击“完成”完成脱机安装</value>
+    <comment>Offline download dialog finish prompt tool tip</comment>
+  </data>
+  <data name="readerOfflineProgressFinish" xml:space="preserve">
+    <value>单击“完成”按钮完成脱机安装</value>
+    <comment>Offline download dialog finish button automation text</comment>
+  </data>
+  <data name="buttonOfflineProgressCancel" xml:space="preserve">
+    <value>!iWqAR!〞Cancel !!!</value>
+    <comment>Offline download dialog cancel button tooltip</comment>
+  </data>
+  <data name="tipOfflineProgressCancel" xml:space="preserve">
+    <value>单击“取消”按钮完成脱机安装</value>
+    <comment>Offline download dialog finish button tooltip</comment>
+  </data>
+  <data name="readerOfflineProgressCancel" xml:space="preserve">
+    <value>单击“取消”按钮停止脱机安装</value>
+    <comment>Offline download dialog cancel button automation text</comment>
+  </data>
+  <data name="textOfflineFinishPrompt" xml:space="preserve">
+    <value>单击“完成”完成脱机安装</value>
+    <comment>Offline download dialog finish prompt text</comment>
+  </data>
+  <data name="textOfflineProgressXOFYFormat" xml:space="preserve">
+    <value>{0}/{1}</value>
+  </data>
+  <data name="captionsCaptions" xml:space="preserve">
+    <value>{0}解释性字幕</value>
+    <comment>captions language</comment>
+  </data>
+  <data name="captionsDescriptive" xml:space="preserve">
+    <value>{0}说明</value>
+    <comment>captions descriptive</comment>
+  </data>
+  <data name="captionsDownloading" xml:space="preserve">
+    <value>正在下载{0}解释性字幕</value>
+    <comment>downloading captions message</comment>
+  </data>
+  <data name="captionsSubtitles" xml:space="preserve">
+    <value>{0}对话字幕</value>
+    <comment>captions subtitles</comment>
+  </data>
+</root>

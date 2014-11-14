@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Deliver Media</title>
+    <link rel="stylesheet" type="text/css" href="StyleBig.css" />
+    <script type="text/javascript" src="Silverlight.js"></script>
+    <style type="text/css">
+<!--
+iframe {
+overflow-x: hidden;
+}
+-->
+</style>
+</head>
+<body>
+    <form id="form1" runat="server" style="height:100%">
+      <div class="Content">
+	  <div class="ApplicationContainer"  id="silverlightControlHost">
+	<iframe id="myFrame" scrolling="no" style="visibility:visible;height:400px;width:600px;border:0px;overflow-x: hidden;overflow-y: hidden;" src="http://silverlightfun.com/samples/chapter-09/ProgressiveDownload/Default.html"></iframe>
+      </div>
+    <div class="ContentHelp">Deliver Mechanism<ul>
+     <li  style="text-decoration:underline;color:Blue;cursor:pointer" onclick="document.getElementById('myFrame').src='http://silverlightfun.com/samples/chapter-09/ProgressiveDownload/Default.html';">Progressive Download (Source 19.3 MB)</li>
+         <ul>
+             <li style="text-decoration:underline;color:Blue;cursor:pointer" onclick="document.getElementById('myFrame').src='http://silverlightfun.com/samples/chapter-09/WMV/Default.html';">Encoded WMV (2.33 MB)</li>
+             <li style="text-decoration:underline;color:Blue;cursor:pointer" onclick="document.getElementById('myFrame').src='http://silverlightfun.com/samples/chapter-09/MP4/Default.html';">Encoded MP4 (2.84 MB)</li>
+         </ul>
+     <li style="text-decoration:underline;color:Blue;cursor:pointer" onclick="document.getElementById('myFrame').src='http://silverlightfun.com/samples/chapter-09/TraditionalStreaming/Defaultasx.html';">Traditional Streaming (19.3 MB)</li>
+     <li style="text-decoration:underline;color:Blue;cursor:pointer" onclick="document.getElementById('myFrame').src='http://addrating.com/Silverlight/Media/SmoothStreaming/default.html';">Smooth Streaming (8 files from 836 KB to 4.14 MB</li>
+     <li style="text-decoration:underline;color:Blue;cursor:pointer" onclick="document.getElementById('myFrame').src='http://addrating.com/Silverlight/Media/SmoothStreamingH264/default.html';">Smooth Streaming H.264 (8 files 1.17 MB to 4.5 MB)</li>
+    </ul>
+    </div>
+    </div>
+    </form>
+
+</body>
+</html>

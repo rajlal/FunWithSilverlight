@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1C448AC5-6883-4A64-A3C8-A626E7ADD086}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>My Project</AppDesignerFolder>
+    <RootNamespace>Markers.Web</RootNamespace>
+    <AssemblyName>Markers.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightApplicationList>{130A7BA4-CE52-45CE-A033-62D0AB61E439}|..\Media\Media.vbproj|ClientBin|False</SilverlightApplicationList>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG=1, TRACE=1</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE=1</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>Off</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1-Markers.html" />
+    <Content Include="ClientBin\index.xap" />
+    <Content Include="ClientBin\Markers.xap" />
+    <Content Include="ClientBin\Media.xap" />
+    <Content Include="Media\ClosedCaption\Default.html" />
+    <Content Include="Media\ClosedCaption\MediaPlayerTemplate.xap" />
+    <Content Include="Media\ClosedCaption\Preview.png" />
+    <Content Include="Media\ClosedCaption\SilverLight_Intro.wmv" />
+    <Content Include="Media\ClosedCaption\SmoothStreaming.xap" />
+    <Content Include="Media\ClosedCaption\TimedTextLibrary.xap" />
+    <Content Include="index.html" />
+    <Content Include="Media\Chapterslist-Subtitles\Default.html" />
+    <Content Include="Media\Chapterslist-Subtitles\MediaPlayerTemplate.xap" />
+    <Content Include="Media\Chapterslist-Subtitles\Preview.png" />
+    <Content Include="Media\Chapterslist-Subtitles\SmoothStreaming.xap" />
+    <Content Include="Media\Chapterslist-Subtitles\TimedTextLibrary.xap" />
+    <Content Include="Media\Chapterslist-Subtitles\TRON  LEGACY Official Trailer.wmv" />
+    <Content Include="Media\Chapterslist-Subtitles\TRON  LEGACY Official Trailer_106.144.jpg" />
+    <Content Include="Media\Chapterslist-Subtitles\TRON  LEGACY Official Trailer_119.944.jpg" />
+    <Content Include="Media\Chapterslist-Subtitles\TRON  LEGACY Official Trailer_23.934.jpg" />
+    <Content Include="Media\Chapterslist-Subtitles\TRON  LEGACY Official Trailer_50.011.jpg" />
+    <Content Include="Media\Chapterslist-Subtitles\TRON  LEGACY Official Trailer_70.036.jpg" />
+    <Content Include="Media\Chapterslist-Subtitles\TRON  LEGACY Official Trailer_89.128.jpg" />
+    <Content Include="Media\Chapterslist-Subtitles\TRON  LEGACY Official Trailer_Thumb.jpg" />
+    <Content Include="Media\Markers\Default.html" />
+    <Content Include="Media\Markers\MediaPlayerTemplate.xap" />
+    <Content Include="Media\Markers\Preview.png" />
+    <Content Include="Media\Markers\SmoothStreaming.xap" />
+    <Content Include="Media\Markers\TimedTextLibrary.xap" />
+    <Content Include="Media\Markers\Tron   Legacy - Official Comic Con Teaser Trailer [HD].wmv" />
+    <Content Include="Media\Markers\Tron   Legacy - Official Comic Con Teaser Trailer [HD]_0.292.jpg" />
+    <Content Include="Media\Markers\Tron   Legacy - Official Comic Con Teaser Trailer [HD]_30.292.jpg" />
+    <Content Include="Media\Markers\Tron   Legacy - Official Comic Con Teaser Trailer [HD]_60.292.jpg" />
+    <Content Include="Media\Markers\Tron   Legacy - Official Comic Con Teaser Trailer [HD]_90.292.jpg" />
+    <Content Include="Media\Markers\Tron   Legacy - Official Comic Con Teaser Trailer [HD]_Thumb.jpg" />
+    <Content Include="StyleBig.css" />
+    <Content Include="Silverlight.js" />
+    <Content Include="Style.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\ClosedCaption\JobFile.xej" />
+    <None Include="Media\ClosedCaption\Settings.dat" />
+    <None Include="Media\Chapterslist-Subtitles\JobFile.xej" />
+    <None Include="Media\Chapterslist-Subtitles\Settings.dat" />
+    <None Include="Media\Markers\JobFile.xej" />
+    <None Include="Media\Markers\Settings.dat" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49742</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="System.Windows.Media.SolidColorBrush">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Field Name="ColorProperty" Hidden="true" />
+      <Method Name="SolidColorBrush" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="System.Windows.Media.Brush" FixedToPoint="true">
+      <Path>
+        <Point X="2.5" Y="1.113" />
+        <Point X="2" Y="1.113" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Media.Brush">
+    <Position X="2.5" Y="0.5" Width="1.75" />
+    <Members>
+      <Method Name="Brush" Hidden="true" />
+      <Field Name="OpacityProperty" Hidden="true" />
+      <Field Name="RelativeTransformProperty" Hidden="true" />
+      <Field Name="TransformProperty" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Media.LinearGradientBrush">
+    <Position X="0.5" Y="5" Width="2" />
+    <Members>
+      <Field Name="EndPointProperty" Hidden="true" />
+      <Method Name="LinearGradientBrush" Hidden="true" />
+      <Field Name="StartPointProperty" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Media.GradientStop">
+    <Position X="2.75" Y="2.75" Width="1.5" />
+    <Members>
+      <Field Name="ColorProperty" Hidden="true" />
+      <Field Name="OffsetProperty" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Media.ImageBrush">
+    <Position X="5.25" Y="4.25" Width="1.5" />
+    <Members>
+      <Method Name="ImageBrush" Hidden="true" />
+      <Field Name="ImageSourceProperty" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Media.VideoBrush">
+    <Position X="7" Y="4.25" Width="1.25" />
+    <Members>
+      <Field Name="SourceNameProperty" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Media.RadialGradientBrush" HideInheritanceLine="true">
+    <Position X="5.25" Y="0.5" Width="1.75" />
+    <Members>
+      <Field Name="CenterProperty" Hidden="true" />
+      <Field Name="GradientOriginProperty" Hidden="true" />
+      <Method Name="RadialGradientBrush" Hidden="true" />
+      <Field Name="RadiusXProperty" Hidden="true" />
+      <Field Name="RadiusYProperty" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Media.TileBrush" Collapsed="true" HideInheritanceLine="true">
+    <Position X="6" Y="3" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Media.GradientBrush" HideInheritanceLine="true">
+    <Position X="0.5" Y="2.75" Width="2" />
+    <Members>
+      <Field Name="ColorInterpolationModeProperty" Hidden="true" />
+      <Method Name="GradientBrush" Hidden="true" />
+      <Field Name="GradientStopsProperty" Hidden="true" />
+      <Field Name="MappingModeProperty" Hidden="true" />
+      <Field Name="SpreadMethodProperty" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

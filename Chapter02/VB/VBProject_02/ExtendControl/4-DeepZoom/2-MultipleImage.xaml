@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="DeepZoom.PageMultipleImage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:vsm="clr-namespace:System.Windows;assembly=System.Windows">
+        <Grid ShowGridLines="True" HorizontalAlignment="Left" VerticalAlignment="Top" x:Name="LayoutRoot" Background="AliceBlue" Width="Auto" Height="Auto" MouseEnter="EnterMovie" MouseLeave="LeaveMovie" MinWidth="600" MinHeight="500">
+        <MultiScaleImage x:Name="msi" Width="600" Height="500" Source="../GeneratedImagesMultiple/dzc_output.xml" />
+    	<Canvas Height="37" HorizontalAlignment="Right" Margin="0,0,8,8" x:Name="buttonCanvas" VerticalAlignment="Bottom" Width="348" Opacity="0" Background="{x:Null}">
+                <Button Height="30" x:Name="leftIn" Width="42" Canvas.Left="137" Canvas.Top="4" Template="{StaticResource upInTemplate}" Content="Button" Click="UpInClick"/>
+                <Button Height="30" x:Name="rightIn" Width="42" Canvas.Left="167" Canvas.Top="4" Template="{StaticResource downInTemplate}" Content="Button" Click="DownInClick"/>
+                <Button Height="30" x:Name="zoomIn" Width="42" Canvas.Left="197" Canvas.Top="4" Template="{StaticResource zoomInTemplate}" Content="Button" Click="ZoomInClick"/>
+    		<Button Height="30" x:Name="zoomOut" Width="42" Template="{StaticResource zoomOutTemplate}" Content="Button" Canvas.Left="227" Canvas.Top="4" Click="ZoomOutClick"/>
+    		<Button Height="30" x:Name="goHome" Width="42" Template="{StaticResource homeTemplate}" Content="Button" Canvas.Left="257" Canvas.Top="4" Click="GoHomeClick"/>
+    		<Button Height="30" x:Name="fullScreen" Width="42" Template="{StaticResource fullScreenTemplate}" Content="Button" Canvas.Left="287" Canvas.Top="4" Click="GoFullScreenClick"/>
+            <Button Height="30" x:Name="Info" Width="42" Template="{StaticResource infoTemplate}" Content="Button" Canvas.Left="317" Canvas.Top="4" Click="GoInfoClick"/>
+        </Canvas>
+        <Canvas x:Name="canvasDescription" HorizontalAlignment="Right" Width="220" Height="460" VerticalAlignment="Top" Background="Silver" Opacity="0">
+            <StackPanel HorizontalAlignment="Center" Margin="8" Width="210">
+                <HyperlinkButton x:Name="closeDesc" Foreground="White" Content="Close" HorizontalAlignment="Right" Click="closeDesc_Click" ></HyperlinkButton>
+                <TextBlock x:Name="none" HorizontalAlignment="Left" Text=" "></TextBlock>
+                <Image x:Name="subImageThumb" Source="Images/thumb7.jpg" Width="180"></Image>
+                <TextBlock Margin ="20,4,4,4" x:Name="subImageTitle" HorizontalAlignment="Left" Text="Wonders of the World" FontWeight="Bold"></TextBlock>
+                <TextBlock Margin ="20,4,4,4" x:Name="subImageDesc" HorizontalAlignment="Left" TextWrapping="Wrap" >
+                    Colosseum in Rome 
+                    <LineBreak/>
+                    Grand Canyon
+                    <LineBreak/>
+                    Taj Mahal
+                    <LineBreak/>
+                    The Great Wall of China
+                    <LineBreak/>
+                    Great Pyramid of Giza
+                    <LineBreak/>
+                    Golden Gate Bridge
+                    <LineBreak/>
+                    Mount Everest
+                </TextBlock>
+                </StackPanel>
+        </Canvas>
+    </Grid>
+</UserControl>

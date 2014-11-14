@@ -1,0 +1,7 @@
+﻿<UserControl x:Class="SlideShow.PageSlide"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:cc="clr-namespace:SlideShow;assembly=SlideShow" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Height="155" Width="300">
+    <Canvas x:Name="LayoutRoot" Background="#EEEEEE"  >
+    </Canvas>
+</UserControl>

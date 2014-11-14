@@ -1,0 +1,5 @@
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_08\WebServices\2-ASPNETWebService\ASMXClient.Web\bin\ASMXClient.Web.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_08\WebServices\2-ASPNETWebService\ASMXClient.Web\bin\ASMXClient.Web.pdb
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_08\WebServices\2-ASPNETWebService\ASMXClient.Web\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_08\WebServices\2-ASPNETWebService\ASMXClient.Web\obj\Release\ASMXClient.Web.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_08\WebServices\2-ASPNETWebService\ASMXClient.Web\obj\Release\ASMXClient.Web.pdb

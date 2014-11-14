@@ -1,0 +1,7 @@
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_10\AdvancedMedia\1-AdvanceMedia\AdvMediaPlayer.Web\bin\AdvMediaPlayer.Web.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_10\AdvancedMedia\1-AdvanceMedia\AdvMediaPlayer.Web\bin\AdvMediaPlayer.Web.pdb
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_10\AdvancedMedia\1-AdvanceMedia\AdvMediaPlayer.Web\bin\System.Web.Silverlight.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_10\AdvancedMedia\1-AdvanceMedia\AdvMediaPlayer.Web\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_10\AdvancedMedia\1-AdvanceMedia\AdvMediaPlayer.Web\obj\Release\AdvMediaPlayer.Web.g.resources
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_10\AdvancedMedia\1-AdvanceMedia\AdvMediaPlayer.Web\obj\Release\AdvMediaPlayer.Web.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_10\AdvancedMedia\1-AdvanceMedia\AdvMediaPlayer.Web\obj\Release\AdvMediaPlayer.Web.pdb

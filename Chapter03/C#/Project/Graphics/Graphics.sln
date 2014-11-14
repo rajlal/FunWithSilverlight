@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1-Layout", "1-Layout\1-Layout.csproj", "{2366A46D-3750-48A7-840D-9C9375864819}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-AdvancedShape", "2-AdvancedShape\2-AdvancedShape.csproj", "{9890A138-27AA-4D2B-BA1E-B824AD8F9558}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3-PaintBrush", "3-PaintBrush\3-PaintBrush.csproj", "{A7E8DBAD-35FD-41CD-9B1A-0DE2FA643F6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-Transformation", "4-Transformation\4-Transformation.csproj", "{613DFF76-ACEB-4013-B9CA-417ECD650C72}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "5-ImageManipulation", "5-ImageManipulation\5-ImageManipulation.csproj", "{675A57F3-C7FE-4BD2-84BC-A13A1CD3FD8C}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Project", "..\", "{F0B6E2FB-681F-4BB7-ABD1-ED7A55C5AC53}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/Chapter 02"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\Chapter 03\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Chapter 02\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Chapter 02"
+		Release.AspNetCompiler.PhysicalPath = "..\..\Chapter 03\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Chapter 02\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "50310"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2366A46D-3750-48A7-840D-9C9375864819}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2366A46D-3750-48A7-840D-9C9375864819}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2366A46D-3750-48A7-840D-9C9375864819}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2366A46D-3750-48A7-840D-9C9375864819}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9890A138-27AA-4D2B-BA1E-B824AD8F9558}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9890A138-27AA-4D2B-BA1E-B824AD8F9558}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9890A138-27AA-4D2B-BA1E-B824AD8F9558}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9890A138-27AA-4D2B-BA1E-B824AD8F9558}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7E8DBAD-35FD-41CD-9B1A-0DE2FA643F6B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7E8DBAD-35FD-41CD-9B1A-0DE2FA643F6B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7E8DBAD-35FD-41CD-9B1A-0DE2FA643F6B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7E8DBAD-35FD-41CD-9B1A-0DE2FA643F6B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{613DFF76-ACEB-4013-B9CA-417ECD650C72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{613DFF76-ACEB-4013-B9CA-417ECD650C72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{613DFF76-ACEB-4013-B9CA-417ECD650C72}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{613DFF76-ACEB-4013-B9CA-417ECD650C72}.Release|Any CPU.Build.0 = Release|Any CPU
+		{675A57F3-C7FE-4BD2-84BC-A13A1CD3FD8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{675A57F3-C7FE-4BD2-84BC-A13A1CD3FD8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{675A57F3-C7FE-4BD2-84BC-A13A1CD3FD8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{675A57F3-C7FE-4BD2-84BC-A13A1CD3FD8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0B6E2FB-681F-4BB7-ABD1-ED7A55C5AC53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0B6E2FB-681F-4BB7-ABD1-ED7A55C5AC53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0B6E2FB-681F-4BB7-ABD1-ED7A55C5AC53}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0B6E2FB-681F-4BB7-ABD1-ED7A55C5AC53}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

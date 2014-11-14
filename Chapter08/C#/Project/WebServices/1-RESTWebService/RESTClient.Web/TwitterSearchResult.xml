@@ -1,0 +1,26 @@
+﻿<rss version="2.0" xmlns:google="http://base.google.com/ns/1.0" xmlns:openSearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:media="http://search.yahoo.com/mrss/" xmlns:twitter="http://api.twitter.com/">
+  <channel>
+    <title>silverlight - Twitter Search</title>
+    <description>silverlight - Twitter Search</description>
+    <link>http://search.twitter.com/search?q=silverlight</link>
+    <twitter:refresh_url>http://search.twitter.com/search.rss?lang=en&amp;q=silverlight&amp;rpp=10&amp;since_id=5541720720</twitter:refresh_url>
+    <twitter:warning>adjusted since_id to 5345972767 (2009-11-01 21:00:00 UTC), requested since_id was older than allowed</twitter:warning>
+    <pubDate>Sun, 08 Nov 2009 21:45:14 +0000</pubDate>
+    <openSearch:itemsPerPage>10</openSearch:itemsPerPage>
+    <language>en</language>
+    <openSearch:language>en</openSearch:language>
+    <item>
+      <title>RT @DavideZordan RT @codenenterp: RT @kelps: Silverlight Storyboard Helper project by @victorgaudioso. Contribute and RT. http://tw0.us/4d3</title>
+      <link>http://twitter.com/faisalhossain/statuses/5541720720</link>
+      <description>RT &lt;a href=&quot;http://twitter.com/DavideZordan&quot;&gt;@DavideZordan&lt;/a&gt; RT &lt;a href=&quot;http://twitter.com/codenenterp&quot;&gt;@codenenterp&lt;/a&gt;: RT &lt;a href=&quot;http://twitter.com/kelps&quot;&gt;@kelps&lt;/a&gt;: &lt;b&gt;Silverlight&lt;/b&gt; Storyboard Helper project by &lt;a href=&quot;http://twitter.com/victorgaudioso&quot;&gt;@victorgaudioso&lt;/a&gt;. Contribute and RT. &lt;a href=&quot;http://tw0.us/4d3&quot;&gt;http://tw0.us/4d3&lt;/a&gt;</description>
+      <pubDate>Sun, 08 Nov 2009 21:45:14 +0000</pubDate>
+      <guid>http://twitter.com/faisalhossain/statuses/5541720720</guid>
+      <author>faisalhossain@twitter.com (faisalhossain)</author>
+      <media:content type="image/jpg" width="48" height="48" url="http://a3.twimg.com/profile_images/454806241/13797232_normal.jpg"/>
+      <google:image_link>http://a3.twimg.com/profile_images/454806241/13797232_normal.jpg</google:image_link>
+    </item>
+    <item>
+     ... omited for brevity
+    </item>
+  </channel>
+</rss>

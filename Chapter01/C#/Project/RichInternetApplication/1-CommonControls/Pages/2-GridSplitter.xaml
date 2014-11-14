@@ -1,0 +1,49 @@
+﻿<UserControl xmlns:basics="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"  x:Class="CommonControls.PageGridSplitter"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="400" Height="300" >
+    <Grid x:Name="LayoutRoot" Background="AliceBlue" Width="400" Height="300" ShowGridLines="True">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="200"/>
+                <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100" MinWidth="50" MaxWidth="300"/>
+                <ColumnDefinition Width="Auto" /><!--For the Splitter-->
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Text=" (0,0)" HorizontalAlignment="Left"  VerticalAlignment="Top" />
+        <TextBlock Grid.Row="0" Grid.Column="2" Text=" (0,2)" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Grid.Row="1" Grid.Column="0" Text=" (1,0)" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Grid.Row="2" Grid.Column="0" Text=" (2,0)" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        <TextBlock Grid.Row="2" Grid.Column="2" Text=" (2,2)" HorizontalAlignment="Left" VerticalAlignment="Top" />
+        
+        <basics:GridSplitter Grid.Column="1"
+                        HorizontalAlignment="Center"
+                        VerticalAlignment="Stretch"
+                        Background="DarkBlue" 
+                        ShowsPreview="True"
+                        Width="10"
+                        Grid.RowSpan="3"
+                        />
+            <Grid Grid.Row="1" Grid.Column="2" Background="AntiqueWhite" ShowGridLines="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50*" MinHeight="20" />
+                    <RowDefinition Height="Auto" /> <!--For the Splitter-->
+                    <RowDefinition Height="50*" MinHeight="20"/>
+                </Grid.RowDefinitions>
+
+            <TextBlock Grid.Row="0" Grid.Column="1" Text=" (1,2)" HorizontalAlignment="Left"  VerticalAlignment="Top" />
+            <TextBlock Grid.Row="0" Grid.Column="1" Text="Nested Grid(0,0)" HorizontalAlignment="Center"  VerticalAlignment="Center" />
+            <basics:GridSplitter Grid.Row="1"
+                          HorizontalAlignment="Stretch"
+                          VerticalAlignment="Center"
+                          Background="DarkGreen" 
+                          ShowsPreview="False"
+                          Height="10"
+                       />
+            <TextBlock Grid.Row="2" Grid.Column="0" Text="Nested Grid(1,0)" HorizontalAlignment="Center"  VerticalAlignment="Center" />
+        </Grid>
+        </Grid>
+</UserControl>

@@ -1,0 +1,376 @@
+
+
+<!-- <$@ Options Name="CleanSilverlight Copy 1"$> -->
+
+
+
+<!-- <$@ Options Version="4"$> -->
+<!-- <$@ Options LaunchPage="true"$> -->
+<!-- <$@ Parameter Name="LoadOptions" Caption="On load" Tooltip="Select how the template should behave when page is loaded" Type="System.Enum" EnumValues="ShowPosterFrame=0,ShowVideoPaused=1,ShowVideoPlaying=2" Default="ShowPosterFrame" OutsideExpander="True" $> -->
+<!-- <$@ Parameter Name="DisplayTimeCode" Caption="Display Timecode" Tooltip="Select to display the position and duration fields as SMPTE timecode" Type="System.Boolean" Default="False" $>  -->
+<!-- <$@ Parameter Name="EnablePopOut" Caption="Enable player popout" Tooltip="Select to allow the media to play in its own window" Type="System.Boolean" Default="True" $>  -->
+<!-- <$@ Parameter Name="EnableOffline" Caption="Enable player to be run offline" Tooltip="Select to allow player to playback offline" Type="System.Boolean" Default="True" $>  -->
+
+
+<!-- <$@ Parameter Name="StartWithPlaylistShowing" Caption="Show playlist on player start" Tooltip="Select to begin with the playlist showing" Type="System.Boolean" Default="False" $>  -->
+
+<!-- <$@ Parameter Name="Muted" Caption="Mute player on start" Tooltip="Select to begin playback in a muted state" Type="System.Boolean" Default="False" $>  -->
+<!-- <$@ Parameter Name="AllowedCodecs" Caption="Allowed Codecs" Tooltip="Codecs template supports" Readonly="true" Type="System.String" Default="H264,AAC,AC3,VC1,WMA,WMV1,WMV2,WMV3,WMAPRO,WMAPROFESSIONAL," $>  -->
+<!-- <$@ Parameter Name="EnableCaptions" Caption="Show captions during playback" Tooltip="Select to allow closed caption text over video during playback" Type="System.Boolean" Default="True" OutsideExpander="True" $>  -->
+<!-- <$@ Parameter Name="EnableCachedComposition" Caption="Enable Cached Composition" Tooltip="Select to use video hardware to speed up player rendering" Type="System.Boolean" Default="True" $>  -->
+<!-- <$@ Parameter Name="StretchNonSquarePixels" Caption="Scale Mode" Tooltip="Change the way the video is displayed in the player" Type="System.Enum" EnumValues="NoStretch=0,StretchToFill=1,StretchDistorted=2" Default="NoStretch" $>  -->
+<!-- <$@ Capabilities Value="silverlight40,audio,video,captions,chapters,gallery,supports16by9,supports4by3,webbrowsable,adaptivestreaming" $>  -->
+<!-- <$@ ScriptCommands Value="caption" $> -->
+
+
+
+
+<!-- <$@ IgnoreDirectory Value="Source" $> -->
+
+
+<!--
+<$@ Import Namespace="System.IO" $>
+
+<script runat="authoring">
+
+    string Esc(string value)
+    {                
+        if(string.IsNullOrEmpty(value))
+        {
+            return "";
+        }
+        value = System.Security.SecurityElement.Escape(value);    
+        value = System.Uri.EscapeDataString(value);
+        return value;
+    }
+
+    int indentLevel = 0;
+
+    void IndentBy(int by)
+    {
+        indentLevel += by;
+    }
+        
+    void Indent()
+    {
+        indentLevel++;
+    }
+    
+    void Outdent()
+    {
+        indentLevel--;
+    } 
+
+    string AutoPlayString(string val)
+    {
+        int enumIndex = Convert.ToInt32(val);
+        if(enumIndex == 2)
+        {
+            return "true";
+        }
+        return "false";
+    }
+
+    string AutoLoadString(string val)
+    {
+        int enumIndex = Convert.ToInt32(val);
+        if(enumIndex == 1 || enumIndex == 2)
+        {
+            return "true";
+        }
+        return "false";
+    }
+                      
+    string IndentString()
+    {
+        string tmp = "\r\n";
+        for (int i=0;i<indentLevel;i++)
+        {
+            tmp += "\t";
+        }
+        return tmp;
+    }                
+            
+    string ChapterImageXML(PublishedMarker marker)
+    {
+        if (String.IsNullOrEmpty(marker.ThumbnailPath))
+        {
+            return "";
+        }
+        return "<ThumbSource>"+Esc(marker.ThumbnailPath)+"</ThumbSource>";
+    }
+    
+    long TotalFileSize(PublishedItem item)
+    {
+        long totalSize=0;
+        foreach(long size in item.OutputFileSizes)
+            totalSize+=size;
+        return totalSize;
+    }
+
+    string ThumbnailImageFilename()
+    {
+        for(int iItem=0;iItem<PublishedItems.Length;iItem++)
+        {
+            if (PublishedItems[iItem].ThumbnailPath!=null && PublishedItems[iItem].ThumbnailPath.Length>0)
+                return PublishedItems[iItem].ThumbnailPath;
+        }
+        return "";
+    }
+
+
+    string StretchNonSquarePixelsString(string val)
+    {
+        return "NoStretch,StretchToFill,StretchDistorted".Split(',')[Convert.ToInt32(val)];
+    }
+    
+    string CaptionFiles(PublishedItem publishedItem)
+    {
+        string captionFiles = null;
+        if (publishedItem.CaptionFiles.Count > 0)
+        {
+            captionFiles=IndentString()+"<CaptionSources>";
+            Indent();
+            foreach (PublishedCaptionFile captionFile in publishedItem.CaptionFiles)
+            {                 
+                captionFiles+=IndentString()+"<CaptionSource Language=\""+Esc(captionFile.Culture.NativeName)+"\" LanguageId=\""+captionFile.Culture.ThreeLetterISOLanguageName+"\" Type=\""+captionFile.CaptionType+"\" Location=\""+Esc(captionFile.FileName)+"\"/>";
+            }
+            Outdent();
+            captionFiles+=IndentString()+"</CaptionSources>";
+        }
+        return captionFiles;
+    }
+
+    
+    string PlayListParam(string strAllowedCodecs)
+    {
+        IndentBy(8);
+        StringBuilder result = new StringBuilder();
+        for (int iItem = 0; iItem < PublishedItems.Length; iItem++)
+        {
+            MediaItem mi = PublishedItems[iItem].MediaItem;
+            string mediaUrl = PublishedItems[iItem].OutputFileName;
+            if (mi.OutputFormat.VideoProfile != null && mi.OutputFormat.VideoProfile.SmoothStreaming)
+            {
+                mediaUrl += "\\Manifest";
+            }
+
+            string title = mi.Metadata[MetadataNames.Title];
+            if (string.IsNullOrEmpty(title) || title.Length < 1)
+            {
+                title = Path.GetFileNameWithoutExtension(PublishedItems[iItem].OutputFileName);
+            }
+
+            result.Append(IndentString() + "<PlaylistItem>");
+            Indent();
+            result.Append(IndentString() + "<AudioCodec>" + (mi.OutputFormat.AudioProfile == null ? string.Empty : Esc(mi.OutputFormat.AudioProfile.Codec.ToString())) + "</AudioCodec>"
+                        + IndentString() + "<Description>" + Esc(mi.Metadata[MetadataNames.Description]) + "</Description>"
+                        + IndentString() + "<FileSize>" + TotalFileSize(PublishedItems[iItem]) + "</FileSize>"
+                        + IndentString() + "<IsAdaptiveStreaming>" + (mi.OutputFormat.VideoProfile != null && mi.OutputFormat.VideoProfile.SmoothStreaming).ToString().ToLower() + "</IsAdaptiveStreaming>"
+                        + IndentString() + "<MediaSource>" + Esc(mediaUrl) + "</MediaSource>"
+                        + IndentString() + "<ThumbSource>" + Esc(PublishedItems[iItem].ThumbnailPath) + "</ThumbSource>"                        
+                        + IndentString() + "<Title>" + Esc(title) + "</Title>"
+                        + IndentString() + "<DRM>" + ((mi.Drm != null) ? "true" : "false") + "</DRM>"
+
+                        + IndentString() + "<VideoCodec>" + (mi.OutputFormat.VideoProfile == null ? string.Empty : Esc(mi.OutputFormat.VideoProfile.Codec.ToString())) + "</VideoCodec>"
+                        + IndentString() + "<FrameRate>" + mi.OutputFrameRate.ToString(System.Globalization.CultureInfo.InvariantCulture) + "</FrameRate>"
+                        + IndentString() + "<Width>" + mi.VideoSize.Width.ToString(System.Globalization.CultureInfo.InvariantCulture) + "</Width>"
+                        + IndentString() + "<Height>" + mi.VideoSize.Height.ToString(System.Globalization.CultureInfo.InvariantCulture) + "</Height>"
+                        + IndentString() + "<AspectRatioWidth>" + mi.OutputAspectRatio.Width.ToString(System.Globalization.CultureInfo.InvariantCulture) + "</AspectRatioWidth>"
+                        + IndentString() + "<AspectRatioHeight>" + mi.OutputAspectRatio.Height.ToString(System.Globalization.CultureInfo.InvariantCulture) + "</AspectRatioHeight>"
+                        + CaptionFiles(PublishedItems[iItem])
+
+			);
+
+            if (PublishedItems[iItem].Markers.Count > 0)
+            {
+                result.Append( IndentString() + "<Chapters>" );
+                Indent();
+                for (int iMarker = 0; iMarker < PublishedItems[iItem].Markers.Count; iMarker++)
+                {
+                    PublishedMarker marker = PublishedItems[iItem].Markers[iMarker];
+                    result.Append( IndentString() + "<ChapterItem>");
+                    Indent();
+                    result.Append( IndentString() + "<Position>" + marker.Time.TotalSeconds.ToString("F3", System.Globalization.CultureInfo.InvariantCulture) + "</Position>");
+                    result.Append( IndentString() + ChapterImageXML(marker));
+                    result.Append( IndentString() + "<Title>" + Esc(marker.Value) + "</Title>");
+                    Outdent();
+                    result.Append( IndentString() + "</ChapterItem>");
+                }
+                Outdent();
+                result.Append( IndentString() + "</Chapters>");
+            }
+            Outdent();
+            result.Append( IndentString() + "</PlaylistItem>");
+        }
+        IndentBy(-8);
+        return result.ToString();
+    }  
+</script> 
+-->
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<!-- saved from url=(0014)about:internet -->
+
+
+<head>
+    <style type="text/css">
+    html, body {
+        height: 100%;
+        overflow: auto;
+    }
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    .fadeSome {
+        opacity:0.30;
+        filter:alpha(opacity=30);
+        -moz-opacity: 30%;        
+    }
+    .fadeLots {
+        opacity:0.50;
+        filter:alpha(opacity=50);
+        -moz-opacity: 0.5;        
+    }  
+    .fadeCompletely {
+        opacity:0.0;
+        filter:alpha(opacity=0);
+        -moz-opacity: 0.0;
+    }     
+    #silverlightControlHost {
+        height: 100%;
+    }
+    </style>
+    
+    <script type="text/javascript">
+        function onSilverlightError(sender, args) {
+
+            var appSource = "";
+            if (sender != null && sender != 0) {
+                appSource = sender.getHost().Source;
+            }
+            var errorType = args.ErrorType;
+            var iErrorCode = args.ErrorCode;
+
+            var errMsg = "Unhandled Error in Silverlight Application " + appSource + "\n";
+
+            errMsg += "Code: " + iErrorCode + "    \n";
+            errMsg += "Category: " + errorType + "       \n";
+            errMsg += "Message: " + args.ErrorMessage + "     \n";
+
+            if (errorType == "ParserError") {
+                errMsg += "File: " + args.xamlFile + "     \n";
+                errMsg += "Line: " + args.lineNumber + "     \n";
+                errMsg += "Position: " + args.charPosition + "     \n";
+            }
+            else if (errorType == "RuntimeError") {
+                if (args.lineNumber != 0) {
+                    errMsg += "Line: " + args.lineNumber + "     \n";
+                    errMsg += "Position: " + args.charPosition + "     \n";
+                }
+                errMsg += "MethodName: " + args.methodName + "     \n";
+            }
+
+            throw new Error(errMsg);
+        }
+
+        function highlightDownloadArea(fOn) {
+            document.getElementById("overlay").className = (fOn) ? "fadeSome" : "fadeLots";            
+        }
+
+	function CloseWindow()
+	{
+	    window.close();
+	}
+
+
+
+
+    </script>
+</head>
+
+
+
+<body>
+    <!-- Runtime errors from Silverlight will be displayed here.
+    This will contain debugging information and should be removed or hidden when debugging is completed -->
+    <div id='errorLocation' style="font-size: small;color: Gray;"></div>
+
+    <div id="silverlightControlHost">
+        <object data="data:application/x-silverlight," type="application/x-silverlight"
+
+
+
+width="100%" height="100%"
+
+	    >
+            <param name="source" value="MediaPlayerTemplate.xap"/>
+            <param name="onerror" value="onSilverlightError" />
+            <param name="autoUpgrade" value="true" />
+            <param name="minRuntimeVersion" value="4.0.50401.0" />
+            <param name="enableHtmlAccess" value="true" />
+
+            <param name="enableGPUAcceleration" value="true" />
+
+            <param name="initparams" value='playerSettings = 
+                        <Playlist>
+                            <AutoLoad><$=AutoLoadString(TemplateParameter.LoadOptions)$></AutoLoad>
+                            <AutoPlay><$=AutoPlayString(TemplateParameter.LoadOptions)$></AutoPlay>
+                            <DisplayTimeCode><$=TemplateParameter.DisplayTimeCode.ToString().ToLower()$></DisplayTimeCode>
+                            <EnableOffline><$=TemplateParameter.EnableOffline.ToString().ToLower()$></EnableOffline>
+                            <EnablePopOut><$=TemplateParameter.EnablePopOut.ToString().ToLower()$></EnablePopOut>
+
+                            <EnableCaptions><$=TemplateParameter.EnableCaptions.ToString().ToLower()$></EnableCaptions>
+                            <EnableCachedComposition><$=TemplateParameter.EnableCachedComposition.ToString().ToLower()$></EnableCachedComposition>
+                            <StretchNonSquarePixels><$=StretchNonSquarePixelsString(TemplateParameter.StretchNonSquarePixels)$></StretchNonSquarePixels>
+                            <StartMuted><$=TemplateParameter.Muted.ToString().ToLower()$></StartMuted>
+
+                            <StartWithPlaylistShowing><$=TemplateParameter.StartWithPlaylistShowing.ToString().ToLower()$></StartWithPlaylistShowing>
+
+
+                            <Items>
+                                <$=PlayListParam(TemplateParameter.AllowedCodecs)$>
+			    </Items>
+                        </Playlist>'/>       
+            <!--  unused valid silverlight init parameters
+            <param name="enableFrameRateCounter" value="bool" />
+            <param name="enableRedrawRegions" value="bool" />
+            <param name="maxFrameRate" value="int" />
+            <param name="allowHtmlPopupWindow" value="bool"/>
+            <param name="background" value="colorValue"/>
+            <param name="splashScreenSource" value="uri"/>
+            <param name="fullScreen" value="bool"/>
+            <param name="onFullScreenChanged" value="functionname"/>
+            <param name="onResize" value="functionname"/>
+            <param name="onSourceDownloadComplete" value="functionname"/>
+            <param name="onSourceDownloadProgressChanged" value="functionname"/>
+            <param name="windowLess" value="bool"/>
+             --> 
+
+             <div onmouseover="highlightDownloadArea(true)" onmouseout="highlightDownloadArea(false)">
+                    <img src="<$=ThumbnailImageFilename()$>" style="position:absolute;width:100%;height:100%;border-style:none;" onerror="this.style.display='none'"/>
+                    <img src="Preview.png" style="position:absolute;width:100%;height:100%;border-style:none;" onerror="this.style.display='none'"/>                                            
+                    <div id="overlay" class="fadeLots" style="position:absolute;width:100%;height:100%;border-style:none;background-color:white;"/></div>
+                    <table width="100%" height="100%" style="position:absolute;"><tr><td align="center" valign="middle">                       
+                    <img src="http://go2.microsoft.com/fwlink/?LinkId=108181" alt="Get Microsoft Silverlight"> 
+                    </td></tr></table>                   
+                    <a href="http://go2.microsoft.com/fwlink/?LinkID=149156">
+                        <img src="" class="fadeCompletely" style="position:absolute;width:100%;height:100%;border-style:none;" alt="Get Microsoft Silverlight"/>
+                    </a>                   
+             </div>             
+        </object>
+        <iframe id='_sl_historyFrame' style='visibility:hidden;height:0;width:0;border:0px'></iframe>
+
+
+
+</div>
+</body> 
+
+
+</html>
+
+
+

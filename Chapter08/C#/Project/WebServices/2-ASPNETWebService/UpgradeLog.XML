@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ASPNETWebService">
+</Property><Property Name="Solution File" Value="S:\04-Final\062908\Project\WebServices\2-ASPNETWebService\ASPNETWebService.sln">
+</Property><Property Name="Date" Value="Sunday, January 30, 2011">
+</Property><Property Name="Time" Value="18:43 PM">
+</Property></Properties><Event ErrorLevel="0" Project="ASMXClient" Source="ASMXClient\ASMXClient.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ASMXClient" Source="ASMXClient\ASMXClient.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ASMXClient.Web" Source="ASMXClient.Web\ASMXClient.Web.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ASMXClient.Web" Source="ASMXClient.Web\ASMXClient.Web.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ASMXService" Source="ASMXWebService\ASMXService.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="ASMXService" Source="ASMXWebService\ASMXService.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="ASPNETWebService.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ASPNETWebService.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="ASMXClient" Source="ASMXClient\ASMXClient.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ASMXClient.Web" Source="ASMXClient.Web\ASMXClient.Web.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="ASMXService" Source="ASMXWebService\ASMXService.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

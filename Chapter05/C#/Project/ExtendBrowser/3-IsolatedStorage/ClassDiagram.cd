@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="System.Windows.Controls.OpenFileDialog">
+    <Position X="0.5" Y="7" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.IO.IsolatedStorage.IsolatedStorageFile">
+    <Position X="1.5" Y="0.75" Width="2.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.294" />
+  </Class>
+  <Class Name="System.IO.IsolatedStorage.IsolatedStorageFileStream" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.IO.Stream">
+    <Position X="7.5" Y="0.5" Width="2" />
+    <Members>
+      <Property Name="CanRead" Hidden="true" />
+      <Property Name="CanSeek" Hidden="true" />
+      <Property Name="CanTimeout" Hidden="true" />
+      <Property Name="CanWrite" Hidden="true" />
+      <Property Name="Length" Hidden="true" />
+      <Field Name="Null" Hidden="true" />
+      <Property Name="Position" Hidden="true" />
+      <Property Name="ReadTimeout" Hidden="true" />
+      <Property Name="WriteTimeout" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.IO.StreamReader">
+    <Position X="9.5" Y="6" Width="2.25" />
+    <Members>
+      <Field Name="Null" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.IO.IsolatedStorage.IsolatedStorageSettings">
+    <Position X="13.5" Y="1.75" Width="2" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.IO.FileInfo">
+    <Position X="2.25" Y="7" Width="2.5" />
+    <Members>
+      <Method Name="AppendText" Hidden="true" />
+      <Method Name="CopyTo" Hidden="true" />
+      <Method Name="Create" Hidden="true" />
+      <Method Name="CreateText" Hidden="true" />
+      <Method Name="Decrypt" Hidden="true" />
+      <Method Name="Delete" Hidden="true" />
+      <Method Name="Encrypt" Hidden="true" />
+      <Method Name="FileInfo" Hidden="true" />
+      <Method Name="GetAccessControl" Hidden="true" />
+      <Method Name="MoveTo" Hidden="true" />
+      <Method Name="OpenWrite" Hidden="true" />
+      <Method Name="Replace" Hidden="true" />
+      <Method Name="SetAccessControl" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.IO.FileStream">
+    <Position X="5.25" Y="1.5" Width="2" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Resources.StreamResourceInfo">
+    <Position X="6.25" Y="6.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1-HelloBrowser", "1-HelloBrowser\1-HelloBrowser.csproj", "{3D602E03-C7AE-4B11-BDB6-28A20DC8901A}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Chapter 05", "..\", "{54154283-E7CA-4FFC-BF44-B1A2108619ED}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/Chapter 03"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\Chapter 03\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Chapter 03\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Chapter 03"
+		Release.AspNetCompiler.PhysicalPath = "..\..\Chapter 03\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Chapter 03\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51298"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-SilverlightPlugIn", "2a-SilverlightPlugIn\2-SilverlightPlugIn.csproj", "{A3254668-5812-40D2-A63C-8584443B003F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-SlideShowCustomParameters", "2b-ExampleSlideShow\2-SlideShowCustomParameters.csproj", "{CEE965F7-C15A-4197-BB93-60E7E8B2CAD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3-LocalStorage", "3-IsolatedStorage\3-LocalStorage.csproj", "{DA9A4686-334C-463F-8354-1B16BE6B623E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-HTMLBridge", "4-HTMLBridge\4-HTMLBridge.csproj", "{9B33E31E-8627-4CD7-874E-E2238ECFF3F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D602E03-C7AE-4B11-BDB6-28A20DC8901A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D602E03-C7AE-4B11-BDB6-28A20DC8901A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D602E03-C7AE-4B11-BDB6-28A20DC8901A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D602E03-C7AE-4B11-BDB6-28A20DC8901A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54154283-E7CA-4FFC-BF44-B1A2108619ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54154283-E7CA-4FFC-BF44-B1A2108619ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54154283-E7CA-4FFC-BF44-B1A2108619ED}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{54154283-E7CA-4FFC-BF44-B1A2108619ED}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{A3254668-5812-40D2-A63C-8584443B003F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3254668-5812-40D2-A63C-8584443B003F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3254668-5812-40D2-A63C-8584443B003F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3254668-5812-40D2-A63C-8584443B003F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEE965F7-C15A-4197-BB93-60E7E8B2CAD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEE965F7-C15A-4197-BB93-60E7E8B2CAD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEE965F7-C15A-4197-BB93-60E7E8B2CAD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEE965F7-C15A-4197-BB93-60E7E8B2CAD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA9A4686-334C-463F-8354-1B16BE6B623E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA9A4686-334C-463F-8354-1B16BE6B623E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA9A4686-334C-463F-8354-1B16BE6B623E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA9A4686-334C-463F-8354-1B16BE6B623E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B33E31E-8627-4CD7-874E-E2238ECFF3F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B33E31E-8627-4CD7-874E-E2238ECFF3F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B33E31E-8627-4CD7-874E-E2238ECFF3F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B33E31E-8627-4CD7-874E-E2238ECFF3F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AdoDataService.SilverlightResourceEntities">
+    <Position X="0.5" Y="0.5" Width="3" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAIAAAAAAAAAAUQAQAAIAAAAAAACAAEAAAAQA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Data.Services.Client.DataServiceContext">
+    <Position X="4" Y="0.5" Width="2.5" />
+    <Members>
+      <Method Name="AddObject" Hidden="true" />
+      <Method Name="AttachLink" Hidden="true" />
+      <Method Name="AttachTo" Hidden="true" />
+      <Method Name="BeginExecuteBatch" Hidden="true" />
+      <Method Name="BeginLoadProperty" Hidden="true" />
+      <Method Name="CreateQuery" Hidden="true" />
+      <Property Name="Credentials" Hidden="true" />
+      <Property Name="DataNamespace" Hidden="true" />
+      <Method Name="DataServiceContext" Hidden="true" />
+      <Method Name="DeleteObject" Hidden="true" />
+      <Method Name="Detach" Hidden="true" />
+      <Method Name="DetachLink" Hidden="true" />
+      <Method Name="EndExecuteBatch" Hidden="true" />
+      <Method Name="EndLoadProperty" Hidden="true" />
+      <Property Name="Entities" Hidden="true" />
+      <Method Name="GetMetadataUri" Hidden="true" />
+      <Property Name="IgnoreMissingProperties" Hidden="true" />
+      <Property Name="Links" Hidden="true" />
+      <Property Name="MergeOption" Hidden="true" />
+      <Event Name="ReadingEntity" Hidden="true" />
+      <Property Name="ResolveName" Hidden="true" />
+      <Property Name="ResolveType" Hidden="true" />
+      <Property Name="SaveChangesDefaultOptions" Hidden="true" />
+      <Event Name="SendingRequest" Hidden="true" />
+      <Property Name="Timeout" Hidden="true" />
+      <Method Name="TryGetEntity" Hidden="true" />
+      <Method Name="TryGetUri" Hidden="true" />
+      <Property Name="TypeScheme" Hidden="true" />
+      <Property Name="UsePostTunneling" Hidden="true" />
+      <Event Name="WritingEntity" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Data.Services.Client.DataServiceQuery">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="System.Data.Services.Client.DataServiceRequest">
+    <Position X="8.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

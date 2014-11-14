@@ -1,0 +1,5 @@
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_08\WebServices\2-ASPNETWebService\ASMXWebService\bin\SilverlightResourceService.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_08\WebServices\2-ASPNETWebService\ASMXWebService\bin\SilverlightResourceService.pdb
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_08\WebServices\2-ASPNETWebService\ASMXWebService\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_08\WebServices\2-ASPNETWebService\ASMXWebService\obj\Release\SilverlightResourceService.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_08\WebServices\2-ASPNETWebService\ASMXWebService\obj\Release\SilverlightResourceService.pdb

@@ -1,0 +1,6 @@
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_09\Media\4-EditMedia\EditMedia.Web\bin\EditMedia.Web.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_09\Media\4-EditMedia\EditMedia.Web\bin\EditMedia.Web.pdb
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_09\Media\4-EditMedia\EditMedia.Web\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_09\Media\4-EditMedia\EditMedia.Web\obj\Release\EditMedia.Web.g.resources
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_09\Media\4-EditMedia\EditMedia.Web\obj\Release\EditMedia.Web.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_09\Media\4-EditMedia\EditMedia.Web\obj\Release\EditMedia.Web.pdb

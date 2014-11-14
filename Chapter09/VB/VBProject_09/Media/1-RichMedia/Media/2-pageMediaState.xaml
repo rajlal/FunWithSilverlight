@@ -1,0 +1,43 @@
+﻿<UserControl x:Class="Media.pageMediaState"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+    <Canvas Background="#EEEEEE">
+
+        <Canvas x:Name="canvasMedia" Margin="0" Background="AliceBlue" Canvas.Top="30" Canvas.Left="40"  Height="200" Width="320" Visibility="Visible" >
+            <MediaElement AutoPlay="False" Visibility="Collapsed" Name="Media" Width="320" Height="200" Source="SilverlightDemo.wmv" Stretch="Fill" CurrentStateChanged="Media_CurrentStateChanged" BufferingProgressChanged="Media_BufferingProgressChanged"></MediaElement>
+            <Image x:Name="btnPlaybig"  Canvas.Top="50"  Canvas.Left="120"   Width="100" Source="image/Playbig.png" Cursor="Hand"  ToolTipService.ToolTip="Play" MouseLeftButtonUp="Image_MouseLeftButtonUp"></Image>
+        </Canvas>
+       
+        <Border x:Name="borderMediastates" Canvas.Top="230" Canvas.Left="40" BorderBrush="Gray" BorderThickness="0" Height="20" Width="320" Background="White">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Padding="4,1,4,0"  Text="Media States" MouseLeftButtonUp="ShowMedia" ToolTipService.ToolTip="Load Media" Cursor="Hand" Foreground="DodgerBlue"/>
+                    <Canvas Margin="100,0,0,0">
+                    <Image x:Name="btnPlay" Canvas.Top="4" Canvas.Left="-60" Width="8" Source="image/play.png" Cursor="Hand"  ToolTipService.ToolTip="Play" MouseLeftButtonUp="btnPlay_MouseLeftButtonUp"></Image>
+                    <Image x:Name="btnPause" Canvas.Top="5" Canvas.Left="-40" Width="6" Source="image/pause.png" Cursor="Hand"   ToolTipService.ToolTip="Pause" MouseLeftButtonUp="btnPause_MouseLeftButtonUp"></Image>
+                    <Image x:Name="btnStop" Canvas.Top="5" Canvas.Left="-20" Width="6" Source="image/stop.png"  ToolTipService.ToolTip="Stop" Cursor="Hand"  MouseLeftButtonUp="btnStop_MouseLeftButtonUp"></Image>
+                    <Image x:Name="btnVolumeDown" Canvas.Top="3" Canvas.Left="55" Width="12" ToolTipService.ToolTip="Reduce Volume" Source="image/Volminus.png" Cursor="Hand"  MouseLeftButtonUp="btnVolumeDown_MouseLeftButtonUp"></Image>
+                    <TextBlock x:Name="txtVolume" FontSize="10" Canvas.Top="2" Canvas.Left="70"  ToolTipService.ToolTip="Current Volume" Cursor="Hand" Foreground="Black">0.5</TextBlock>
+                    <Image x:Name="btnVolumeup" Canvas.Top="3" Canvas.Left="90" Width="12" ToolTipService.ToolTip="Increase Volume" Source="image/Volplus.png" Cursor="Hand"  MouseLeftButtonUp="btnVolumeup_MouseLeftButtonUp"></Image>
+                    <Image x:Name="btnRewind" Canvas.Top="2" Canvas.Left="-5" Width="16" ToolTipService.ToolTip="Rewind" Source="image/rewind.png" Cursor="Hand"  MouseLeftButtonUp="btnRewind_MouseLeftButtonUp"></Image>
+                    <Image x:Name="btnFastForward" Canvas.Top="2" Canvas.Left="15" Width="16" ToolTipService.ToolTip="Fast Forward" Source="image/fastforward.png" Cursor="Hand"  MouseLeftButtonUp="btnFastForward_MouseLeftButtonUp"></Image>
+                    <Image x:Name="btnFullscreen" Canvas.Top="3" Canvas.Left="120" Width="14"  ToolTipService.ToolTip="Fullscreen" Source="image/fullscreen.png" Cursor="Hand"  MouseLeftButtonUp="btnFullscreen_MouseLeftButtonUp"></Image>
+                </Canvas>
+            </StackPanel>
+        </Border>
+
+        <Border x:Name="borderStatus" Canvas.Left="0" Canvas.Top="280" Width="400" Background="#F1EDED" BorderBrush="Silver" BorderThickness=".5" >
+            <Grid ShowGridLines="False" x:Name="StatusGrid">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="240"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock  x:Name="StatusBar" Margin="2" Grid.Column="0" Text="Media: Different States" VerticalAlignment="Center"></TextBlock>
+                <TextBlock x:Name="StatusPosition"  Margin="2" Grid.Column="1" Text="" TextAlignment="Right" HorizontalAlignment="Right" VerticalAlignment="Center"></TextBlock>
+            </Grid>
+        </Border>
+    </Canvas>
+</UserControl>

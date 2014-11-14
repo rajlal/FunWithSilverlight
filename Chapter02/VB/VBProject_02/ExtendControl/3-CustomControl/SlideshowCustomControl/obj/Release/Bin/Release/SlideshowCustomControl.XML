@@ -1,0 +1,19 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SlideshowCustomControl
+</name>
+</assembly>
+<members>
+<member name="P:SlideshowCustomControl.Slideshow.SlideStyle">
+	<summary>
+ Gets or sets the style of the added TextBlock controls
+ </summary>
+</member><member name="P:SlideshowCustomControl.Slideshow.Text">
+	<summary>
+ Gets or sets the text of the LinkLabel control
+ </summary>
+</member>
+</members>
+</doc>

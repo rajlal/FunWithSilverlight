@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="HTMLBridge.PageAccessScript"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="400" Height="300">
+    <Grid x:Name="LayoutRoot" Background="AliceBlue" Width="400" Height="300" Loaded="LayoutRoot_Loaded">
+        <Canvas Background="White" Width="300" Height="200" >
+            <TextBlock x:Name="txtTitle" Text="Access Page JavaScript" Canvas.Top="10" Canvas.Left="20" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="18"></TextBlock>
+            <TextBlock x:Name="txtParameter" FontSize="12" Canvas.Left="20" Canvas.Top="50" >Send Parameter to JavaScript function</TextBlock>
+            <Button Width="200" Height="50" Canvas.Top="100" Canvas.Left="50" FontSize="14" Content="Call Page JavaScript" Click="Button_Click"></Button>
+        </Canvas>
+    </Grid>
+</UserControl>

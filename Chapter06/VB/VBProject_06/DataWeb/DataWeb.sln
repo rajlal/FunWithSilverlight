@@ -1,0 +1,37 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1-KnowData", "1-KnowData\1-KnowData.vbproj", "{3E034CB8-2C48-44D3-9442-E348874F3253}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-WorkwithXML", "2-WorkwithXML\2-WorkwithXML.vbproj", "{C66B0CDD-A114-4B31-925D-EBE2931E420C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3-UseJSON", "3-UseJSON\3-UseJSON.vbproj", "{1354AAE3-26C4-430F-BC7C-F5FCD6E13923}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-RSSandAtom", "4-RSSandAtom\4-RSSandAtom.vbproj", "{C4023838-C9A8-4694-A913-B27CD2EE148E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E034CB8-2C48-44D3-9442-E348874F3253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E034CB8-2C48-44D3-9442-E348874F3253}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E034CB8-2C48-44D3-9442-E348874F3253}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E034CB8-2C48-44D3-9442-E348874F3253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C66B0CDD-A114-4B31-925D-EBE2931E420C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C66B0CDD-A114-4B31-925D-EBE2931E420C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C66B0CDD-A114-4B31-925D-EBE2931E420C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C66B0CDD-A114-4B31-925D-EBE2931E420C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1354AAE3-26C4-430F-BC7C-F5FCD6E13923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1354AAE3-26C4-430F-BC7C-F5FCD6E13923}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1354AAE3-26C4-430F-BC7C-F5FCD6E13923}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1354AAE3-26C4-430F-BC7C-F5FCD6E13923}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4023838-C9A8-4694-A913-B27CD2EE148E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4023838-C9A8-4694-A913-B27CD2EE148E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4023838-C9A8-4694-A913-B27CD2EE148E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4023838-C9A8-4694-A913-B27CD2EE148E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

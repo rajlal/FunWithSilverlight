@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="System.Windows.Controls.MultiScaleImage">
+    <Position X="0.5" Y="0.75" Width="2.25" />
+    <Members>
+      <Field Name="AspectRatioProperty" Hidden="true" />
+      <Field Name="SourceProperty" Hidden="true" />
+      <Field Name="SubImagesProperty" Hidden="true" />
+      <Field Name="UseSpringsProperty" Hidden="true" />
+      <Field Name="ViewportOriginProperty" Hidden="true" />
+      <Field Name="ViewportWidthProperty" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="DeepZoom.MouseWheelEventArgs">
+    <Position X="7.25" Y="0.75" Width="2" />
+    <Members>
+      <Field Name="delta" Hidden="true" />
+      <Field Name="handled" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>QAAgAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>MouseWheelHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DeepZoom.MouseWheelHelper">
+    <Position X="5.25" Y="0.75" Width="1.75" />
+    <NestedTypes>
+      <Class Name="DeepZoom.MouseWheelHelper.Worker" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>MouseWheelHelper.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>gCAABAAAABAQAAAAAAAAAIAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>MouseWheelHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

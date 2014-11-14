@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="System.Windows.Controls.Border" HideInheritanceLine="true">
+    <Position X="0.75" Y="0.5" Width="2" />
+    <Members>
+      <Field Name="BackgroundProperty" Hidden="true" />
+      <Field Name="BorderBrushProperty" Hidden="true" />
+      <Field Name="BorderThicknessProperty" Hidden="true" />
+      <Field Name="CornerRadiusProperty" Hidden="true" />
+      <Field Name="PaddingProperty" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Shapes.Rectangle">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <Members>
+      <Field Name="RadiusXProperty" Hidden="true" />
+      <Field Name="RadiusYProperty" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Shapes.Shape" HideInheritanceLine="true">
+    <Position X="4.75" Y="0.5" Width="2" />
+    <Members>
+      <Field Name="FillProperty" Hidden="true" />
+      <Field Name="StretchProperty" Hidden="true" />
+      <Field Name="StrokeDashArrayProperty" Hidden="true" />
+      <Field Name="StrokeDashCapProperty" Hidden="true" />
+      <Field Name="StrokeDashOffsetProperty" Hidden="true" />
+      <Field Name="StrokeEndLineCapProperty" Hidden="true" />
+      <Field Name="StrokeLineJoinProperty" Hidden="true" />
+      <Field Name="StrokeMiterLimitProperty" Hidden="true" />
+      <Field Name="StrokeProperty" Hidden="true" />
+      <Field Name="StrokeStartLineCapProperty" Hidden="true" />
+      <Field Name="StrokeThicknessProperty" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.FrameworkElement">
+    <Position X="7.25" Y="0.5" Width="1.75" />
+    <Members>
+      <Property Name="ActualHeight" Hidden="true" />
+      <Field Name="ActualHeightProperty" Hidden="true" />
+      <Property Name="ActualWidth" Hidden="true" />
+      <Field Name="ActualWidthProperty" Hidden="true" />
+      <Method Name="ArrangeOverride" Hidden="true" />
+      <Event Name="BindingValidationError" Hidden="true" />
+      <Field Name="DataContextProperty" Hidden="true" />
+      <Method Name="FindName" Hidden="true" />
+      <Method Name="FrameworkElement" Hidden="true" />
+      <Field Name="HeightProperty" Hidden="true" />
+      <Property Name="HorizontalAlignment" Hidden="true" />
+      <Field Name="HorizontalAlignmentProperty" Hidden="true" />
+      <Field Name="LanguageProperty" Hidden="true" />
+      <Event Name="LayoutUpdated" Hidden="true" />
+      <Event Name="Loaded" Hidden="true" />
+      <Field Name="LoadedEvent" Hidden="true" />
+      <Field Name="MarginProperty" Hidden="true" />
+      <Property Name="MaxHeight" Hidden="true" />
+      <Field Name="MaxHeightProperty" Hidden="true" />
+      <Property Name="MaxWidth" Hidden="true" />
+      <Field Name="MaxWidthProperty" Hidden="true" />
+      <Method Name="MeasureOverride" Hidden="true" />
+      <Property Name="MinHeight" Hidden="true" />
+      <Field Name="MinHeightProperty" Hidden="true" />
+      <Property Name="MinWidth" Hidden="true" />
+      <Field Name="MinWidthProperty" Hidden="true" />
+      <Field Name="NameProperty" Hidden="true" />
+      <Method Name="OnApplyTemplate" Hidden="true" />
+      <Method Name="SetBinding" Hidden="true" />
+      <Event Name="SizeChanged" Hidden="true" />
+      <Field Name="StyleProperty" Hidden="true" />
+      <Field Name="TagProperty" Hidden="true" />
+      <Property Name="VerticalAlignment" Hidden="true" />
+      <Field Name="VerticalAlignmentProperty" Hidden="true" />
+      <Field Name="WidthProperty" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Events" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Controls.TextBlock" HideInheritanceLine="true">
+    <Position X="9.5" Y="0.5" Width="1.75" />
+    <Members>
+      <Field Name="FontFamilyProperty" Hidden="true" />
+      <Field Name="FontSizeProperty" Hidden="true" />
+      <Field Name="FontStretchProperty" Hidden="true" />
+      <Field Name="FontStyleProperty" Hidden="true" />
+      <Field Name="FontWeightProperty" Hidden="true" />
+      <Field Name="ForegroundProperty" Hidden="true" />
+      <Field Name="LineHeightProperty" Hidden="true" />
+      <Field Name="LineStackingStrategyProperty" Hidden="true" />
+      <Method Name="OnCreateAutomationPeer" Hidden="true" />
+      <Field Name="PaddingProperty" Hidden="true" />
+      <Field Name="TextAlignmentProperty" Hidden="true" />
+      <Method Name="TextBlock" Hidden="true" />
+      <Field Name="TextDecorationsProperty" Hidden="true" />
+      <Field Name="TextProperty" Hidden="true" />
+      <Field Name="TextWrappingProperty" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

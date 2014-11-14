@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="System.Json.JsonObject">
+    <Position X="0.75" Y="2.75" Width="2" />
+    <Members>
+      <Method Name="AddRange" Hidden="true" />
+      <Method Name="JsonObject" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Runtime.Serialization.Json.JsonReaderWriterFactory">
+    <Position X="9.5" Y="1.25" Width="2.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Text.Encoding">
+    <Position X="6.75" Y="1.25" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Json.JsonValue">
+    <Position X="3" Y="2.75" Width="2.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

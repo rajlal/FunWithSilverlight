@@ -1,0 +1,14 @@
+﻿<UserControl x:Class="InputEvents.Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="400" Height="300">
+    <Grid x:Name="LayoutRoot" Background="#EEEEEE">
+        <TextBlock Text="" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="24">
+        <Run Text="Input and Events" />
+        <LineBreak />
+        <Run Text="Mouse, Keyboard and Ink" FontSize="12" />
+        <LineBreak />
+        <Run Text="Samples folder contains all compiled examples" FontSize="12" />
+        </TextBlock>
+    </Grid>
+</UserControl>

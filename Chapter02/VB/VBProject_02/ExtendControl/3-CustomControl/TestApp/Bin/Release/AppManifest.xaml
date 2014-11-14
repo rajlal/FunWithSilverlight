@@ -1,0 +1,6 @@
+﻿<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="TestCustomControl" EntryPointType="TestCustomControl.App" RuntimeVersion="4.0.50826.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="TestCustomControl" Source="TestCustomControl.dll" />
+    <AssemblyPart x:Name="SlideshowCustomControl" Source="SlideshowCustomControl.dll" />
+  </Deployment.Parts>
+</Deployment>

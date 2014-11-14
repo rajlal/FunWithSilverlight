@@ -1,0 +1,6 @@
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_02\ExtendControl\3-CustomControl\SlideshowCustomControl\Bin\Release\SlideshowCustomControl.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_02\ExtendControl\3-CustomControl\SlideshowCustomControl\Bin\Release\SlideshowCustomControl.pdb
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_02\ExtendControl\3-CustomControl\SlideshowCustomControl\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_02\ExtendControl\3-CustomControl\SlideshowCustomControl\obj\Release\SlideshowCustomControl.g.resources
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_02\ExtendControl\3-CustomControl\SlideshowCustomControl\obj\Release\SlideshowCustomControl.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_02\ExtendControl\3-CustomControl\SlideshowCustomControl\obj\Release\SlideshowCustomControl.pdb

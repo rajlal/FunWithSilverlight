@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="SlideShow">
+</Property><Property Name="Solution File" Value="C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_05\ExtendBrowser\2b-ExampleSlideShow\SlideShow.sln">
+</Property><Property Name="Date" Value="samedi 24 mars 2012">
+</Property><Property Name="Time" Value="08:21">
+</Property></Properties><Event ErrorLevel="2" Project="SlideShow" Source="SlideShow.vbproj" Description="Unable to open project file to perform upgrade.  ">
+</Event><Event ErrorLevel="0" Project="" Source="SlideShow.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="SlideShow.sln" Description="Converted">
+</Event></UpgradeLog>

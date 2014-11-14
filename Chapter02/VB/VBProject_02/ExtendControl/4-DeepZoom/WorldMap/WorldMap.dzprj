@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<DeepZoomComposerProject version="2.2" name="WorldMap">
+  <Settings>
+    <SourceDirectory>Source Images</SourceDirectory>
+    <TreeDirectory>Working Data</TreeDirectory>
+  </Settings>
+  <ImageList>
+    <Image Id="568589129">
+      <File>worldmap_landandpolitical.jpg</File>
+      <Tree>worldmap_landandpolitical_files</Tree>
+      <TotalSize>21062105</TotalSize>
+    </Image>
+  </ImageList>
+  <CompositionList>
+    <Composition Name="" ZoomLevel="1">
+      <CompositionNode ImageId="568589129" Index="0" X="29" Y="87.7640896358543" Width="768.427538216898" Height="401.702491091679" Visible="true" Active="true" Selected="true" Tag="" />
+    </Composition>
+  </CompositionList>
+</DeepZoomComposerProject>

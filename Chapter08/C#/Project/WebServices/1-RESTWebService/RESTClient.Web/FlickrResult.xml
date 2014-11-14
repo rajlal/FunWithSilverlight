@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<rsp stat="ok">
+<photos page="1" pages="1" perpage="100" total="6">
+	<photo id="4060504862" owner="44162244@N02" secret="6dae70317d" server="2512" farm="3" title="images_microsoft_silverlight" ispublic="1" isfriend="0" isfamily="0" />
+	<photo id="4059762685" owner="44162244@N02" secret="aa76a9070e" server="2452" farm="3" title="Microsoft-Silverlight-Wallpapers_1" ispublic="1" isfriend="0" isfamily="0" />
+	<photo id="4060500928" owner="44162244@N02" secret="e8a4387f20" server="3533" farm="4" title="smile" ispublic="1" isfriend="0" isfamily="0" />
+	<photo id="4060506018" owner="44162244@N02" secret="370eb536f3" server="2646" farm="3" title="silverlight_anims" ispublic="1" isfriend="0" isfamily="0" />
+	<photo id="4059758403" owner="44162244@N02" secret="f4485bb507" server="2529" farm="3" title="Silverlight2PosterMIX08" ispublic="1" isfriend="0" isfamily="0" />
+	<photo id="4060504854" owner="44162244@N02" secret="2dbf8a5482" server="2791" farm="3" title="487px3D_coordinate_system_svg" ispublic="1" isfriend="0" isfamily="0" />
+</photos>
+</rsp>

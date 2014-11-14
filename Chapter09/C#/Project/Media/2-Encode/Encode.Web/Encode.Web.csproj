@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{723ABC68-245F-4BF0-9247-687412601706}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Encode.Web</RootNamespace>
+    <AssemblyName>Encode.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightApplicationList>{130A7BA4-CE52-45CE-A033-62D0AB61E439}|..\Media\Media.csproj|ClientBin|False</SilverlightApplicationList>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1-Deliver.html" />
+    <Content Include="ClientBin\Encode.xap" />
+    <Content Include="ClientBin\index.xap" />
+    <Content Include="Media\1-ProgressiveDownload\Default.html" />
+    <Content Include="Media\1-ProgressiveDownload\MediaPlayerTemplate.xap" />
+    <Content Include="Media\1-ProgressiveDownload\Preview.png" />
+    <Content Include="Media\1-ProgressiveDownload\Robotica_1080.wmv" />
+    <Content Include="Media\1-ProgressiveDownload\Robotica_1080_Thumb.jpg" />
+    <Content Include="Media\1-ProgressiveDownload\SmoothStreaming.xap" />
+    <Content Include="Media\1-ProgressiveDownload\TimedTextLibrary.xap" />
+    <Content Include="Media\6-SmoothStreamingH264\Default.html" />
+    <Content Include="Media\6-SmoothStreamingH264\MediaPlayerTemplate.xap" />
+    <Content Include="Media\6-SmoothStreamingH264\Preview.png" />
+    <Content Include="Media\6-SmoothStreamingH264\Robotica_1080_1241.ismv" />
+    <Content Include="Media\6-SmoothStreamingH264\Robotica_1080_1644.ismv" />
+    <Content Include="Media\6-SmoothStreamingH264\Robotica_1080_230.ismv" />
+    <Content Include="Media\6-SmoothStreamingH264\Robotica_1080_305.ismv" />
+    <Content Include="Media\6-SmoothStreamingH264\Robotica_1080_403.ismv" />
+    <Content Include="Media\6-SmoothStreamingH264\Robotica_1080_534.ismv" />
+    <Content Include="Media\6-SmoothStreamingH264\Robotica_1080_708.ismv" />
+    <Content Include="Media\6-SmoothStreamingH264\Robotica_1080_937.ismv" />
+    <Content Include="Media\6-SmoothStreamingH264\Robotica_1080_Thumb.jpg" />
+    <Content Include="Media\6-SmoothStreamingH264\SmoothStreaming.xap" />
+    <Content Include="Media\6-SmoothStreamingH264\TimedTextLibrary.xap" />
+    <Content Include="Media\4-TraditionalStreaming\Default.html" />
+    <Content Include="Media\4-TraditionalStreaming\MediaPlayerTemplate.xap" />
+    <Content Include="Media\4-TraditionalStreaming\Preview.png" />
+    <Content Include="Media\4-TraditionalStreaming\Robotica_1080.asx" />
+    <Content Include="Media\4-TraditionalStreaming\Robotica_1080.wmv" />
+    <Content Include="Media\4-TraditionalStreaming\Robotica_1080.wvx" />
+    <Content Include="Media\4-TraditionalStreaming\Robotica_1080_Thumb.jpg" />
+    <Content Include="Media\4-TraditionalStreaming\SmoothStreaming.xap" />
+    <Content Include="Media\4-TraditionalStreaming\TimedTextLibrary.xap" />
+    <Content Include="TestStreaming.htm" />
+    <Content Include="StyleBig.css" />
+    <Content Include="index.html" />
+    <Content Include="Media\3-ProgressiveDownloadMP4\Default.html" />
+    <Content Include="Media\3-ProgressiveDownloadMP4\MediaPlayerTemplate.xap" />
+    <Content Include="Media\3-ProgressiveDownloadMP4\Preview.png" />
+    <Content Include="Media\3-ProgressiveDownloadMP4\Robotica_1080.mp4" />
+    <Content Include="Media\3-ProgressiveDownloadMP4\Robotica_1080_Thumb.jpg" />
+    <Content Include="Media\3-ProgressiveDownloadMP4\SmoothStreaming.xap" />
+    <Content Include="Media\3-ProgressiveDownloadMP4\TimedTextLibrary.xap" />
+    <Content Include="Media\5-SmoothStreaming\Default.html" />
+    <Content Include="Media\5-SmoothStreaming\MediaPlayerTemplate.xap" />
+    <Content Include="Media\5-SmoothStreaming\Preview.png" />
+    <Content Include="Media\5-SmoothStreaming\Robotica_1080_1241.ismv" />
+    <Content Include="Media\5-SmoothStreaming\Robotica_1080_1644.ismv" />
+    <Content Include="Media\5-SmoothStreaming\Robotica_1080_230.ismv" />
+    <Content Include="Media\5-SmoothStreaming\Robotica_1080_305.ismv" />
+    <Content Include="Media\5-SmoothStreaming\Robotica_1080_403.ismv" />
+    <Content Include="Media\5-SmoothStreaming\Robotica_1080_534.ismv" />
+    <Content Include="Media\5-SmoothStreaming\Robotica_1080_708.ismv" />
+    <Content Include="Media\5-SmoothStreaming\Robotica_1080_937.ismv" />
+    <Content Include="Media\5-SmoothStreaming\Robotica_1080_Thumb.jpg" />
+    <Content Include="Media\5-SmoothStreaming\SmoothStreaming.xap" />
+    <Content Include="Media\5-SmoothStreaming\TimedTextLibrary.xap" />
+    <Content Include="Media\2-ProgressiveDownloadWMV\Default.html" />
+    <Content Include="Media\2-ProgressiveDownloadWMV\MediaPlayerTemplate.xap" />
+    <Content Include="Media\2-ProgressiveDownloadWMV\Preview.png" />
+    <Content Include="Media\2-ProgressiveDownloadWMV\Robotica_1080.wmv" />
+    <Content Include="Media\2-ProgressiveDownloadWMV\Robotica_1080_Thumb.jpg" />
+    <Content Include="Media\2-ProgressiveDownloadWMV\SmoothStreaming.xap" />
+    <Content Include="Media\2-ProgressiveDownloadWMV\TimedTextLibrary.xap" />
+    <Content Include="Silverlight.js" />
+    <Content Include="Style.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\3-ProgressiveDownloadMP4\JobFile.xej" />
+    <None Include="Media\3-ProgressiveDownloadMP4\Settings.dat" />
+    <None Include="Media\1-ProgressiveDownload\Settings.dat" />
+    <None Include="Media\6-SmoothStreamingH264\Robotica_1080.ism" />
+    <None Include="Media\6-SmoothStreamingH264\Robotica_1080.ismc" />
+    <None Include="Media\6-SmoothStreamingH264\Settings.dat" />
+    <None Include="Media\5-SmoothStreaming\JobFile.xej" />
+    <None Include="Media\5-SmoothStreaming\Robotica_1080.ism" />
+    <None Include="Media\5-SmoothStreaming\Robotica_1080.ismc" />
+    <None Include="Media\5-SmoothStreaming\Settings.dat" />
+    <None Include="Media\4-TraditionalStreaming\JobFile.xej" />
+    <None Include="Media\4-TraditionalStreaming\Settings.dat" />
+    <None Include="Media\2-ProgressiveDownloadWMV\JobFile.xej" />
+    <None Include="Media\2-ProgressiveDownloadWMV\Settings.dat" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>50896</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,30 @@
+﻿<UserControl x:Class="SMF.PageSMFPlayer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:p="clr-namespace:Microsoft.SilverlightMediaFramework.Core;assembly=Microsoft.SilverlightMediaFramework.Core"
+             xmlns:Media="clr-namespace:Microsoft.SilverlightMediaFramework.Core.Media;assembly=Microsoft.SilverlightMediaFramework.Core" 
+             
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+
+
+    <Grid x:Name="LayoutRoot">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.95*"></RowDefinition>
+            <RowDefinition Height="0.05*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <p:SMFPlayer Grid.Row="0" Name="smfMediaPlayer" >
+            <p:SMFPlayer.Playlist>
+                <Media:PlaylistItem  MediaSource="http://Silverlightfun.com/Samples/Chapter-10/Tron-Legacy.mp4"/>
+            </p:SMFPlayer.Playlist>
+        </p:SMFPlayer>
+        <StackPanel Orientation="Horizontal" Grid.Row="1">
+            <TextBlock x:Name="Volume" VerticalAlignment="Center" Text="Volume" Width="50" />
+            <Slider x:Name="VolumeBar" Width="60" Value="{Binding Path=VolumeLevel, ElementName=smfMediaPlayer, Mode=TwoWay}" />
+            <Button x:Name="PlayButton" Width="50" Click="PlayButton_Click" Loaded="PlayButton_Loaded"/>
+            <Button x:Name="StopButton" Content="Stop" Width="50" Click="StopButton_Click" />
+        </StackPanel>
+    </Grid>
+</UserControl>

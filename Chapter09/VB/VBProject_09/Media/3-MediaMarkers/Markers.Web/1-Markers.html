@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Deliver Media</title>
+    <link rel="stylesheet" type="text/css" href="StyleBig.css" />
+    <script type="text/javascript" src="Silverlight.js"></script>
+    <style type="text/css">
+<!---
+iframe {
+overflow-x: hidden;
+}
+-->
+</style>
+</head>
+<body>
+    <form id="form1" runat="server" style="height:100%">
+      <div class="Content">
+	  <div class="ApplicationContainer"  id="silverlightControlHost">
+	<iframe id="myFrame" scrolling="no" style="visibility:visible;height:400px;width:600px;border:0px;overflow-x: hidden;overflow-y: hidden;" src="Media/Markers/Default.html"></iframe>
+      </div>
+    <div class="ContentHelp">Create Media Markers<ul>
+     <li  style="text-decoration:underline;color:Blue;cursor:pointer" onclick="document.getElementById('myFrame').src='Media/Markers/Default.html';">Thumbnail Media Markers</li>
+     <li style="text-decoration:underline;color:Blue;cursor:pointer" onclick="document.getElementById('myFrame').src='Media/ClosedCaption/Default.html';">Closed Captions</li>
+     <li style="text-decoration:underline;color:Blue;cursor:pointer" onclick="document.getElementById('myFrame').src='Media/Chapterslist-Subtitles/Default.html';">Chapters list and Sub-titles</li>
+    </ul>
+    </div>
+    </div>
+    </form>
+
+</body>
+</html>

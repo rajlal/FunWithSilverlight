@@ -1,0 +1,30 @@
+
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Playlist", "Playlist\Playlist.vbproj", "{1562CC2E-3A5E-4425-811B-667DA04A719E}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Playlist.Web", "Playlist.Web\Playlist.Web.vbproj", "{FAA40184-99FE-486B-A4BA-DE91641B51F5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1562CC2E-3A5E-4425-811B-667DA04A719E} = {1562CC2E-3A5E-4425-811B-667DA04A719E}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1562CC2E-3A5E-4425-811B-667DA04A719E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1562CC2E-3A5E-4425-811B-667DA04A719E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1562CC2E-3A5E-4425-811B-667DA04A719E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1562CC2E-3A5E-4425-811B-667DA04A719E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAA40184-99FE-486B-A4BA-DE91641B51F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAA40184-99FE-486B-A4BA-DE91641B51F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAA40184-99FE-486B-A4BA-DE91641B51F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAA40184-99FE-486B-A4BA-DE91641B51F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
+

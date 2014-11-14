@@ -1,0 +1,5 @@
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_07\ASPAJAX\4-AdoDataService\AdoDataService\bin\AdoDataService.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_07\ASPAJAX\4-AdoDataService\AdoDataService\bin\AdoDataService.pdb
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_07\ASPAJAX\4-AdoDataService\AdoDataService\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_07\ASPAJAX\4-AdoDataService\AdoDataService\obj\Release\AdoDataService.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_07\ASPAJAX\4-AdoDataService\AdoDataService\obj\Release\AdoDataService.pdb

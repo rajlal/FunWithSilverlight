@@ -1,0 +1,29 @@
+10
+
+dir
+0
+https://raj-vista/svn/Silverlight3HowTo/Main/Projects/Chapter%2007/ASPAJAX/2-AdoDataService/AdoDataServiceClient/Service%20References/SilverlightResourceReference
+https://raj-vista/svn/Silverlight3HowTo
+add
+
+Reference.datasvcmap
+file
+
+
+
+add
+
+Reference.cs
+file
+
+
+
+add
+
+service.edmx
+file
+
+
+
+add
+

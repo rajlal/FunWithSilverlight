@@ -1,0 +1,39 @@
+﻿<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <edmx:DataServices>
+    <Schema Namespace="SilverlightResourceModel" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+      <EntityType Name="Resource">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Title" Type="Edm.String" Nullable="true" MaxLength="150" Unicode="true" FixedLength="false" />
+        <Property Name="Author" Type="Edm.String" Nullable="true" MaxLength="50" Unicode="true" FixedLength="false" />
+        <Property Name="Image" Type="Edm.String" Nullable="true" MaxLength="150" Unicode="true" FixedLength="false" />
+        <Property Name="URL" Type="Edm.String" Nullable="true" MaxLength="250" Unicode="true" FixedLength="false" />
+        <NavigationProperty Name="ResourceType" Relationship="SilverlightResourceModel.FK_Resource_ResourceType" FromRole="Resource" ToRole="ResourceType" />
+      </EntityType>
+      <EntityType Name="ResourceType">
+        <Key>
+          <PropertyRef Name="Id" />
+        </Key>
+        <Property Name="Id" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Name" Type="Edm.String" Nullable="true" MaxLength="10" Unicode="true" FixedLength="true" />
+        <NavigationProperty Name="Resource" Relationship="SilverlightResourceModel.FK_Resource_ResourceType" FromRole="ResourceType" ToRole="Resource" />
+      </EntityType>
+      <Association Name="FK_Resource_ResourceType">
+        <End Role="ResourceType" Type="SilverlightResourceModel.ResourceType" Multiplicity="1" />
+        <End Role="Resource" Type="SilverlightResourceModel.Resource" Multiplicity="*" />
+      </Association>
+    </Schema>
+    <Schema Namespace="AdoDataService" xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://schemas.microsoft.com/ado/2006/04/edm">
+      <EntityContainer Name="SilverlightResourceEntities" m:IsDefaultEntityContainer="true">
+        <EntitySet Name="Resource" EntityType="SilverlightResourceModel.Resource" />
+        <EntitySet Name="ResourceType" EntityType="SilverlightResourceModel.ResourceType" />
+        <AssociationSet Name="FK_Resource_ResourceType" Association="SilverlightResourceModel.FK_Resource_ResourceType">
+          <End Role="ResourceType" EntitySet="ResourceType" />
+          <End Role="Resource" EntitySet="Resource" />
+        </AssociationSet>
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

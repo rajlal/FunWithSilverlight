@@ -1,0 +1,47 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+xmlns:local="clr-namespace:SlideshowCustomControl;assembly=SlideshowCustomControl">
+    <Style x:Key="SlideshowStyle"  TargetType="Slideshow">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="cc:Slideshow">
+                    <!-- RootElement -->
+                    <Canvas x:Name="LayoutRoot" Background="#EEEEEE">
+                        <Border x:Name="SlideBorder" BorderBrush="#265C5C5C" BorderThickness="1,0,1,1" Canvas.Left="00" Canvas.Top="00" Background="White" Width="400">
+                            <!-- Slideshow Image -->
+                            <Grid x:Name="SlideGrid" ShowGridLines="False" >
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="35"/>
+                                </Grid.RowDefinitions>
+                                <Image  Grid.Row="0"
+                                    Height="265"
+                                    x:Name="SlideImage"
+                                    Margin="0"
+                                    Stretch="UniformToFill" 
+                                    Source="Images/_Default.jpg"
+                                    Cursor="Hand"
+                                    MouseLeftButtonUp="SlideImage_MouseLeftButtonUp"
+                                   />
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition></ColumnDefinition>
+                                        <ColumnDefinition></ColumnDefinition>
+                                        <ColumnDefinition Width="Auto"></ColumnDefinition>
+                                        <ColumnDefinition></ColumnDefinition>
+                                        <ColumnDefinition></ColumnDefinition>
+                                    </Grid.ColumnDefinitions>
+                                    <Image Grid.Column="1" Source="Images/_leftarrow.jpg" Stretch="None" HorizontalAlignment="Right" Margin="2" Cursor="Hand" x:Name="LeftButton" />
+                                    <TextBlock Grid.Column="2" x:Name="SlideTitle" Text="test" Margin="8"></TextBlock>
+                                    <Image Grid.Column="3" Source="Images/_rightarrow.jpg" Stretch="None" HorizontalAlignment="Left" Margin="2" Cursor="Hand" x:Name="RightButton" />
+                                    <Image Grid.Column="4" Source="Images/_fullscreen.jpg" Stretch="None" HorizontalAlignment="Right" Margin="4" Cursor="Hand" x:Name="FullscreenButton" />
+                                </Grid>
+                            </Grid>
+                        </Border>
+                    </Canvas>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
+

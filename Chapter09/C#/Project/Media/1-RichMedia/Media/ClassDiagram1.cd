@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="System.Windows.Controls.MediaElement" HideInheritanceLine="true">
+    <Position X="10" Y="7.5" Width="2.25" />
+    <Members>
+      <Property Name="Attributes" Hidden="true" />
+      <Property Name="AudioStreamCount" Hidden="true" />
+      <Property Name="AudioStreamIndex" Hidden="true" />
+      <Property Name="AutoPlay" Hidden="true" />
+      <Property Name="Balance" Hidden="true" />
+      <Property Name="DownloadProgressOffset" Hidden="true" />
+      <Property Name="DroppedFramesPerSecond" Hidden="true" />
+      <Property Name="IsMuted" Hidden="true" />
+      <Property Name="LicenseAcquirer" Hidden="true" />
+      <Method Name="MediaElement" Hidden="true" />
+      <Property Name="NaturalVideoHeight" Hidden="true" />
+      <Property Name="NaturalVideoWidth" Hidden="true" />
+      <Method Name="OnCreateAutomationPeer" Hidden="true" />
+      <Property Name="RenderedFramesPerSecond" Hidden="true" />
+      <Method Name="RequestLog" Hidden="true" />
+      <Property Name="Stretch" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Media.Animation.Storyboard">
+    <Position X="5" Y="7.25" Width="2" />
+    <Members>
+      <Method Name="GetCurrentState" Hidden="true" />
+      <Method Name="GetCurrentTime" Hidden="true" />
+      <Method Name="GetTargetName" Hidden="true" />
+      <Method Name="GetTargetProperty" Hidden="true" />
+      <Method Name="SeekAlignedToLastTick" Hidden="true" />
+      <Method Name="SetTarget" Hidden="true" />
+      <Method Name="SetTargetName" Hidden="true" />
+      <Method Name="SetTargetProperty" Hidden="true" />
+      <Method Name="SkipToFill" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Interop.SilverlightHost">
+    <Position X="4.5" Y="2.75" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Threading.DispatcherTimer">
+    <Position X="8" Y="4" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Media.VideoBrush">
+    <Position X="9" Y="0.75" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Media.TileBrush">
+    <Position X="6.75" Y="0.75" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.FrameworkElement" Collapsed="true">
+    <Position X="7.75" Y="8.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.UIElement" Collapsed="true">
+    <Position X="7.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

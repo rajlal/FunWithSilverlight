@@ -1,0 +1,33 @@
+﻿<!--
+// (c) Copyright Microsoft Corporation.
+// This source is subject to the Microsoft Public License (Ms-PL).
+// Please see http://go.microsoft.com/fwlink/?LinkID=131993 for details.
+// All other rights reserved.
+-->
+<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" EntryPointAssembly="MediaPlayerTemplate" EntryPointType="MediaPlayerTemplate.App" RuntimeVersion="4.0.50826.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="MediaPlayerTemplate" Source="MediaPlayerTemplate.dll" />
+    <AssemblyPart x:Name="ExpressionPlayer" Source="ExpressionPlayer.dll" />
+    <AssemblyPart x:Name="MediaPlayer" Source="MediaPlayer.dll" />
+    <AssemblyPart x:Name="PlugInMssCtrl" Source="PlugInMssCtrl.dll" />
+    <AssemblyPart x:Name="OfflineShared" Source="OfflineShared.dll" />
+    <AssemblyPart Source="de/MediaPlayer.resources.dll" />
+    <AssemblyPart Source="es/MediaPlayer.resources.dll" />
+    <AssemblyPart Source="fr/MediaPlayer.resources.dll" />
+    <AssemblyPart Source="it/MediaPlayer.resources.dll" />
+    <AssemblyPart Source="ja/MediaPlayer.resources.dll" />
+    <AssemblyPart Source="ko/MediaPlayer.resources.dll" />
+    <AssemblyPart Source="zh-Hans/MediaPlayer.resources.dll" />
+    <AssemblyPart Source="zh-Hant/MediaPlayer.resources.dll" />
+  </Deployment.Parts>
+  <Deployment.OutOfBrowserSettings>
+    <OutOfBrowserSettings ShortName="Player" EnableGPUAcceleration="True" ShowInstallMenuItem="false">
+      <OutOfBrowserSettings.Blurb>
+        Media player
+      </OutOfBrowserSettings.Blurb>
+      <OutOfBrowserSettings.WindowSettings>
+        <WindowSettings Title="Media Player" />
+      </OutOfBrowserSettings.WindowSettings>
+    </OutOfBrowserSettings>
+  </Deployment.OutOfBrowserSettings>
+</Deployment>

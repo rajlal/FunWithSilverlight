@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="WorkwithXML.XSerializer"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="400" Height="300">
+    <Canvas x:Name="layoutRoot" Background="#EEEEEE" Width="400" Height="300" Loaded="LayoutRoot_Loaded">
+        <Canvas x:Name="Canvas" Canvas.Top="30" Canvas.Left="40"  Height="200" Width="320" Background="AliceBlue" Visibility="Visible">
+            <StackPanel x:Name="stackDeserialize" Margin="5,2,5,0" Width="320" Visibility="Collapsed">
+                <TextBlock  Margin="10,10,0,0" FontSize="14" x:Name="itemTitle">Title</TextBlock>
+                <TextBlock  Margin="10,10,0,0" Foreground="Gray" x:Name="itempubDate">pubDate</TextBlock>
+                <TextBlock   Margin="10,10,0,0"  FontWeight="bold">Description</TextBlock>
+                <TextBox  Margin="0,0,0,0" x:Name="itemDesc" BorderThickness="0" Background="AliceBlue" VerticalScrollBarVisibility="Auto" Width="300" TextWrapping="Wrap" Text=""  Height="90"></TextBox>
+                <HyperlinkButton  x:Name="itemLink" Margin="10,0,0,0" HorizontalAlignment="Left" Content="Visit the web page" ToolTipService.ToolTip="" NavigateUri="" TargetName="_Blank" Width="120"></HyperlinkButton>
+
+            </StackPanel>
+            <StackPanel x:Name="stackSerialize" Margin="5,2,5,0" Width="320"  Visibility="Visible">
+                <TextBlock   Margin="10,10,0,0"  FontWeight="bold">XML</TextBlock>
+                <TextBox  Margin="0,0,0,0" x:Name="xmlData" BorderThickness="0" Background="AliceBlue" VerticalScrollBarVisibility="Auto" Width="300" TextWrapping="Wrap" Text=""  Height="180"></TextBox>
+            </StackPanel>
+        </Canvas>
+        <Border Canvas.Top="230" Canvas.Left="40" BorderBrush="Gray" BorderThickness="0" Height="20" Width="320" Background="White">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Padding="8,1,12,0" Text="Serialize" ToolTipService.ToolTip="Serialize XML" Cursor="Hand" Foreground="DodgerBlue" MouseLeftButtonUp="FileSelect"/>
+                <TextBlock Padding="6,1,12,0"  Text="De-Serialize" ToolTipService.ToolTip="De-Serialize XML" Cursor="Hand" Foreground="DodgerBlue" MouseLeftButtonUp="FileSelect"/>
+            </StackPanel>
+        </Border>
+
+
+        <Border Canvas.Left="0" Canvas.Top="280" Width="400" Background="#F1EDED" BorderBrush="Silver" BorderThickness=".5" >
+            <Grid ShowGridLines="False" x:Name="StatusGrid">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width="220"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="StatusBar" Margin="2" Grid.Column="0" Text="XML Serializer" VerticalAlignment="Center"></TextBlock>
+                <TextBlock x:Name="StatusInfo" Margin="0,0,10,0" Grid.Column="1" Text=""  VerticalAlignment="Center" HorizontalAlignment="Right"></TextBlock>
+            </Grid>
+        </Border>
+    </Canvas>
+</UserControl>

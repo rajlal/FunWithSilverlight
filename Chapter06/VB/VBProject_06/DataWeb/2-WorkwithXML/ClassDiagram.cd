@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="WorkwithXML.SelectedNewsItem">
+    <Position X="3" Y="0.75" Width="2" />
+    <Members>
+      <Field Name="desc" Hidden="true" />
+      <Field Name="link" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAgAAAAABAAAAAQAAAAEA=</HashCode>
+      <FileName>Pages\1-XReader.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Xml.XmlReader">
+    <Position X="0.5" Y="0.75" Width="2.25" />
+    <Members>
+      <Method Name="IsStartElement" Hidden="true" />
+      <Method Name="LookupNamespace" Hidden="true" />
+      <Method Name="MoveToAttribute" Hidden="true" />
+      <Method Name="MoveToContent" Hidden="true" />
+      <Method Name="MoveToElement" Hidden="true" />
+      <Method Name="MoveToFirstAttribute" Hidden="true" />
+      <Method Name="MoveToNextAttribute" Hidden="true" />
+      <Method Name="ReadContentAs" Hidden="true" />
+      <Method Name="ReadContentAsBase64" Hidden="true" />
+      <Method Name="ReadContentAsBinHex" Hidden="true" />
+      <Method Name="ReadContentAsBoolean" Hidden="true" />
+      <Method Name="ReadContentAsDateTime" Hidden="true" />
+      <Method Name="ReadContentAsDecimal" Hidden="true" />
+      <Method Name="ReadContentAsDouble" Hidden="true" />
+      <Method Name="ReadContentAsFloat" Hidden="true" />
+      <Method Name="ReadContentAsInt" Hidden="true" />
+      <Method Name="ReadContentAsLong" Hidden="true" />
+      <Method Name="ReadContentAsObject" Hidden="true" />
+      <Method Name="ReadContentAsString" Hidden="true" />
+      <Method Name="ReadElementContentAs" Hidden="true" />
+      <Method Name="ReadElementContentAsBase64" Hidden="true" />
+      <Method Name="ReadElementContentAsBinHex" Hidden="true" />
+      <Method Name="ReadElementContentAsBoolean" Hidden="true" />
+      <Method Name="ReadElementContentAsDateTime" Hidden="true" />
+      <Method Name="ReadElementContentAsDecimal" Hidden="true" />
+      <Method Name="ReadElementContentAsDouble" Hidden="true" />
+      <Method Name="ReadElementContentAsFloat" Hidden="true" />
+      <Method Name="ReadElementContentAsInt" Hidden="true" />
+      <Method Name="ReadElementContentAsLong" Hidden="true" />
+      <Method Name="ReadElementContentAsObject" Hidden="true" />
+      <Method Name="ReadElementContentAsString" Hidden="true" />
+      <Method Name="ReadStartElement" Hidden="true" />
+      <Method Name="ReadToDescendant" Hidden="true" />
+      <Method Name="ReadToFollowing" Hidden="true" />
+      <Method Name="ReadToNextSibling" Hidden="true" />
+      <Method Name="ResolveEntity" Hidden="true" />
+      <Method Name="Skip" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Net.WebClient">
+    <Position X="8.25" Y="0.5" Width="2.75" />
+    <Members>
+      <Method Name="GetWebRequest" Hidden="true" />
+      <Method Name="GetWebResponse" Hidden="true" />
+      <Method Name="OnDownloadProgressChanged" Hidden="true" />
+      <Method Name="OnDownloadStringCompleted" Hidden="true" />
+      <Method Name="OnOpenReadCompleted" Hidden="true" />
+      <Method Name="OnOpenWriteCompleted" Hidden="true" />
+      <Method Name="OnUploadProgressChanged" Hidden="true" />
+      <Method Name="OnUploadStringCompleted" Hidden="true" />
+      <Method Name="OnWriteStreamClosed" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Xml.XmlReaderSettings">
+    <Position X="5.5" Y="0.5" Width="2.25" />
+    <Members>
+      <Property Name="IgnoreComments" Hidden="true" />
+      <Property Name="IgnoreProcessingInstructions" Hidden="true" />
+      <Property Name="IgnoreWhitespace" Hidden="true" />
+      <Property Name="MaxCharactersFromEntities" Hidden="true" />
+      <Property Name="MaxCharactersInDocument" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Xml.XmlWriter">
+    <Position X="0.5" Y="7.5" Width="2.75" />
+    <Members>
+      <Method Name="LookupPrefix" Hidden="true" />
+      <Method Name="WriteAttributeString" Hidden="true" />
+      <Method Name="WriteBase64" Hidden="true" />
+      <Method Name="WriteBinHex" Hidden="true" />
+      <Method Name="WriteCharEntity" Hidden="true" />
+      <Method Name="WriteChars" Hidden="true" />
+      <Method Name="WriteEndAttribute" Hidden="true" />
+      <Method Name="WriteEndDocument" Hidden="true" />
+      <Method Name="WriteEndElement" Hidden="true" />
+      <Method Name="WriteEntityRef" Hidden="true" />
+      <Method Name="WriteFullEndElement" Hidden="true" />
+      <Method Name="WriteNmToken" Hidden="true" />
+      <Method Name="WriteProcessingInstruction" Hidden="true" />
+      <Method Name="WriteQualifiedName" Hidden="true" />
+      <Method Name="WriteRaw" Hidden="true" />
+      <Method Name="WriteStartAttribute" Hidden="true" />
+      <Method Name="WriteSurrogateCharEntity" Hidden="true" />
+      <Method Name="WriteWhitespace" Hidden="true" />
+      <Method Name="XmlWriter" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Xml.XmlWriterSettings">
+    <Position X="3.5" Y="7.5" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Xml.Linq.XDocument" Collapsed="true">
+    <Position X="10.25" Y="14" Width="1.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Xml.Linq.XElement" Collapsed="true">
+    <Position X="11.75" Y="14" Width="1.25" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Xml.Linq.XNode" Collapsed="true">
+    <Position X="9.25" Y="11" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Xml.Serialization.XmlSerializer">
+    <Position X="11.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="WorkwithXML.blog">
+    <Position X="0.5" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\4-XSerializer.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WorkwithXML.blogitem">
+    <Position X="2.25" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAQAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAEA=</HashCode>
+      <FileName>Pages\4-XSerializer.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Xml.Linq.XDocumentType" Collapsed="true">
+    <Position X="9" Y="12.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Xml.Linq.XAttribute" Collapsed="true">
+    <Position X="11.25" Y="11" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Xml.Linq.XObject" Collapsed="true">
+    <Position X="10.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Xml.Linq.XCData" Collapsed="true">
+    <Position X="7.25" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Xml.Linq.XText" Collapsed="true">
+    <Position X="7.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Xml.Linq.XProcessingInstruction" Collapsed="true">
+    <Position X="12.5" Y="12.5" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Xml.Linq.XContainer" Collapsed="true">
+    <Position X="10.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

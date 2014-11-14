@@ -1,0 +1,2 @@
+D:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_08\WebServices\4-NetRIAService\NetRIAService
+Generated_Code\NetRIAService.Web.g.vb

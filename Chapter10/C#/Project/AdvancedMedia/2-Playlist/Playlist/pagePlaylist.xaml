@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="Playlist.pagePlaylist"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300" d:DesignWidth="400">
+    <Canvas Background="#EEEEEE">
+        <Canvas x:Name="canvasMedia" Margin="0" Background="AliceBlue" Canvas.Top="30" Canvas.Left="40"  Height="200" Width="320" Visibility="Visible" >
+            <MediaElement Name ="Media" Width="320" Source="Butterfly.wmv">
+            </MediaElement>
+        </Canvas>
+        <Canvas x:Name="canvasServer" Margin="0" Background="AliceBlue" Canvas.Top="30" Canvas.Left="40"  Height="200" Width="320" Visibility="Visible" >
+            <MediaElement Name ="mediaServerPlaylist" Width="320" Source="Butterfly.wmv">
+            </MediaElement>
+        </Canvas>
+
+        <Canvas x:Name="canvasWeb" Margin="0" Background="AliceBlue" Canvas.Top="30" Canvas.Left="40"  Height="200" Width="320" Visibility="Visible" >
+            <MediaElement Name ="mediaWebPlaylist" Width="320" Source="Butterfly.wmv">
+            </MediaElement>
+        </Canvas>
+        <Border Canvas.Top="230" Canvas.Left="40" BorderBrush="Gray" BorderThickness="0" Height="20" Width="320" Background="White">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Padding="4,1,4,0"  Text="Media" MouseLeftButtonUp="ShowMedia" ToolTipService.ToolTip="Local Media" Cursor="Hand" Foreground="DodgerBlue"/>
+                <TextBlock Padding="4,1,4,0"  Text="Web Playlist" MouseLeftButtonUp="ShowWebPlaylist" ToolTipService.ToolTip="Web Playlist" Cursor="Hand" Foreground="DodgerBlue"/>
+                <TextBlock Padding="4,1,4,0"  Text="Server Playlist" MouseLeftButtonUp="ShowServerPlaylist" ToolTipService.ToolTip="Server Playlist" Cursor="Hand" Foreground="DodgerBlue"/>
+              </StackPanel>
+        </Border>
+
+        <Border Canvas.Left="0" Canvas.Top="280" Width="400" Background="#F1EDED" BorderBrush="Silver" BorderThickness=".5" >
+            <Grid ShowGridLines="False" x:Name="StatusGrid">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="240"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock  x:Name="StatusBar" Margin="2" Grid.Column="0" Text="Media: First class Citizen" VerticalAlignment="Center"></TextBlock>
+                <TextBlock x:Name="StatusThickness"  Margin="2" Grid.Column="1" Text="" TextAlignment="Right" HorizontalAlignment="Right" VerticalAlignment="Center"></TextBlock>
+            </Grid>
+        </Border>
+    </Canvas>
+</UserControl>

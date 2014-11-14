@@ -1,0 +1,18 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="SilverlightResourceSoap" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:62479/SilverlightResource.asmx"
+                binding="basicHttpBinding" bindingConfiguration="SilverlightResourceSoap"
+                contract="SilverlightResourceASMXService.SilverlightResourceSoap"
+                name="SilverlightResourceSoap" />
+        </client>
+    </system.serviceModel>
+</configuration>

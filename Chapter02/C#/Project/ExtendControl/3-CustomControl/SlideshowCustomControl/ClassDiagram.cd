@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="SlideshowCustomControl.Slideshow">
+    <Position X="1.5" Y="1.25" Width="2" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AABAAICQAAzAKIIAABAQAAAgAACBRCAIkCAADAyAgAA=</HashCode>
+      <FileName>Slideshow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SlideshowCustomControl.Slides">
+    <Position X="6.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Slideshow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SlideshowCustomControl.SlideImagesList">
+    <Position X="6.5" Y="1.25" Width="1.5" />
+    <Members>
+      <Field Name="si" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Slideshow.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Windows.Controls.Control" Collapsed="true">
+    <Position X="1.5" Y="5" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.FrameworkElement">
+    <Position X="3.75" Y="1.25" Width="2" />
+    <Members>
+      <Property Name="ActualHeight" Hidden="true" />
+      <Field Name="ActualHeightProperty" Hidden="true" />
+      <Property Name="ActualWidth" Hidden="true" />
+      <Field Name="ActualWidthProperty" Hidden="true" />
+      <Method Name="ArrangeOverride" Hidden="true" />
+      <Event Name="BindingValidationError" Hidden="true" />
+      <Property Name="Cursor" Hidden="true" />
+      <Field Name="DataContextProperty" Hidden="true" />
+      <Method Name="FrameworkElement" Hidden="true" />
+      <Field Name="HeightProperty" Hidden="true" />
+      <Property Name="HorizontalAlignment" Hidden="true" />
+      <Field Name="HorizontalAlignmentProperty" Hidden="true" />
+      <Field Name="LanguageProperty" Hidden="true" />
+      <Event Name="LayoutUpdated" Hidden="true" />
+      <Event Name="Loaded" Hidden="true" />
+      <Field Name="LoadedEvent" Hidden="true" />
+      <Field Name="MarginProperty" Hidden="true" />
+      <Property Name="MaxHeight" Hidden="true" />
+      <Field Name="MaxHeightProperty" Hidden="true" />
+      <Property Name="MaxWidth" Hidden="true" />
+      <Field Name="MaxWidthProperty" Hidden="true" />
+      <Method Name="MeasureOverride" Hidden="true" />
+      <Property Name="MinHeight" Hidden="true" />
+      <Field Name="MinHeightProperty" Hidden="true" />
+      <Property Name="MinWidth" Hidden="true" />
+      <Field Name="MinWidthProperty" Hidden="true" />
+      <Field Name="NameProperty" Hidden="true" />
+      <Property Name="Parent" Hidden="true" />
+      <Event Name="SizeChanged" Hidden="true" />
+      <Field Name="StyleProperty" Hidden="true" />
+      <Property Name="Tag" Hidden="true" />
+      <Field Name="TagProperty" Hidden="true" />
+      <Property Name="VerticalAlignment" Hidden="true" />
+      <Field Name="VerticalAlignmentProperty" Hidden="true" />
+      <Field Name="WidthProperty" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Events" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

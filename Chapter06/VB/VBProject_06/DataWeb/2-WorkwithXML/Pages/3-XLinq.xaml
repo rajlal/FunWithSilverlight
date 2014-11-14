@@ -1,0 +1,84 @@
+﻿<UserControl x:Class="WorkwithXML.XLinq"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="400" Height="300">
+    <Canvas x:Name="layoutRoot" Background="#EEEEEE" Width="400" Height="300" Loaded="LayoutRoot_Loaded">
+        <Canvas  Canvas.Top="30" Canvas.Left="40"  Height="200" Width="320" Background="AliceBlue" Visibility="Visible">
+            <StackPanel Orientation="Horizontal" Visibility="Collapsed" x:Name="stackElement">
+                <Canvas Width="220" Background="AliceBlue" Height="199">
+                    <TextBox Margin="0,0,0,0" HorizontalScrollBarVisibility="Auto" x:Name="txtXElement" BorderThickness="0" Background="AliceBlue" VerticalScrollBarVisibility="Auto" Width="220" TextWrapping="NoWrap" AcceptsReturn="True" Text=""  Height="199"></TextBox>
+                    <Canvas x:Name="canvasXElement"></Canvas>
+                </Canvas>
+                <ListBox Width="100" Cursor="Hand" BorderThickness=".25" >
+                    <ListBoxItem>
+                        <TextBlock Text="Create XML" MouseLeftButtonUp="CreateXElement" ToolTipService.ToolTip="Create XML Element" />
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <TextBlock Text="Load XML" MouseLeftButtonUp="CreateXElement" ToolTipService.ToolTip="Load XML File" />
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <TextBlock Text="Create XAML" MouseLeftButtonUp="CreateXElement" ToolTipService.ToolTip="Create XAML" />
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <TextBlock Text="Load XAML" MouseLeftButtonUp="CreateXElement" ToolTipService.ToolTip="Load XAML File" />
+                    </ListBoxItem>
+                </ListBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Visibility="Visible" x:Name="stackDocument">
+                <Canvas Width="220" Background="AliceBlue" Height="199">
+                    <TextBox Margin="0,0,0,0" HorizontalScrollBarVisibility="Auto" x:Name="txtXDocument" BorderThickness="0" Background="AliceBlue" VerticalScrollBarVisibility="Auto" Width="220" TextWrapping="NoWrap" AcceptsReturn="True" Text=""  Height="199"></TextBox>
+                </Canvas>
+                <ListBox Width="100" Cursor="Hand" BorderThickness=".25" >
+                    <ListBoxItem>
+                        <TextBlock Text="Create XML" MouseLeftButtonUp="CreateXDocument" ToolTipService.ToolTip="Create XML using XDocument" />
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <TextBlock Text="Load XML" MouseLeftButtonUp="CreateXDocument" ToolTipService.ToolTip="Load XML Document" />
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <TextBlock Text="Remote XML" MouseLeftButtonUp="CreateXDocument" ToolTipService.ToolTip="Load Remote XML Document" />
+                    </ListBoxItem>
+                    </ListBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Visibility="Collapsed" x:Name="stackOthers">
+                <Canvas Width="220" Background="AliceBlue" Height="199">
+                    <TextBox Margin="0,0,0,0" HorizontalScrollBarVisibility="Auto" x:Name="txtXMLOthers" BorderThickness="0" Background="AliceBlue" VerticalScrollBarVisibility="Auto" Width="220" TextWrapping="NoWrap" AcceptsReturn="True" Text=""  Height="199"></TextBox>
+                </Canvas>
+                <ListBox Width="100"  Cursor="Hand" BorderThickness=".25" >
+                    <ListBoxItem>
+                        <TextBlock  Text="XAttribute" MouseLeftButtonUp="CreateXOthers" ToolTipService.ToolTip="Create Attribute in XML" />
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <TextBlock  Text="XComment" MouseLeftButtonUp="CreateXOthers" ToolTipService.ToolTip="Create Comments in XML" />
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <TextBlock  Text="XDocumentType" MouseLeftButtonUp="CreateXOthers" ToolTipService.ToolTip="Add XDocumentType in XML" />
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <TextBlock  Text="XProcessingInst" MouseLeftButtonUp="CreateXOthers" ToolTipService.ToolTip="Add Processing Instr. in XML" />
+                    </ListBoxItem>
+                    <ListBoxItem>
+                        <TextBlock Text="XCData" MouseLeftButtonUp="CreateXOthers" ToolTipService.ToolTip="Create CData in XML" />
+                    </ListBoxItem>
+                </ListBox>
+            </StackPanel>
+        </Canvas>
+        <Border Canvas.Top="230" Canvas.Left="40" BorderBrush="Gray" BorderThickness="0" Height="20" Width="320" Background="White">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Padding="8,1,12,0" Text="XElement" ToolTipService.ToolTip="Create XML using XElement" Cursor="Hand" Foreground="DodgerBlue" MouseLeftButtonUp="CreateSelect"/>
+                <TextBlock Padding="6,1,12,0"  Text="XDocument" ToolTipService.ToolTip="Create/Read XML using XDocument" Cursor="Hand" Foreground="DodgerBlue" MouseLeftButtonUp="CreateSelect"/>
+                <TextBlock Padding="6,1,12,0"  Text="XOthers" ToolTipService.ToolTip="Other XLinq elements" Cursor="Hand" Foreground="DodgerBlue" MouseLeftButtonUp="CreateSelect"/>
+            </StackPanel>
+        </Border>
+        <Border Canvas.Left="0" Canvas.Top="280" Width="400" Background="#F1EDED" BorderBrush="Silver" BorderThickness=".5" >
+            <Grid ShowGridLines="False" x:Name="StatusGrid">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition Width="200"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="StatusBar" Margin="2" Grid.Column="0" Text="Create XML using XElement" VerticalAlignment="Center"></TextBlock>
+                <TextBlock x:Name="StatusInfo" Margin="0,0,10,0" Grid.Column="1" Text=""  VerticalAlignment="Center" HorizontalAlignment="Right"></TextBlock>
+            </Grid>
+        </Border>
+    </Canvas>
+</UserControl>

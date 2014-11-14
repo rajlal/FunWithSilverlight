@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="System.Windows.Controls.Grid">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <Members>
+      <Field Name="ColumnProperty" Hidden="true" />
+      <Field Name="ColumnSpanProperty" Hidden="true" />
+      <Field Name="RowProperty" Hidden="true" />
+      <Field Name="RowSpanProperty" Hidden="true" />
+      <Field Name="ShowGridLinesProperty" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Controls.GridSplitter">
+    <Position X="2.75" Y="0.5" Width="2" />
+    <Members>
+      <Field Name="PreviewStyleProperty" Hidden="true" />
+      <Field Name="ShowsPreviewProperty" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Controls.Primitives.Popup">
+    <Position X="5" Y="0.5" Width="2" />
+    <Members>
+      <Field Name="ChildProperty" Hidden="true" />
+      <Field Name="HorizontalOffsetProperty" Hidden="true" />
+      <Field Name="IsOpenProperty" Hidden="true" />
+      <Field Name="VerticalOffsetProperty" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Controls.StackPanel">
+    <Position X="7.25" Y="0.5" Width="1.75" />
+    <Members>
+      <Field Name="OrientationProperty" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Controls.Primitives.RepeatButton">
+    <Position X="9.25" Y="0.5" Width="2" />
+    <Members>
+      <Field Name="DelayProperty" Hidden="true" />
+      <Field Name="IntervalProperty" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Controls.ToolTipService">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Controls.ToolTip">
+    <Position X="13.5" Y="0.5" Width="2" />
+    <Members>
+      <Field Name="HorizontalOffsetProperty" Hidden="true" />
+      <Field Name="IsOpenProperty" Hidden="true" />
+      <Field Name="VerticalOffsetProperty" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Controls.Canvas">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Shapes.Shape">
+    <Position X="19.75" Y="3.5" Width="1.75" />
+    <Members>
+      <Field Name="FillProperty" Hidden="true" />
+      <Field Name="StretchProperty" Hidden="true" />
+      <Field Name="StrokeDashArrayProperty" Hidden="true" />
+      <Field Name="StrokeDashCapProperty" Hidden="true" />
+      <Field Name="StrokeDashOffsetProperty" Hidden="true" />
+      <Field Name="StrokeEndLineCapProperty" Hidden="true" />
+      <Field Name="StrokeLineJoinProperty" Hidden="true" />
+      <Field Name="StrokeMiterLimitProperty" Hidden="true" />
+      <Field Name="StrokeProperty" Hidden="true" />
+      <Field Name="StrokeStartLineCapProperty" Hidden="true" />
+      <Field Name="StrokeThicknessProperty" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Shapes.Path">
+    <Position X="19.25" Y="0.5" Width="1.5" />
+    <Members>
+      <Field Name="DataProperty" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Shapes.Ellipse">
+    <Position X="21" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Shapes.Line">
+    <Position X="22.75" Y="0.5" Width="1.5" />
+    <Members>
+      <Field Name="X1Property" Hidden="true" />
+      <Field Name="X2Property" Hidden="true" />
+      <Field Name="Y1Property" Hidden="true" />
+      <Field Name="Y2Property" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Shapes.Rectangle">
+    <Position X="17.5" Y="0.5" Width="1.5" />
+    <Members>
+      <Field Name="RadiusXProperty" Hidden="true" />
+      <Field Name="RadiusYProperty" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

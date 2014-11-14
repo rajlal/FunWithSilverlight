@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="4-WorkwithLINQ">
+</Property><Property Name="Solution File" Value="C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_06\DataWeb\4-LINQtoData\4-WorkwithLINQ.sln">
+</Property><Property Name="Date" Value="mercredi 14 mars 2012">
+</Property><Property Name="Time" Value="14:30:26">
+</Property></Properties><Event ErrorLevel="0" Project="4-WorkwithLINQ" Source="4-WorkwithLINQ.vbproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="4-WorkwithLINQ" Source="4-WorkwithLINQ.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="4-WorkwithLINQ" Source="4-WorkwithLINQ.vbproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

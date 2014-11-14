@@ -1,0 +1,135 @@
+﻿<UserControl  x:Class="Animation.PagePointAnimation"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="400" Height="300">
+    <Canvas Background="#EEEEEE">
+        <Canvas.Resources>
+            <Storyboard x:Name="myBasicStoryboard">
+                <PointAnimation Storyboard.TargetProperty="Center" Storyboard.TargetName="ufobody" Duration="0:0:5"  From="40,40" To="200,180" />
+                <PointAnimation Storyboard.TargetProperty="Center" Storyboard.TargetName="uforing" Duration="0:0:5"  From="40,40" To="200,180" />
+            </Storyboard>
+            <Storyboard x:Name="myEclipseStoryboard">
+                <PointAnimation Storyboard.TargetProperty="Center" Storyboard.TargetName="SunEclipse"  Duration="0:0:10"   From="30,30"    To="290,90" />
+                <PointAnimation Storyboard.TargetProperty="Center" Storyboard.TargetName="MoonEclipse"  Duration="0:0:10"   From="30,90"    To="290,30" />
+                <DoubleAnimation Storyboard.TargetProperty="Opacity" BeginTime="0:0:4.85" Storyboard.TargetName="EclipseGlow"  Duration="0:0:.2" From="0" To="1" AutoReverse="True" FillBehavior="Stop" />
+            </Storyboard>
+            <Storyboard x:Name="mySunriseStoryboard">
+                <PointAnimation Storyboard.TargetProperty="Center" Storyboard.TargetName="Sun"  Duration="0:0:5"   From="140,200"    To="140,20"   />
+                <PointAnimation Storyboard.TargetProperty="GradientOrigin" Storyboard.TargetName="SunGlow" Duration="0:0:5" From="0.44,1.1" To="0.44,.15"  />
+                <PointAnimation   Storyboard.TargetProperty="Center"  Storyboard.TargetName="SunGlow"  Duration="0:0:5"   From="0.44,1"   To="0.44,.15"    />
+            </Storyboard>
+        </Canvas.Resources>
+
+        <Canvas x:Name="CanvasBasic" Canvas.Top="30" Canvas.Left="40"   Height="200" Width="320"  Background="AliceBlue" Visibility="Visible">
+           
+            <Path Fill="Gray">
+                <Path.Data>
+                    <EllipseGeometry x:Name="ufobody" Center="40,40" RadiusX="20" RadiusY="20" />
+                </Path.Data>
+            </Path>
+            <Path Fill="Blue">
+                <Path.Data>
+                    <EllipseGeometry x:Name="uforing" Center="40,40" RadiusX="45" RadiusY="6" />
+                </Path.Data>
+            </Path>
+        </Canvas>
+        <Canvas x:Name="CanvasEclipse" Canvas.Top="30" Canvas.Left="40"   Visibility="Collapsed" Height="200" Width="320"  >
+            <Canvas.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                    <GradientStop Color="#000E33" Offset="0.0" />
+                    <GradientStop Color="#000E33" Offset="0.6" />
+                    <GradientStop Color="#072764" Offset="1.0" />
+                </LinearGradientBrush>
+            </Canvas.Background>
+            <Path>
+                <Path.Fill>
+                    <RadialGradientBrush GradientOrigin="0.5,0.5" Center="0.5,0.5" RadiusX="0.5" RadiusY="0.5">
+                        <GradientStop Color="#FFFFFF" Offset="0.1" />
+                        <GradientStop Color="#FFFFDB" Offset="0.3" />
+                        <GradientStop Color="#F1F2D2" Offset="0.6" />
+                        <GradientStop Color="#D3D486" Offset="1.0" />
+                    </RadialGradientBrush>
+                </Path.Fill>
+                <Path.Data>
+                    <EllipseGeometry x:Name="SunEclipse" Center="30,30" RadiusX="20" RadiusY="20" />
+                </Path.Data>
+            </Path>
+            <Image x:Name="EclipseGlow" Source="../image/eclipseglow2.png" Canvas.Left="102" Canvas.Top="0" Opacity="0"></Image>
+            <Path>
+                <Path.Fill>
+                    <RadialGradientBrush GradientOrigin="0.5,0.5" Center="0.5,0.5" RadiusX="0.5" RadiusY="0.5">
+                        <GradientStop Color="#000C2F" Offset="0.1" />
+                        <GradientStop Color="#000C2F" Offset="0.3" />
+                        <GradientStop Color="#000C2F" Offset="0.6" />
+                        <GradientStop Color="#000C2F" Offset="1.0" />
+                    </RadialGradientBrush>
+                </Path.Fill>
+                <Path.Data>
+                    <EllipseGeometry x:Name="MoonEclipse" Center="30,90" RadiusX="20" RadiusY="20" />
+                </Path.Data>
+            </Path>
+            
+
+        </Canvas>
+        <Canvas x:Name="CanvasSunrise" Canvas.Top="30" Canvas.Left="40"  Height="200" Width="320" Visibility="Collapsed">
+               <Rectangle Width="320" Height="200" Canvas.Top="0" Canvas.Left="0">
+                    <Rectangle.Fill>
+                        <RadialGradientBrush  x:Name="SunGlow" GradientOrigin="0.44,1" Center="0.44,1" RadiusX="0.5" RadiusY="0.5">
+                            <GradientStop Color="#FAFFFB" Offset="0.0" />
+                            <GradientStop Color="#FFA73F" Offset="0.2" />
+                            <GradientStop Color="#FE8A33" Offset="0.4" />
+                            <GradientStop Color="#E98F37" Offset="0.6" />
+                            <GradientStop Color="#D88F40" Offset="0.8" />
+                            <GradientStop Color="#D88F40" Offset="1.0" />
+                        </RadialGradientBrush>
+                    </Rectangle.Fill>
+                </Rectangle>
+                <Path>
+                <Path.Fill>
+                        <RadialGradientBrush GradientOrigin="0.5,0.5" Center="0.5,0.5" RadiusX="0.5" RadiusY="0.5">
+                            <GradientStop Color="#FAFFFB" Offset="0.0" />
+                            <GradientStop Color="#FAFFFB" Offset="1.0" />
+                        </RadialGradientBrush>
+                    </Path.Fill>
+                    <Path.Data>
+                    <EllipseGeometry x:Name="Sun" Center="140,200" RadiusX="20" RadiusY="20" />
+                    </Path.Data>
+                </Path>
+            
+            <Polygon Points="0,200 00,140 140,200 200,150 320,200" >
+                        <Polygon.Fill>
+                            <LinearGradientBrush StartPoint=".5,1" EndPoint=".5,0">
+                                <GradientStop Color="#333333" Offset="0.2" />
+                                <GradientStop Color="#000000" Offset="0.4" />
+                                <GradientStop Color="#000000" Offset="0.6" />
+                                <GradientStop Color="#000000" Offset="0.8" />
+                                <GradientStop Color="#000000" Offset="1.0" />
+                            </LinearGradientBrush>
+                        </Polygon.Fill>
+                    </Polygon>
+            </Canvas>    
+        <Border Canvas.Top="230" Canvas.Left="40" BorderBrush="Gray" BorderThickness="0" Height="20" Width="320" Background="White">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Padding="4,1,4,0"  Text="Basic" MouseLeftButtonUp="ShowBasic" ToolTipService.ToolTip="Basic Point Animation" Cursor="Hand" Foreground="DodgerBlue"/>
+                <TextBlock Padding="4,1,4,0"  Text="Eclipse" MouseLeftButtonUp="ShowEclipse" ToolTipService.ToolTip="Eclipse Animation" Cursor="Hand" Foreground="DodgerBlue"/>
+                <TextBlock Padding="4,1,4,0"  Text="Sunrise" MouseLeftButtonUp="ShowSunrise" ToolTipService.ToolTip="Sunrise Animation" Cursor="Hand" Foreground="DodgerBlue"/>
+                <Canvas Margin="136,0,0,0">
+                    <Image x:Name="btnPlay" Canvas.Top="5" Canvas.Left="0" Width="8" Source="../image/play.png" Cursor="Hand" MouseLeftButtonUp="btnPlay_MouseLeftButtonUp"></Image>
+                    <Image x:Name="btnPause" Canvas.Top="5" Canvas.Left="20" Width="8" Source="../image/pause.png" Cursor="Hand"  MouseLeftButtonUp="btnPause_MouseLeftButtonUp"></Image>
+                    <Image x:Name="btnStop" Canvas.Top="6" Canvas.Left="40" Width="7" Source="../image/stop.png" Cursor="Hand"  MouseLeftButtonUp="btnStop_MouseLeftButtonUp"></Image>
+                </Canvas>
+            </StackPanel>
+        </Border>
+
+        <Border Canvas.Left="0" Canvas.Top="280" Width="400" Background="#F1EDED" BorderBrush="Silver" BorderThickness=".5" >
+            <Grid ShowGridLines="False" x:Name="StatusGrid">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="220"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock  x:Name="StatusBar" Margin="2" Grid.Column="0" Text="Basic Point Animation" VerticalAlignment="Center"></TextBlock>
+                <TextBlock x:Name="StatusThickness"  Margin="2" Grid.Column="1" Text="Target: Center,GradientOrigin" TextAlignment="Right" HorizontalAlignment="Right" VerticalAlignment="Center"></TextBlock>
+            </Grid>
+        </Border>
+    </Canvas>
+</UserControl>

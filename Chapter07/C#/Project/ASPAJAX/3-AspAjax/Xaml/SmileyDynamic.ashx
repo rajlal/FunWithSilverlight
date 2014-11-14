@@ -1,0 +1,30 @@
+﻿<%@ WebHandler Language="C#" Class="SmileyDynamic" %>
+using System;
+using System.Web;
+using System.Text;
+using System.Xml;
+
+public class SmileyDynamic : IHttpHandler {
+    
+    public void ProcessRequest (HttpContext context) {
+        context.Response.ContentType = "application/xaml+xml";
+        //context.Response.Write("Hello World");
+
+        StringBuilder XamlCode = new StringBuilder("<?xml version='1.0' encoding='utf-8' ?>");
+        XamlCode.Append("<Canvas xmlns='http://schemas.microsoft.com/winfx/2006/xaml/presentation' xmlns:x='http://schemas.microsoft.com/winfx/2006/xaml' Width='200' Height='150' Clip='F1 M 0,0L 68.6579,0L 68.6579,65.359L 0,65.359L 0,0'>");
+        XamlCode.Append("<Canvas Width='68.6579' Height='65.359' Canvas.Left='0' Canvas.Top='0'>");
+        XamlCode.Append("<Ellipse Width='68.6579' Height='65.359' Canvas.Left='0' Canvas.Top='0' Stretch='Fill' StrokeLineJoin='Round' Stroke='#FF000000' Fill='LightGreen'/>");
+        XamlCode.Append("<Path  Width='7.04111' Height='6.55237' Canvas.Left='18.2232' Canvas.Top='21.4838' Stretch='Fill' StrokeLineJoin='Round' Stroke='#FF000000' Fill='#FF060725' Data='F1 M 21.7438,21.9838C 23.412,21.9838 24.7643,23.2267 24.7643,24.76C 24.7643,26.2932 23.412,27.5362 21.7438,27.5362C 20.0756,27.5362 18.7232,26.2932 18.7232,24.76C 18.7232,23.2267 20.0756,21.9838 21.7438,21.9838 Z '/>");
+        XamlCode.Append("<Path  Width='7.0412' Height='6.55249' Canvas.Left='43.6955' Canvas.Top='21.4838' Stretch='Fill' StrokeLineJoin='Round' Stroke='#FF000000' Fill='#FF07081F' Data='F1 M 47.2161,21.9838C 48.8843,21.9838 50.2367,23.2268 50.2367,24.76C 50.2367,26.2933 48.8843,27.5363 47.2161,27.5363C 45.5479,27.5363 44.1955,26.2933 44.1955,24.76C 44.1955,23.2268 45.5478,21.9838 47.2161,21.9838 Z '/>");
+        XamlCode.Append("<Path  Width='20.6681' Height='7.00052' Canvas.Left='24.1972' Canvas.Top='41.719' Stretch='Fill' StrokeLineJoin='Round' Stroke='#FF1A1D4B' Data='F1 M 44.3652,42.219C 42.745,45.7453 38.952,48.2195 34.5312,48.2195C 30.1104,48.2195 26.3174,45.7453 24.6972,42.219'/>");
+        XamlCode.Append("</Canvas></Canvas>");
+        context.Response.Write(XamlCode.ToString()); 
+    }
+ 
+    public bool IsReusable {
+        get {
+            return false;
+        }
+    }
+
+}

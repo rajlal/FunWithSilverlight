@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="DataWeb">
+</Property><Property Name="Solution File" Value="S:\04-Final\062906\Project\DataWeb\DataWeb.sln">
+</Property><Property Name="Date" Value="Saturday, January 29, 2011">
+</Property><Property Name="Time" Value="10:40 AM">
+</Property></Properties><Event ErrorLevel="0" Project="1-KnowData" Source="1-KnowData\1-KnowData.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="1-KnowData" Source="1-KnowData\1-KnowData.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="2-WorkwithXML" Source="2-WorkwithXML\2-WorkwithXML.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="2-WorkwithXML" Source="2-WorkwithXML\2-WorkwithXML.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="3-UseJSON" Source="3-UseJSON\3-UseJSON.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="3-UseJSON" Source="3-UseJSON\3-UseJSON.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="4-RSSandAtom" Source="4-RSSandAtom\4-RSSandAtom.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="4-RSSandAtom" Source="4-RSSandAtom\4-RSSandAtom.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="DataWeb.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="DataWeb.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="1-KnowData" Source="1-KnowData\1-KnowData.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="2-WorkwithXML" Source="2-WorkwithXML\2-WorkwithXML.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="3-UseJSON" Source="3-UseJSON\3-UseJSON.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event><Event ErrorLevel="0" Project="4-RSSandAtom" Source="4-RSSandAtom\4-RSSandAtom.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

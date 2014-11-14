@@ -1,0 +1,5 @@
+D:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_08\WebServices\3-WCFService\WCFClient.Web\bin\WCFClient.Web.dll
+D:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_08\WebServices\3-WCFService\WCFClient.Web\bin\WCFClient.Web.pdb
+D:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_08\WebServices\3-WCFService\WCFClient.Web\obj\Release\ResolveAssemblyReference.cache
+D:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_08\WebServices\3-WCFService\WCFClient.Web\obj\Release\WCFClient.Web.dll
+D:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_08\WebServices\3-WCFService\WCFClient.Web\obj\Release\WCFClient.Web.pdb

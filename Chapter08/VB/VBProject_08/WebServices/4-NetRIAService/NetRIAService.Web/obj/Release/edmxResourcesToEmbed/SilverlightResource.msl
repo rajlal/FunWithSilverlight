@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="SilverlightResourceModelStoreContainer" CdmEntityContainer="SilverlightResourceEntities">
+    <EntitySetMapping Name="Resource">
+      <EntityTypeMapping TypeName="IsTypeOf(SilverlightResourceModel.Resource)">
+        <MappingFragment StoreEntitySet="Resource">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="Image" ColumnName="Image" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ResourceType">
+      <EntityTypeMapping TypeName="IsTypeOf(SilverlightResourceModel.ResourceType)">
+        <MappingFragment StoreEntitySet="ResourceType">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="FK_Resource_ResourceType" TypeName="SilverlightResourceModel.FK_Resource_ResourceType" StoreEntitySet="Resource">
+      <EndProperty Name="ResourceType">
+        <ScalarProperty Name="Id" ColumnName="ResourceId" />
+      </EndProperty>
+      <EndProperty Name="Resource">
+        <ScalarProperty Name="Id" ColumnName="Id" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>

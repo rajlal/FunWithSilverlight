@@ -1,0 +1,40 @@
+﻿<UserControl x:Class="ReusableControl.Thumbnail"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    > 
+    <UserControl.Resources>
+        <!--Thumbs Title -->
+        <Style x:Key="ThumbStyle" TargetType="TextBlock">
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="0 0 0 0"/>
+            <Setter Property="Margin" Value="2"/>
+            <Setter Property="FontFamily" Value="Verdana"/>
+            <Setter Property="FontSize" Value="10"/>
+            <Setter Property="Foreground" Value="Gray"/>
+        </Style>
+    </UserControl.Resources>
+    <Canvas x:Name="Root" Background="#EEEEEE">
+        <!-- Shadow -->
+        <Rectangle x:Name="ThumbShadow" Canvas.Left="0" Canvas.Top="0" Width="82" Height="122" Stretch="Fill" Fill="Silver">
+        </Rectangle>
+        <Border x:Name="ThumbBorder" BorderBrush="#265C5C5C" BorderThickness="0,0,1,1" Canvas.Left="00" Canvas.Top="00" Background="White" Width="80">
+        <!-- Thumbnail Image -->
+        <Grid x:Name="ThumbGrid" ShowGridLines="False" Height="120">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="20"/>
+                </Grid.RowDefinitions>
+                <Image  Grid.Row="0"
+                        ImageFailed="ThumbImage_ImageFailed"
+                        x:Name="ThumbImage"
+                        Margin="1"
+                        Stretch="Uniform" 
+                        Source="{Binding ImageUri}"
+                        MouseEnter="ThumbImage_MouseEnter" MouseLeave="ThumbImage_MouseLeave"/>
+               <TextBlock x:Name="ThumbnailText" Grid.Row="1" Text="{Binding Title}" Style="{StaticResource ThumbStyle}"></TextBlock>
+        </Grid>
+        </Border>
+    </Canvas>
+</UserControl>
+
+    

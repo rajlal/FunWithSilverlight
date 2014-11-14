@@ -1,0 +1,18 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <customBinding>
+                <binding name="CustomBinding_SilverlightResource">
+                    <binaryMessageEncoding />
+                    <httpTransport maxReceivedMessageSize="2147483647" maxBufferSize="2147483647" />
+                </binding>
+            </customBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://localhost:50962/SilverlightResource.svc"
+                binding="customBinding" bindingConfiguration="CustomBinding_SilverlightResource"
+                contract="SilverlightResourceWCFService.SilverlightResource"
+                name="CustomBinding_SilverlightResource" />
+        </client>
+    </system.serviceModel>
+</configuration>

@@ -1,0 +1,12 @@
+c:\users\rajesh\documents\visual studio 2010\Projects\HelloWorld\HelloWorld\Bin\Release\HelloWorld.dll
+c:\users\rajesh\documents\visual studio 2010\Projects\HelloWorld\HelloWorld\Bin\Release\HelloWorld.pdb
+c:\users\rajesh\documents\visual studio 2010\Projects\HelloWorld\HelloWorld\Bin\Release\AppManifest.xaml
+c:\users\rajesh\documents\visual studio 2010\Projects\HelloWorld\HelloWorld\Bin\Release\HelloWorld.xap
+c:\users\rajesh\documents\visual studio 2010\Projects\HelloWorld\HelloWorld\Bin\Release\HelloWorldTestPage.html
+c:\users\rajesh\documents\visual studio 2010\Projects\HelloWorld\HelloWorld\obj\Release\ResolveAssemblyReference.cache
+c:\users\rajesh\documents\visual studio 2010\Projects\HelloWorld\HelloWorld\obj\Release\App.g.i.cs
+c:\users\rajesh\documents\visual studio 2010\Projects\HelloWorld\HelloWorld\obj\Release\MainPage.g.i.cs
+c:\users\rajesh\documents\visual studio 2010\Projects\HelloWorld\HelloWorld\obj\Release\HelloWorld.g.resources
+c:\users\rajesh\documents\visual studio 2010\Projects\HelloWorld\HelloWorld\obj\Release\HelloWorld.dll
+c:\users\rajesh\documents\visual studio 2010\Projects\HelloWorld\HelloWorld\obj\Release\HelloWorld.pdb
+c:\users\rajesh\documents\visual studio 2010\Projects\HelloWorld\HelloWorld\obj\Release\XapCacheFile.xml

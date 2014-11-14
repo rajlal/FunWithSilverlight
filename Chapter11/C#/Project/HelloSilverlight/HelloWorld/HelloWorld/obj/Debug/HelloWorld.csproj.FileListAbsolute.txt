@@ -1,0 +1,12 @@
+c:\users\rajesh\documents\visual studio 2010\Projects\HelloWorld\HelloWorld\Bin\Debug\HelloWorld.dll
+c:\users\rajesh\documents\visual studio 2010\Projects\HelloWorld\HelloWorld\Bin\Debug\HelloWorld.pdb
+c:\users\rajesh\documents\visual studio 2010\Projects\HelloWorld\HelloWorld\Bin\Debug\AppManifest.xaml
+c:\users\rajesh\documents\visual studio 2010\Projects\HelloWorld\HelloWorld\Bin\Debug\HelloWorld.xap
+c:\users\rajesh\documents\visual studio 2010\Projects\HelloWorld\HelloWorld\Bin\Debug\HelloWorldTestPage.html
+c:\users\rajesh\documents\visual studio 2010\Projects\HelloWorld\HelloWorld\obj\Debug\ResolveAssemblyReference.cache
+c:\users\rajesh\documents\visual studio 2010\Projects\HelloWorld\HelloWorld\obj\Debug\App.g.i.cs
+c:\users\rajesh\documents\visual studio 2010\Projects\HelloWorld\HelloWorld\obj\Debug\MainPage.g.i.cs
+c:\users\rajesh\documents\visual studio 2010\Projects\HelloWorld\HelloWorld\obj\Debug\HelloWorld.g.resources
+c:\users\rajesh\documents\visual studio 2010\Projects\HelloWorld\HelloWorld\obj\Debug\HelloWorld.dll
+c:\users\rajesh\documents\visual studio 2010\Projects\HelloWorld\HelloWorld\obj\Debug\HelloWorld.pdb
+c:\users\rajesh\documents\visual studio 2010\Projects\HelloWorld\HelloWorld\obj\Debug\XapCacheFile.xml

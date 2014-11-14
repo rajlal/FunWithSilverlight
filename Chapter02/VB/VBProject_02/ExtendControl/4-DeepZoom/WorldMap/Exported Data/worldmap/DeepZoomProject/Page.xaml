@@ -1,0 +1,41 @@
+﻿<UserControl x:Class="DeepZoomProject.Page"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:vsm="clr-namespace:System.Windows;assembly=System.Windows">
+    <StackPanel>
+        <Grid x:Name="LayoutRoot" Background="White" Width="Auto" Height="Auto" MouseEnter="EnterMovie" MouseLeave="LeaveMovie" MinWidth="600" MinHeight="300">
+        <MultiScaleImage x:Name="msi" Width="600" Height="300" Source="../GeneratedImages/dzc_output.xml" />
+    	<Canvas Height="37" HorizontalAlignment="Right" Margin="0,0,8,8" x:Name="buttonCanvas" VerticalAlignment="Bottom" Width="348" Opacity="0" Background="{x:Null}">
+                <Button Height="30" x:Name="leftIn" Width="42" Canvas.Left="137" Canvas.Top="4" Template="{StaticResource leftInTemplate}" Content="Button" Click="LeftInClick"/>
+                <Button Height="30" x:Name="rightIn" Width="42" Canvas.Left="167" Canvas.Top="4" Template="{StaticResource rightInTemplate}" Content="Button" Click="RightInClick"/>
+                <Button Height="30" x:Name="zoomIn" Width="42" Canvas.Left="197" Canvas.Top="4" Template="{StaticResource zoomInTemplate}" Content="Button" Click="ZoomInClick"/>
+    		<Button Height="30" x:Name="zoomOut" Width="42" Template="{StaticResource zoomOutTemplate}" Content="Button" Canvas.Left="227" Canvas.Top="4" Click="ZoomOutClick"/>
+    		<Button Height="30" x:Name="goHome" Width="42" Template="{StaticResource homeTemplate}" Content="Button" Canvas.Left="257" Canvas.Top="4" Click="GoHomeClick"/>
+    		<Button Height="30" x:Name="fullScreen" Width="42" Template="{StaticResource fullScreenTemplate}" Content="Button" Canvas.Left="287" Canvas.Top="4" Click="GoFullScreenClick"/>
+    	</Canvas>
+       </Grid>
+                <Canvas MouseLeftButtonUp="TextCanvas_MouseLeftButtonUp" Height="37" HorizontalAlignment="Left" Margin="0,0,0,0" x:Name="TextCanvas" VerticalAlignment="Bottom" Width="600" Opacity="1" Background="{x:Null}">
+                <Border Canvas.Left="0" Canvas.Top="0" Width="600" Background="#F1EDED" BorderBrush="Silver" BorderThickness=".5" >
+                    <Grid ShowGridLines="False" x:Name="StatusGrid" Height="37" MouseLeftButtonUp="TextCanvas_MouseLeftButtonUp">
+                        <Grid.RowDefinitions>
+                            <RowDefinition></RowDefinition>
+                            <RowDefinition></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="120"></ColumnDefinition>
+                            <ColumnDefinition Width="180"></ColumnDefinition>
+                            <ColumnDefinition Width="150"></ColumnDefinition>
+                            <ColumnDefinition Width="*"></ColumnDefinition>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock MouseLeftButtonUp="TextCanvas_MouseLeftButtonUp" x:Name="StatusZoom" Margin="4,2,2,2" Grid.Column="0" Text="Zoom:100%" VerticalAlignment="Center"></TextBlock>
+                        <TextBlock MouseLeftButtonUp="TextCanvas_MouseLeftButtonUp" x:Name="StatusViewport" Margin="4,2,2,2" Grid.Column="1" Text="ViewPort Origin:0.00,0.00" VerticalAlignment="Center"></TextBlock>
+                        <TextBlock  x:Name="StatusViewportWidth" Margin="4,2,2,2" Grid.Column="2" Text="ViewportWidth:1" VerticalAlignment="Center"></TextBlock>
+                        <TextBlock x:Name="StatusBar3"  Margin="4,2,2,2" Grid.Column="3" Text="" TextAlignment="Right" HorizontalAlignment="Right" VerticalAlignment="Center"></TextBlock>
+                        <CheckBox x:Name="CheckBound" IsChecked="true" Click="CheckBound_Click" Grid.Row="1" Content="Boundry"></CheckBox>
+                        <CheckBox x:Name="ZoomBound" IsChecked="true" Click="ZoomBound_Click" Grid.Row="1"  Grid.Column="1" Content="Zoom Min:100 Max:1100"></CheckBox>
+                        <CheckBox x:Name="UseSprings" IsChecked="true" Click="UseSprings_Click" Grid.Row="1"  Grid.Column="2" Content="Use Animation"></CheckBox>
+                </Grid>
+                </Border>
+            </Canvas>
+ </StackPanel>
+
+</UserControl>

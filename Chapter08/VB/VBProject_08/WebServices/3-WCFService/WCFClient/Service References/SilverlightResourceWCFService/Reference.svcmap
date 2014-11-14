@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="772a1213-6a0c-4773-b164-cd55101d86e5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:50962/SilverlightResource.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SilverlightResource.xsd" MetadataType="Schema" ID="401eb2ac-0273-41a3-81a7-6e434d88bb85" SourceId="1" SourceUrl="http://localhost:50962/SilverlightResource.svc?xsd=xsd2" />
+    <MetadataFile FileName="SilverlightResource.disco" MetadataType="Disco" ID="c91a5302-14bc-49a4-9597-af4fa5c67a77" SourceId="1" SourceUrl="http://localhost:50962/SilverlightResource.svc?disco" />
+    <MetadataFile FileName="SilverlightResource1.xsd" MetadataType="Schema" ID="e763b2f8-bd1a-4794-9536-3e8d2068936d" SourceId="1" SourceUrl="http://localhost:50962/SilverlightResource.svc?xsd=xsd0" />
+    <MetadataFile FileName="SilverlightResource.wsdl" MetadataType="Wsdl" ID="5e73651a-ddda-42b8-878e-ed58f3ab494b" SourceId="1" SourceUrl="http://localhost:50962/SilverlightResource.svc?wsdl" />
+    <MetadataFile FileName="SilverlightResource2.xsd" MetadataType="Schema" ID="bfe79147-65ae-4b11-a9ae-997651a5df37" SourceId="1" SourceUrl="http://localhost:50962/SilverlightResource.svc?xsd=xsd1" />
+    <MetadataFile FileName="SilverlightResource1.wsdl" MetadataType="Wsdl" ID="82f66730-bf5a-4f45-88da-9f879aa527cd" SourceId="1" SourceUrl="http://localhost:50962/SilverlightResource.svc?wsdl=wsdl0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

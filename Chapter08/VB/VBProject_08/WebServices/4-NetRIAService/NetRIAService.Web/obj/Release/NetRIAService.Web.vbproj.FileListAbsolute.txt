@@ -1,0 +1,2 @@
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_08\WebServices\4-NetRIAService\NetRIAService.Web\obj\Release\ResolveAssemblyReference.cache
+D:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_08\WebServices\4-NetRIAService\NetRIAService.Web\obj\Release\ResolveAssemblyReference.cache

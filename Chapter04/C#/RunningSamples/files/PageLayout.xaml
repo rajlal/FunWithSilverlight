@@ -1,0 +1,32 @@
+﻿<UserControl  x:Class="Animation.PageLayout"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="400" Height="300">
+    <Canvas Background="#EEEEEE">
+
+         <Canvas x:Name="CanvasBorder" Canvas.Top="30" Canvas.Left="40"  Height="200" Width="320" Background="AliceBlue" Visibility="Visible">
+        </Canvas>
+         <Canvas x:Name="CanvasMargin" Canvas.Top="30" Canvas.Left="40"  Height="200" Width="320" Background="AliceBlue" Visibility="Collapsed">
+        </Canvas>
+         <Canvas x:Name="CanvasPadding" Canvas.Top="30" Canvas.Left="40"  Height="200" Width="320" Background="AliceBlue" Visibility="Collapsed">
+        </Canvas>
+        <Border Canvas.Top="230" Canvas.Left="40" BorderBrush="Gray" BorderThickness="0" Height="20" Width="320" Background="White">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Padding="4,1,4,0"  Text="Border" MouseLeftButtonUp="showBorder" ToolTipService.ToolTip="Border Animation" Cursor="Hand" Foreground="DodgerBlue"/>
+                <TextBlock Padding="4,1,4,0"  Text="Margin" MouseLeftButtonUp="showMargin" ToolTipService.ToolTip="Margin Animation" Cursor="Hand" Foreground="DodgerBlue"/>
+               <TextBlock Padding="4,1,4,0"  Text="Padding" MouseLeftButtonUp="showPadding" ToolTipService.ToolTip="Padding Animation" Cursor="Hand" Foreground="DodgerBlue"/>
+            </StackPanel>
+        </Border>
+
+        <Border Canvas.Left="0" Canvas.Top="280" Width="400" Background="#F1EDED" BorderBrush="Silver" BorderThickness=".5" >
+            <Grid ShowGridLines="False" x:Name="StatusGrid">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock  x:Name="StatusBar" Margin="2" Grid.Column="0" Text="Border" VerticalAlignment="Center"></TextBlock>
+                <TextBlock x:Name="StatusMore"  Margin="2" Grid.Column="1" Text="" TextAlignment="Right" HorizontalAlignment="Right" VerticalAlignment="Center"></TextBlock>
+            </Grid>
+        </Border>
+    </Canvas>
+</UserControl>

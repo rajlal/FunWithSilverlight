@@ -1,0 +1,5 @@
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_07\ASPAJAX\2-ASPUserControl\FunBadge.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_07\ASPAJAX\2-ASPUserControl\FunBadge.Web\bin\FunBadge.Web.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_07\ASPAJAX\2-ASPUserControl\FunBadge.Web\bin\FunBadge.Web.pdb
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_07\ASPAJAX\2-ASPUserControl\FunBadge.Web\obj\Debug\FunBadge.Web.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_07\ASPAJAX\2-ASPUserControl\FunBadge.Web\obj\Debug\FunBadge.Web.pdb

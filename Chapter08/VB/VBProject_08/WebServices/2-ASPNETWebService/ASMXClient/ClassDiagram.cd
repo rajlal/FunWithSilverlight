@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ASMXClient.App" Collapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAEAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASMXClient.MainPage" Collapsed="true">
+    <Position X="6.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>MainPage.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASMXClient.SilverlightResourceASMXService.ResourceInfo" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Events" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAICAAABAEAQgAAAAAAAgCAAABAAAQAAAABQAAA=</HashCode>
+      <FileName>Service References\SilverlightResourceASMXService\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ASMXClient.SilverlightResourceASMXService.GetResourceRequest">
+    <Position X="3.75" Y="5.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\SilverlightResourceASMXService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASMXClient.SilverlightResourceASMXService.GetResourceRequestBody">
+    <Position X="0.5" Y="8" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Service References\SilverlightResourceASMXService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASMXClient.SilverlightResourceASMXService.GetResourceResponse">
+    <Position X="3.75" Y="7.25" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\SilverlightResourceASMXService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASMXClient.SilverlightResourceASMXService.GetResourceResponseBody">
+    <Position X="0.5" Y="9.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\SilverlightResourceASMXService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASMXClient.SilverlightResourceASMXService.GetResourceCompletedEventArgs">
+    <Position X="1" Y="5.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\SilverlightResourceASMXService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ASMXClient.SilverlightResourceASMXService.SilverlightResourceSoapClient" BaseTypeListCollapsed="true">
+    <Position X="6.75" Y="1.75" Width="5.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="ASMXClient.SilverlightResourceASMXService.SilverlightResourceSoapClient.SilverlightResourceSoapClientChannel" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Service References\SilverlightResourceASMXService\Reference.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BCAABAMAAAAEIgAYACGABAQkAQgAAAiAKEIAIAAAAAA=</HashCode>
+      <FileName>Service References\SilverlightResourceASMXService\Reference.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="ASMXClient.SilverlightResourceASMXService.SilverlightResourceSoap" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Service References\SilverlightResourceASMXService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ASMXClient.SilverlightResourceASMXService.SilverlightResourceSoapChannel">
+    <Position X="0.5" Y="1.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Service References\SilverlightResourceASMXService\Reference.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

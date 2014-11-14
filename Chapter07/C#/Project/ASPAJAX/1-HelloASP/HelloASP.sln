@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloASP", "HelloASP\HelloASP.csproj", "{F975DEA3-DAE0-4847-BD02-F1E4246C5407}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloASP.Web", "HelloASP.Web\HelloASP.Web.csproj", "{41C3936D-D540-4A0D-A30B-C2201A3613C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F975DEA3-DAE0-4847-BD02-F1E4246C5407}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F975DEA3-DAE0-4847-BD02-F1E4246C5407}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F975DEA3-DAE0-4847-BD02-F1E4246C5407}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F975DEA3-DAE0-4847-BD02-F1E4246C5407}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41C3936D-D540-4A0D-A30B-C2201A3613C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41C3936D-D540-4A0D-A30B-C2201A3613C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41C3936D-D540-4A0D-A30B-C2201A3613C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41C3936D-D540-4A0D-A30B-C2201A3613C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

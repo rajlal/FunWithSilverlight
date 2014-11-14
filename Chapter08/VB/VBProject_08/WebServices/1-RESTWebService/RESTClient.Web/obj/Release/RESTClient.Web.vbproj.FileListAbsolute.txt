@@ -1,0 +1,6 @@
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_08\WebServices\1-RESTWebService\RESTClient.Web\bin\RESTClient.Web.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_08\WebServices\1-RESTWebService\RESTClient.Web\bin\RESTClient.Web.pdb
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_08\WebServices\1-RESTWebService\RESTClient.Web\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_08\WebServices\1-RESTWebService\RESTClient.Web\obj\Release\RESTClient.Web.g.resources
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_08\WebServices\1-RESTWebService\RESTClient.Web\obj\Release\RESTClient.Web.dll
+C:\Users\Main OutDoor\Documents\Visual Studio 2010\Projects\S\Silverlight\VBProject_08\WebServices\1-RESTWebService\RESTClient.Web\obj\Release\RESTClient.Web.pdb

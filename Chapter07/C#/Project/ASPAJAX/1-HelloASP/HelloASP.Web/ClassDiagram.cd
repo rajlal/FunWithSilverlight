@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="System.Web.UI.SilverlightControls.Silverlight" Collapsed="true">
+    <Position X="4" Y="1" Width="1.5" />
+    <Members>
+      <Method Name="AddAttributesToRender" Hidden="true" />
+      <Method Name="GetScriptDescriptors" Hidden="true" />
+      <Method Name="GetScriptReferences" Hidden="true" />
+      <Method Name="GetSilverlightParameters" Hidden="true" />
+      <Property Name="OnPluginError" Hidden="true" />
+      <Property Name="OnPluginFullScreenChanged" Hidden="true" />
+      <Property Name="OnPluginLoaded" Hidden="true" />
+      <Property Name="OnPluginResized" Hidden="true" />
+      <Property Name="OnPluginSourceDownloadComplete" Hidden="true" />
+      <Property Name="OnPluginSourceDownloadProgressChanged" Hidden="true" />
+      <Method Name="OnPreRender" Hidden="true" />
+      <Property Name="PluginBackground" Hidden="true" />
+      <Property Name="PluginNotInstalledTemplate" Hidden="true" />
+      <Method Name="Render" Hidden="true" />
+      <Method Name="RenderContents" Hidden="true" />
+      <Method Name="Silverlight" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Web.UI.ScriptManager">
+    <Position X="7" Y="0.75" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Events" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="System.Web.UI.SilverlightControls.MediaPlayer">
+    <Position X="1" Y="1" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

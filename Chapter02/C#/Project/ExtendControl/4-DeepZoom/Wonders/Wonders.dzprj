@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<DeepZoomComposerProject version="2.2" name="Wonders">
+  <Settings>
+    <SourceDirectory>Source Images</SourceDirectory>
+    <TreeDirectory>Working Data</TreeDirectory>
+  </Settings>
+  <ImageList>
+    <Image Id="-1232574238">
+      <File>colosseum_in_rome.jpg</File>
+      <Tree>colosseum_in_rome_files</Tree>
+      <TotalSize>16247242</TotalSize>
+    </Image>
+    <Image Id="913991372">
+      <File>goldengatebridge.jpg</File>
+      <Tree>goldengatebridge_files</Tree>
+      <TotalSize>10516246</TotalSize>
+    </Image>
+    <Image Id="1712604587">
+      <File>grand_canyon.jpg</File>
+      <Tree>grand_canyon_files</Tree>
+      <TotalSize>11875179</TotalSize>
+    </Image>
+    <Image Id="-942506180">
+      <File>greatwallofchina.jpg</File>
+      <Tree>greatwallofchina_files</Tree>
+      <TotalSize>5788133</TotalSize>
+    </Image>
+    <Image Id="1355306054">
+      <File>greatyramid.jpg</File>
+      <Tree>greatyramid_files</Tree>
+      <TotalSize>3009358</TotalSize>
+    </Image>
+    <Image Id="-1245002403">
+      <File>mount everest.jpg</File>
+      <Tree>mount everest_files</Tree>
+      <TotalSize>1712189</TotalSize>
+    </Image>
+    <Image Id="-433596058">
+      <File>taj_mahal.jpg</File>
+      <Tree>taj_mahal_files</Tree>
+      <TotalSize>6087166</TotalSize>
+    </Image>
+  </ImageList>
+  <CompositionList>
+    <Composition Name="" ZoomLevel="1">
+      <CompositionNode ImageId="-1232574238" Index="0" X="484.560014576945" Y="207.427179941525" Width="214.025090865605" Height="125.612820058475" Visible="true" Active="false" Selected="false" Tag="" />
+      <CompositionNode ImageId="913991372" Index="1" X="840.666666666667" Y="333.04" Width="178.053326044862" Height="133.539994533646" Visible="true" Active="false" Selected="false" Tag="" />
+      <CompositionNode ImageId="1712604587" Index="2" X="687.564102564102" Y="207.427179941525" Width="188.419230087712" Height="125.612820058475" Visible="true" Active="false" Selected="false" Tag="" />
+      <CompositionNode ImageId="-942506180" Index="3" X="484.560014576945" Y="333.04" Width="178.053326044861" Height="133.539994533646" Visible="true" Active="false" Selected="false" Tag="" />
+      <CompositionNode ImageId="1355306054" Index="4" X="662.613340621807" Y="333.04" Width="178.053326044861" Height="133.539994533646" Visible="true" Active="false" Selected="false" Tag="" />
+      <CompositionNode ImageId="-1245002403" Index="5" X="484.560014576946" Y="466.579994533646" Width="534.159978134584" Height="212.919517416713" Visible="true" Active="false" Selected="false" Tag="" />
+      <CompositionNode ImageId="-433596058" Index="6" X="866.28087735205" Y="207.427179941525" Width="152.43911535948" Height="125.612820058475" Visible="true" Active="false" Selected="false" Tag="" />
+    </Composition>
+  </CompositionList>
+</DeepZoomComposerProject>

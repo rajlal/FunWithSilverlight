@@ -1,0 +1,24 @@
+﻿<!--
+// (c) Copyright Microsoft Corporation.
+// This source is subject to the Microsoft Public License (Ms-PL).
+// Please see http://go.microsoft.com/fwlink/?LinkID=131993 for details.
+// All other rights reserved.
+-->
+<Deployment xmlns="http://schemas.microsoft.com/client/2007/deployment" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" RuntimeVersion="4.0.50401.0">
+  <Deployment.Parts>
+    <AssemblyPart x:Name="SmoothStreaming" Source="SmoothStreaming.dll" />
+    <AssemblyPart x:Name="Microsoft.Web.Media.SmoothStreaming" Source="Microsoft.Web.Media.SmoothStreaming.dll" />
+    <AssemblyPart x:Name="OfflineShared" Source="OfflineShared.dll" />
+    <AssemblyPart x:Name="PlugInMssCtrl" Source="PlugInMssCtrl.dll" />
+  </Deployment.Parts>
+  <Deployment.OutOfBrowserSettings>
+    <OutOfBrowserSettings ShortName="Player" EnableGPUAcceleration="True" ShowInstallMenuItem="false">
+      <OutOfBrowserSettings.Blurb>
+        Media player
+      </OutOfBrowserSettings.Blurb>
+      <OutOfBrowserSettings.WindowSettings>
+        <WindowSettings Height="800" Width="600" Title="Media Player" />
+      </OutOfBrowserSettings.WindowSettings>
+    </OutOfBrowserSettings>
+  </Deployment.OutOfBrowserSettings>
+</Deployment>

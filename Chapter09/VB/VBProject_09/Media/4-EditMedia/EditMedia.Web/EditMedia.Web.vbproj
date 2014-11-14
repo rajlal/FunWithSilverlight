@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A617C4AE-7391-4AF8-8A5E-240419BBEED4}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>My Project</AppDesignerFolder>
+    <RootNamespace>EditMedia.Web</RootNamespace>
+    <AssemblyName>EditMedia.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightApplicationList>{130A7BA4-CE52-45CE-A033-62D0AB61E439}|..\Media\Media.vbproj|ClientBin|False</SilverlightApplicationList>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG=1, TRACE=1</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE=1</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>Off</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Windows">
+      <HintPath>c:\Program Files\Reference Assemblies\Microsoft\Framework\Silverlight\v4.0\System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Presentation" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1-EditMedia.html" />
+    <Content Include="ClientBin\EditMedia.xap" />
+    <Content Include="ClientBin\index.xap" />
+    <Content Include="ClientBin\Media.xap" />
+    <Content Include="index.html" />
+    <Content Include="Media\2EmbedImage\Default.html" />
+    <Content Include="Media\2EmbedImage\MediaPlayerTemplate.xap" />
+    <Content Include="Media\2EmbedImage\Preview.png" />
+    <Content Include="Media\2EmbedImage\SilverlightSplash.wmv" />
+    <Content Include="Media\2EmbedImage\SilverlightSplash_Thumb.jpg" />
+    <Content Include="Media\2EmbedImage\SmoothStreaming.xap" />
+    <Content Include="Media\2EmbedImage\TimedTextLibrary.xap" />
+    <Content Include="Media\1InsertImage\Default.html" />
+    <Content Include="Media\1InsertImage\MediaPlayerTemplate.xap" />
+    <Content Include="Media\1InsertImage\Preview.png" />
+    <Content Include="Media\1InsertImage\SilverlightSplash.wmv" />
+    <Content Include="Media\1InsertImage\SmoothStreaming.xap" />
+    <Content Include="Media\1InsertImage\TimedTextLibrary.xap" />
+    <Content Include="Media\3EmbedVideo\Default.html" />
+    <Content Include="Media\3EmbedVideo\MediaPlayerTemplate.xap" />
+    <Content Include="Media\3EmbedVideo\Microsoft Silverlight DEMO.wmv" />
+    <Content Include="Media\3EmbedVideo\Microsoft Silverlight DEMO_Thumb.jpg" />
+    <Content Include="Media\3EmbedVideo\Preview.png" />
+    <Content Include="Media\3EmbedVideo\SmoothStreaming.xap" />
+    <Content Include="Media\3EmbedVideo\TimedTextLibrary.xap" />
+    <Content Include="Media\4EmbedXAML\Default.html" />
+    <Content Include="Media\4EmbedXAML\MediaPlayerTemplate.xap" />
+    <Content Include="Media\4EmbedXAML\Preview.png" />
+    <Content Include="Media\4EmbedXAML\SilverLight_Intro.wmv" />
+    <Content Include="Media\4EmbedXAML\SilverLight_Intro_Thumb.jpg" />
+    <Content Include="Media\4EmbedXAML\SmoothStreaming.xap" />
+    <Content Include="Media\4EmbedXAML\TimedTextLibrary.xap" />
+    <Content Include="Media\resource\cover.jpg" />
+    <Content Include="Media\resource\coverbw.png" />
+    <Content Include="Media\resource\coverw.png" />
+    <Content Include="Media\resource\coverwide.png" />
+    <Content Include="Media\resource\image.jpg" />
+    <Content Include="Media\resource\SilverlightSplash.wmv" />
+    <Content Include="Media\resource\SilverLight_Intro.wmv" />
+    <Content Include="Media\resource\wide.jpg" />
+    <Content Include="Media\resource\widecover.jpg" />
+    <Content Include="StyleBig.css" />
+    <Content Include="Silverlight.js" />
+    <Content Include="Style.css" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Media\2EmbedImage\JobFile.xej" />
+    <None Include="Media\2EmbedImage\Settings.dat" />
+    <None Include="Media\1InsertImage\JobFile.xej" />
+    <None Include="Media\1InsertImage\Settings.dat" />
+    <None Include="Media\3EmbedVideo\Settings.dat" />
+    <None Include="Media\4EmbedXAML\insertclock.xej" />
+    <None Include="Media\4EmbedXAML\JobFile.xej" />
+    <None Include="Media\4EmbedXAML\Settings.dat" />
+    <None Include="Media\4EmbedXAML\Settings._at" />
+    <None Include="Media\4EmbedXAML\SilverLight_Intro._mv" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Media\resource\Silverlightclock.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>49747</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

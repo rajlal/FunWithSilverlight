@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="SilverlightResourceModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="SilverlightResourceModelStoreContainer">
+    <EntitySet Name="Resource" EntityType="SilverlightResourceModel.Store.Resource" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <EntitySet Name="ResourceType" EntityType="SilverlightResourceModel.Store.ResourceType" store:Type="Tables" Schema="dbo" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" />
+    <AssociationSet Name="FK_Resource_ResourceType" Association="SilverlightResourceModel.Store.FK_Resource_ResourceType">
+      <End Role="ResourceType" EntitySet="ResourceType" />
+      <End Role="Resource" EntitySet="Resource" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Resource">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="nvarchar" MaxLength="150" />
+    <Property Name="Author" Type="nvarchar" MaxLength="50" />
+    <Property Name="Image" Type="nvarchar" MaxLength="150" />
+    <Property Name="URL" Type="nvarchar" MaxLength="250" />
+    <Property Name="ResourceId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ResourceType">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <Association Name="FK_Resource_ResourceType">
+    <End Role="ResourceType" Type="SilverlightResourceModel.Store.ResourceType" Multiplicity="1" />
+    <End Role="Resource" Type="SilverlightResourceModel.Store.Resource" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ResourceType">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Resource">
+        <PropertyRef Name="ResourceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="System.Array">
+    <Position X="0.5" Y="1.25" Width="2.25" />
+    <Members>
+      <Method Name="AsReadOnly" Hidden="true" />
+      <Method Name="ConstrainedCopy" Hidden="true" />
+      <Method Name="ConvertAll" Hidden="true" />
+      <Method Name="CopyTo" Hidden="true" />
+      <Method Name="CreateInstance" Hidden="true" />
+      <Method Name="FindAll" Hidden="true" />
+      <Method Name="FindIndex" Hidden="true" />
+      <Method Name="FindLast" Hidden="true" />
+      <Method Name="FindLastIndex" Hidden="true" />
+      <Method Name="ForEach" Hidden="true" />
+      <Method Name="GetEnumerator" Hidden="true" />
+      <Method Name="GetLength" Hidden="true" />
+      <Method Name="GetLongLength" Hidden="true" />
+      <Method Name="GetLowerBound" Hidden="true" />
+      <Method Name="GetUpperBound" Hidden="true" />
+      <Method Name="GetValue" Hidden="true" />
+      <Method Name="Initialize" Hidden="true" />
+      <Property Name="IsFixedSize" Hidden="true" />
+      <Property Name="IsReadOnly" Hidden="true" />
+      <Property Name="IsSynchronized" Hidden="true" />
+      <Method Name="LastIndexOf" Hidden="true" />
+      <Property Name="LongLength" Hidden="true" />
+      <Method Name="SetValue" Hidden="true" />
+      <Method Name="TrueForAll" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Windows.Data.Binding">
+    <Position X="0.75" Y="6.5" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.DataTemplate">
+    <Position X="0.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Controls.ItemsControl">
+    <Position X="2.25" Y="11.5" Width="2.5" />
+    <Members>
+      <Field Name="DisplayMemberPathProperty" Hidden="true" />
+      <Field Name="ItemsPanelProperty" Hidden="true" />
+      <Field Name="ItemsSourceProperty" Hidden="true" />
+      <Field Name="ItemTemplateProperty" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.Controls.ValidationErrorEventArgs">
+    <Position X="9" Y="11.5" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Collections.Generic.List&lt;T&gt;">
+    <Position X="3" Y="1.5" Width="2.25" />
+    <Members>
+      <Method Name="AddRange" Hidden="true" />
+      <Method Name="AsReadOnly" Hidden="true" />
+      <Method Name="BinarySearch" Hidden="true" />
+      <Method Name="ConvertAll" Hidden="true" />
+      <Method Name="CopyTo" Hidden="true" />
+      <Method Name="FindIndex" Hidden="true" />
+      <Method Name="FindLast" Hidden="true" />
+      <Method Name="FindLastIndex" Hidden="true" />
+      <Method Name="ForEach" Hidden="true" />
+      <Method Name="GetEnumerator" Hidden="true" />
+      <Method Name="GetRange" Hidden="true" />
+      <Method Name="InsertRange" Hidden="true" />
+      <Method Name="LastIndexOf" Hidden="true" />
+      <Method Name="List" Hidden="true" />
+      <Method Name="RemoveAll" Hidden="true" />
+      <Method Name="RemoveRange" Hidden="true" />
+      <Method Name="TrimExcess" Hidden="true" />
+      <Method Name="TrueForAll" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Struct Name="System.Collections.Generic.List&lt;T&gt;.Enumerator" Collapsed="true">
+        <TypeIdentifier />
+        <Lollipop Position="0.2" />
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="KnowData.ScientistList" HideInheritanceLine="true">
+    <Position X="5.5" Y="1.5" Width="1.5" />
+    <Members>
+      <Field Name="si" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\1-DataOperation.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KnowData.Scientist">
+    <Position X="7.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\1-DataOperation.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KnowData.ScientistNameDictComparer" BaseTypeListCollapsed="true">
+    <Position X="11.5" Y="1.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Pages\1-DataOperation.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;">
+    <Position X="9" Y="1.5" Width="2.25" />
+    <Members>
+      <Method Name="GetEnumerator" Hidden="true" />
+      <Method Name="GetObjectData" Hidden="true" />
+      <Method Name="OnDeserialization" Hidden="true" />
+      <Method Name="TryGetValue" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Struct Name="System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.Enumerator" Collapsed="true">
+        <TypeIdentifier />
+        <Lollipop Position="0.2" />
+      </Struct>
+      <Class Name="System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.KeyCollection" Collapsed="true">
+        <TypeIdentifier />
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="System.Collections.Generic.Dictionary&lt;TKey, TValue&gt;.ValueCollection" Collapsed="true">
+        <TypeIdentifier />
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="KnowData.ScientistListB" HideInheritanceLine="true">
+    <Position X="3" Y="6.5" Width="2" />
+    <Members>
+      <Field Name="si" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\2-DataBinding.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KnowData.ScientistB" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="6.5" Width="2" />
+    <Members>
+      <Field Name="imageuri" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAQAgAAEAAgAAAAIAAAAAAA=</HashCode>
+      <FileName>Pages\2-DataBinding.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="KnowData.SelectedScientist" BaseTypeListCollapsed="true">
+    <Position X="5.25" Y="6.5" Width="2" />
+    <Members>
+      <Field Name="selectedIndex" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAAgAAAgAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Pages\2-DataBinding.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Collections.ObjectModel.ObservableCollection&lt;T&gt;">
+    <Position X="14.25" Y="1.5" Width="2" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="KnowData.HeterogeneousData">
+    <Position X="12.25" Y="13" Width="1.75" />
+    <Members>
+      <Field Name="dataDateTime" Hidden="true" />
+      <Field Name="dataPhone" Hidden="true" />
+      <Field Name="dataRating" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAIAAAAAABAAAAAQAAAAACAAAAAg=</HashCode>
+      <FileName>Pages\4-ValidationConversion.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KnowData.PhoneToFormatedPhoneConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.25" Y="13.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\4-ValidationConversion.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="KnowData.DateTimeToDateConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.25" Y="11.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\4-ValidationConversion.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="KnowData.RatingFormatConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.25" Y="12.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\4-ValidationConversion.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="KnowData.Account">
+    <Position X="6.75" Y="14" Width="1.5" />
+    <Members>
+      <Field Name="email" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Field Name="zipcode" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAgAAAAAAQAAAAEAAAAAAAAAQAAAAE=</HashCode>
+      <FileName>Pages\4-ValidationConversion.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KnowData.ScientistNameComparer">
+    <Position X="5.5" Y="3.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Pages\1-DataOperation.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Collections.ObjectModel.Collection&lt;T&gt;">
+    <Position X="16.5" Y="1.5" Width="2" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Windows.Controls.Control" Collapsed="true" HideInheritanceLine="true">
+    <Position X="5" Y="11.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.FrameworkElement" HideInheritanceLine="true">
+    <Position X="6.75" Y="11.5" Width="2" />
+    <Members>
+      <Field Name="ActualHeightProperty" Hidden="true" />
+      <Field Name="ActualWidthProperty" Hidden="true" />
+      <Field Name="DataContextProperty" Hidden="true" />
+      <Field Name="HeightProperty" Hidden="true" />
+      <Field Name="HorizontalAlignmentProperty" Hidden="true" />
+      <Field Name="LanguageProperty" Hidden="true" />
+      <Field Name="LoadedEvent" Hidden="true" />
+      <Field Name="MarginProperty" Hidden="true" />
+      <Field Name="MaxHeightProperty" Hidden="true" />
+      <Field Name="MaxWidthProperty" Hidden="true" />
+      <Field Name="MinHeightProperty" Hidden="true" />
+      <Field Name="MinWidthProperty" Hidden="true" />
+      <Field Name="NameProperty" Hidden="true" />
+      <Field Name="StyleProperty" Hidden="true" />
+      <Field Name="TagProperty" Hidden="true" />
+      <Field Name="VerticalAlignmentProperty" Hidden="true" />
+      <Field Name="WidthProperty" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Windows.UIElement" Collapsed="true">
+    <Position X="5" Y="13.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="System.Windows.Data.IValueConverter">
+    <Position X="12.25" Y="11.5" Width="1.75" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="System.ComponentModel.INotifyPropertyChanged">
+    <Position X="3" Y="8.5" Width="2" />
+    <TypeIdentifier />
+  </Interface>
+  <Enum Name="System.Windows.Controls.ValidationErrorEventAction">
+    <Position X="9" Y="13.25" Width="2.25" />
+    <TypeIdentifier />
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

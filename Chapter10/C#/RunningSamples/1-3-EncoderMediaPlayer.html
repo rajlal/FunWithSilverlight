@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title>Advanced Media Player</title>
+    <link rel="stylesheet" type="text/css" href="Style.css" />
+    <script type="text/javascript" src="Silverlight.js"></script>
+    <style type="text/css">
+<!--
+iframe {
+overflow-x: hidden;
+}
+-->
+</style>
+</head>
+<body>
+    <form id="form1" runat="server" style="height:100%">
+      <div class="Content">
+	  <div class="ApplicationContainer"  id="silverlightControlHost">
+	<iframe id="myFrame" scrolling="no" style="visibility:visible;height:300px;width:400px;border:0px;overflow-x: hidden;overflow-y: hidden;" src="EncoderMedia/CustomMediaPlayerWeb/Default.html"></iframe>
+      </div>
+   <div class="ContentHelp">Advanced Media Player<ul>
+     <LI><a href="1-PlayerProgress.html">Media Player with Progressbar</a>
+    <LI><a href="2-MediaPlayerControl.aspx">MediaPlayer Control with Skins</a>
+    <LI><a href="3-EncoderMediaPlayer.html">Custom Encoder Media Player</a>
+
+    </ul>
+    </div>
+    </div>
+    </form>
+
+</body>
+</html>

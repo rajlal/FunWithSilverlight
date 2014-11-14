@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="clsDataAccess" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAYZIAAAAAAACAAARABAAAAAIAQAEAAAAAACIAAAAA=</HashCode>
+      <FileName>App_Code\clsDataAccess.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="System.Web.UI.UpdatePanel">
+    <Position X="2.25" Y="1.25" Width="2.25" />
+    <Members>
+      <Method Name="CreateContentTemplateContainer" Hidden="true" />
+      <Method Name="CreateControlCollection" Hidden="true" />
+      <Method Name="Initialize" Hidden="true" />
+      <Method Name="OnInit" Hidden="true" />
+      <Method Name="OnLoad" Hidden="true" />
+      <Method Name="OnPreRender" Hidden="true" />
+      <Method Name="OnUnload" Hidden="true" />
+      <Method Name="Render" Hidden="true" />
+      <Method Name="RenderChildren" Hidden="true" />
+      <Method Name="Update" Hidden="true" />
+      <Method Name="UpdatePanel" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="System.Web.UI.AsyncPostBackTrigger">
+    <Position X="4.75" Y="1.25" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

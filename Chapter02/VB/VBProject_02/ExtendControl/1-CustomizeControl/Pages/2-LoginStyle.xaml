@@ -1,0 +1,22 @@
+﻿<UserControl x:Class="CustomizeControl.PageLoginStyle"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="400" Height="300">
+    <Grid x:Name="LayoutRoot" Style="{StaticResource BackgroundStyle}">
+        <Border x:Name="LoginBox" Style="{StaticResource BorderStyle}" >
+            <StackPanel x:Name="StackLayout" Style="{StaticResource StackStyle}">
+                <Image Style="{StaticResource ImageStyle}"></Image>
+                <Border Style="{StaticResource InnerBorderStyle}">
+                    <StackPanel x:Name="Login" Style="{StaticResource InnerStackStyle}">
+                    <TextBlock Text="Username" Style="{StaticResource TextStyle}"></TextBlock>
+                    <TextBox Style="{StaticResource TextboxStyle}"></TextBox>
+                    <TextBlock Text="Password"  Style="{StaticResource TextStyle}"></TextBlock>
+                    <PasswordBox Style="{StaticResource PasswordboxStyle}"></PasswordBox>
+                    <Button Style="{StaticResource ButtonStyle}" Content="Login" ></Button>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Border>
+    </Grid>
+</UserControl>
+    

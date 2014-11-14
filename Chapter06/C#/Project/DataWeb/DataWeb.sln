@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1-KnowData", "1-KnowData\1-KnowData.csproj", "{3E034CB8-2C48-44D3-9442-E348874F3253}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Project", "..\", "{D3BE0C70-6126-4B53-A891-AF2300373ED9}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/Chapter 04"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\Chapter 06\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\Chapter 04\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/Chapter 04"
+		Release.AspNetCompiler.PhysicalPath = "..\..\Chapter 06\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\Chapter 04\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "57833"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2-WorkwithXML", "2-WorkwithXML\2-WorkwithXML.csproj", "{C66B0CDD-A114-4B31-925D-EBE2931E420C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3-UseJSON", "3-UseJSON\3-UseJSON.csproj", "{1354AAE3-26C4-430F-BC7C-F5FCD6E13923}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "4-RSSandAtom", "4-RSSandAtom\4-RSSandAtom.csproj", "{C4023838-C9A8-4694-A913-B27CD2EE148E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E034CB8-2C48-44D3-9442-E348874F3253}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E034CB8-2C48-44D3-9442-E348874F3253}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E034CB8-2C48-44D3-9442-E348874F3253}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E034CB8-2C48-44D3-9442-E348874F3253}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3BE0C70-6126-4B53-A891-AF2300373ED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3BE0C70-6126-4B53-A891-AF2300373ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3BE0C70-6126-4B53-A891-AF2300373ED9}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3BE0C70-6126-4B53-A891-AF2300373ED9}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{C66B0CDD-A114-4B31-925D-EBE2931E420C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C66B0CDD-A114-4B31-925D-EBE2931E420C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C66B0CDD-A114-4B31-925D-EBE2931E420C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C66B0CDD-A114-4B31-925D-EBE2931E420C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1354AAE3-26C4-430F-BC7C-F5FCD6E13923}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1354AAE3-26C4-430F-BC7C-F5FCD6E13923}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1354AAE3-26C4-430F-BC7C-F5FCD6E13923}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1354AAE3-26C4-430F-BC7C-F5FCD6E13923}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4023838-C9A8-4694-A913-B27CD2EE148E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4023838-C9A8-4694-A913-B27CD2EE148E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4023838-C9A8-4694-A913-B27CD2EE148E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4023838-C9A8-4694-A913-B27CD2EE148E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

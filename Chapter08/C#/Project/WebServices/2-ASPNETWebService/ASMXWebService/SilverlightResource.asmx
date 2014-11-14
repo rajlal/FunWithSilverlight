@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="SilverlightResource.asmx.cs" Class="ASMXService.SilverlightResource" %>

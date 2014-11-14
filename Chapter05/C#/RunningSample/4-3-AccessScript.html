@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>HTML Bridge</title>
+<link rel="stylesheet" type="text/css" href="files/Style.css" />
+ <script type="text/javascript">
+    function GetTime(param) {
+        var d = new Date();
+        if (param)
+            document.getElementById("currenttime").innerHTML = "Current Time:" + param + " (From Managed Code)";
+        else
+            document.getElementById("currenttime").innerHTML = "Current Time:" + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + " (From JavaScript)" ;
+    }
+    </script>
+</head>
+<body onload="GetTime();">
+
+     <div id ="ContentId" class="Content">
+	  <div class="ApplicationContainer" id="silverlightControlHost">
+	      <object data="data:application/x-silverlight," type="application/x-silverlight-2" width="100%" height="100%">
+			<param name="source" value="files/03-04-3-AccessScript.xap"/>
+			<param name="enableHtmlAccess" value="true" />
+			<param name="background" value="gray" />
+			<param name="minRuntimeVersion" value="4.0.50826.0" />
+			<param name="autoUpgrade" value="true" />
+			   <a href="http://go.microsoft.com/fwlink/?LinkID=149156&v=4.0.50826.0" style="text-decoration:none">
+ 			      <img src="http://go.microsoft.com/fwlink/?LinkId=161376" alt="Get Microsoft Silverlight" style="border-style:none"/>
+		      </a>
+		</object>
+		<iframe style='visibility:hidden;height:0;width:0;border:0px'></iframe>
+    </div>
+    <div id= "ContentText" class="ContentHelp">
+    <div id="currenttime" style="color:Green;background:#EEEFFF; font-size:large" >Current Time</div><div style="background:#EEEFFF;" onclick="GetTime();" style="cursor:hand;"><a href="JavaScript:GetTime();">Click here to update Time</a></div><br />
+    Access JavaScript from Managed Code
+    <UL>
+    <LI>Use of HtmlPage.Window.Invoke
+    <LI>Pass Parameter to the JavaScript function from managed code
+    </UL>
+    </div>
+    </div>
+    
+</body>
+</html>

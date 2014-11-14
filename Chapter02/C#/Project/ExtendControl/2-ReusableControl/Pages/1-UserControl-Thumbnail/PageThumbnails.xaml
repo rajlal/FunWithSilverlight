@@ -1,0 +1,48 @@
+﻿<UserControl x:Class="ReusableControl.PageThumbnails"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    xmlns:uc="clr-namespace:ReusableControl;assembly=ReusableControl"
+    Width="400" Height="300">
+    <Canvas x:Name="LayoutRoot" Background="AliceBlue"  Width="400" Height="300" >
+        <Canvas Canvas.Top="0" Canvas.Left="10">
+            <uc:Thumbnail x:Name="tn1"  Canvas.Left="40" Canvas.Top="10"  ThumbWidth="70" ThumbHeight="84">
+                <uc:Thumbnail.DataContext>
+                    <uc:ThumbnailData ImageUri ="Images/Einstein.jpg" Title="Einstein" >
+                    </uc:ThumbnailData>
+                </uc:Thumbnail.DataContext> 
+            </uc:Thumbnail>
+            <uc:Thumbnail x:Name="tn2"  Canvas.Left="150" Canvas.Top="10"  ThumbWidth="70" ThumbHeight="84">
+            <uc:Thumbnail.DataContext>
+                <uc:ThumbnailData ImageUri ="Images/leonardo.jpg" Title="Da Vinci">
+                </uc:ThumbnailData>
+            </uc:Thumbnail.DataContext>
+            </uc:Thumbnail>
+            <uc:Thumbnail x:Name="tn3"  Canvas.Left="260" Canvas.Top="10"  ThumbWidth="70" ThumbHeight="84">
+            <uc:Thumbnail.DataContext>
+                <uc:ThumbnailData ImageUri ="Images/Newton.jpg" Title="Newton">
+                </uc:ThumbnailData>
+            </uc:Thumbnail.DataContext>
+            </uc:Thumbnail>
+            <uc:Thumbnail x:Name="tn4"  Canvas.Left="40" Canvas.Top="138" ThumbWidth="70" ThumbHeight="84">
+            <uc:Thumbnail.DataContext>
+                <uc:ThumbnailData ImageUri ="Images/Galileo.jpg" Title="Galileo">
+                </uc:ThumbnailData>
+            </uc:Thumbnail.DataContext>
+            </uc:Thumbnail>
+            <uc:Thumbnail x:Name="tn5"  Canvas.Left="150" Canvas.Top="138" ThumbWidth="70" ThumbHeight="84">
+            <uc:Thumbnail.DataContext>
+                <uc:ThumbnailData ImageUri ="Images/Darwin.jpg" Title="Darwin">
+                </uc:ThumbnailData>
+            </uc:Thumbnail.DataContext>
+            </uc:Thumbnail>
+            <uc:Thumbnail x:Name="tn6"  Canvas.Left="260" Canvas.Top="138" ThumbWidth="70" ThumbHeight="84">
+            <uc:Thumbnail.DataContext>
+                <uc:ThumbnailData ImageUri ="Images/Edison.jpg" Title="Edison">
+                </uc:ThumbnailData>
+            </uc:Thumbnail.DataContext>
+            </uc:Thumbnail>
+            <Button x:Name="SwitchThumb" Canvas.Top="260" Canvas.Left="90" Width="80" Content="Switch" Click="Button_Click" ToolTipService.ToolTip="Changes the DataContext"></Button>
+            <Button x:Name="ResizeThumb" Canvas.Top="260" Canvas.Left="210" Width="80" Content="Resize" Click="ResizeThumb_Click" ToolTipService.ToolTip="Changes the UserControl Property (ThumbWidth and ThumbHeight) "></Button>
+            </Canvas>
+    </Canvas>
+</UserControl>

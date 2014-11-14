@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="InputEvents.PageInk"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+    Width="400" Height="300">
+    <Grid x:Name="LayoutRoot" Background="White">
+        <Canvas Background="AliceBlue">
+            <TextBlock x:Name="Mirror" MouseLeftButtonUp="Mirror_MouseLeftButtonUp" Cursor="Hand" ToolTipService.ToolTip="Mirror Strokes" Canvas.Top="10" Canvas.Left="290"  Width="20" Height="20" Text="}{" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center"></TextBlock>
+            <TextBlock x:Name="IncreaseThickness" MouseLeftButtonUp="IncreaseThickness_MouseLeftButtonUp" Cursor="Hand" ToolTipService.ToolTip="Increase Stroke Thickness" Canvas.Top="10" Canvas.Left="330"  Width="20" Height="20" Text="+" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center"></TextBlock>
+            <TextBlock x:Name="DecreaseThickness" MouseLeftButtonUp="DecreaseThickness_MouseLeftButtonUp" Cursor="Hand" ToolTipService.ToolTip="Decrease Stroke Thickness" Canvas.Top="10" Canvas.Left="310"  Width="20" Height="20"   Text="-" VerticalAlignment="Center" HorizontalAlignment="Center" TextAlignment="Center"></TextBlock>
+            <Border Canvas.Top="30" Canvas.Left="50" BorderBrush="Gray" BorderThickness="1">
+                <InkPresenter x:Name="InkPresenterControl" Height="200" Width="300" Background="White"
+                  Margin="0,0,0,0"
+                  MouseLeftButtonDown="InkPresenterControl_MouseLeftButtonDown" 
+                  LostMouseCapture="InkPresenterControl_LostMouseCapture" 
+                  MouseMove="InkPresenterControl_MouseMove" 
+                   Opacity="1" Cursor="Stylus"/>
+        </Border>
+            <Rectangle x:Name="BlackBox" Fill="Black" Width="20" Height="20" Canvas.Left="50" Canvas.Top="240" Cursor="Hand" MouseLeftButtonUp="BlackBox_MouseLeftButtonUp"></Rectangle>
+            <Rectangle x:Name="RedBox" Fill="Red" Width="20" Height="20" Canvas.Left="80" Canvas.Top="240" Cursor="Hand" MouseLeftButtonUp="RedBox_MouseLeftButtonUp"></Rectangle>
+            <Rectangle x:Name="BlueBox" Fill="Blue" Width="20" Height="20" Canvas.Left="110" Canvas.Top="240" Cursor="Hand" MouseLeftButtonUp='BlueBox_MouseLeftButtonUp'></Rectangle>
+            <Rectangle x:Name="GreenBox" Fill="Green" Width="20" Height="20" Canvas.Left="140" Canvas.Top="240" Cursor="Hand" MouseLeftButtonUp="GreenBox_MouseLeftButtonUp"></Rectangle>
+            <Rectangle x:Name="YellowBox" Fill="Yellow" Width="20" Height="20" Canvas.Left="170" Canvas.Top="240" Cursor="Hand" MouseLeftButtonUp="YellowBox_MouseLeftButtonUp"></Rectangle>
+            <Rectangle x:Name="WhiteBox" Fill="White" Width="20" Height="20" Canvas.Left="200" Canvas.Top="240" Cursor="Eraser" MouseLeftButtonUp="WhiteBox_MouseLeftButtonUp"></Rectangle>
+            <Border Canvas.Left="330" Canvas.Top="240" BorderBrush="Gray" BorderThickness=".5">
+                <Rectangle x:Name="EraseBox" Fill="White" Width="20" Height="20" Cursor="Hand" ToolTipService.ToolTip="Erase All" MouseLeftButtonUp="EraseBox_MouseLeftButtonUp"></Rectangle>
+            </Border>
+            <Border Canvas.Left="0" Canvas.Top="280" Width="400" Background="#F1EDED" BorderBrush="Silver" BorderThickness=".5" >
+                <Grid ShowGridLines="False" x:Name="StatusGrid">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="220"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock  x:Name="StatusBar" Margin="2" Grid.Column="0" Text="Status" VerticalAlignment="Center"></TextBlock>
+                    <TextBlock x:Name="StatusThickness"  Margin="2" Grid.Column="1" Text="" TextAlignment="Right" HorizontalAlignment="Right" VerticalAlignment="Center"></TextBlock>
+                </Grid>
+            </Border>
+        </Canvas>
+    </Grid>
+</UserControl>
