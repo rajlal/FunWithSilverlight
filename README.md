@@ -5,44 +5,47 @@ Source code for the book Fun with Silverlight 4: Illustrated Guide to Creating R
 
 Contents at a Glance
 Introduction………………………. 1
-
+==================
 Part I
 Developing Silverlight Applications
-
+==================
 1. Design a Rich Internet Application ..11
 2. Extend Control Framework………….69
 3. Create Compelling Graphics ……….119
 4. Work with Animation………………193
-
+==================
 Part II
 Interact with the Web
+==================
 5. Extend Browser Programming Model….. 231
 6. Bring Data Visualization to the Web ..295
 7. Develop with ASP.NET and AJAX………379
 8. Work with Web Services…………….413
-
+==================
 Part III
 Advance with Media
+==================
 9. Play with Media ………………….451
 10. Fun with Advanced Media ………….505
-
+==================
 Part IV
 Appendix
+==================
 11. Silverlight: A Beginner’s Guide …..559
 
 Detail: Table of Contents
-———————————————-
+==================
 Introduction
-———————————————-
+==================
 What’s in the Book	1
 Section 1: Develop Silverlight Applications	2
 Section 2: Interact with Web	2
 Section 3: Advance with Media 3
-
+==================
 Part I: Developing Silverlight Applications
-———————————————-
+==================
 1. Design a Rich Internet Application
-———————————————-
+==================
 Use Common Controls	11
 Use a Grid	11
 Use Grid Splitter Control	15
@@ -65,9 +68,9 @@ Load Media File 60
 Load Audio File 62
 Use Fonts	63
 
-———————————————-
+==================
 2. Extend Control Framework
-———————————————-
+==================
 Customize Common Controls	69
 Create a Reusable Control	69
 Apply Style to the Login Control	71
@@ -80,9 +83,9 @@ DeepZoom	100
 Create Single Image Zoom Application 100
 Create Multiple Image Zoom with Information 108
 
-———————————————-
+==================
 3. Create Compelling Graphics
-———————————————-
+==================
 Understand Layout	119
 Work with Border	119
 Understand Padding	125
@@ -121,9 +124,9 @@ Apply Opacity to an Image	184
 Shadow Image 186
 Glow Image	187
 Add Reflection to an Image 189
-———————————————-
+==================
 4. Work with Animation
-———————————————-
+==================
 Understanding Animation	193
 Use Double Animation 196
 Customize the speed of the animation 199
@@ -137,11 +140,11 @@ Create a Rainbow with Fade In effect. 214
 Understand Keyframe Animation	217
 Create Discrete KeyFrame Animation	220
 Create Splined KeyFrame Animation	222
-
+==================
 Part II: Interacting with the Web
-———————————————-
+==================
 5. Extend Browser Programming Model
-———————————————-
+==================
 Get Browser Information	232
 Read Query Strings	234
 Implement History Navigation 238
@@ -164,9 +167,9 @@ Access Document Object Model (DOM) 283
 Access Script on the Page	286
 Access Silverlight from the Page	289
 
-———————————————-
+==================
 6. Bring Data Visualization to Web
-———————————————-
+==================
 Know Data	295
 Know Array data structures	296
 Bind Data with One-Way and Two-Way Binding 311
@@ -184,9 +187,9 @@ Work with RSS and Atom feeds	369
 Read RSS 2.0 and Atom 1.0 feed	370
 Format XML as RSS and Atom 1.0 Feed 373
 
-———————————————-
+==================
 7. Develop with ASP.NET and AJAX
-———————————————-
+==================
 Use Silverlight in ASP.NET	379
 Create Silverlight using Server code	380
 Work with ASP.NET Silverlight Server Control	381
@@ -199,20 +202,20 @@ Use ADO.NET Data Services for READ Operation	404
 Use ADO.NET Data Services for UPDATE Operation	408
 Use ADO.NET Data Services for DELETE Operation	410
 
-———————————————-
+==================
 8. Work with Web Services
-———————————————-
+==================
 Interact with REST Web Service	413
 Use Silverlight to GET from Flickr REST API	414
 Use Silverlight to POST to Twitter REST API	421
 Work with ASP.NET Web service (ASMX)	426
 Use Silverlight enabled WCF service	433
 Develop with .NET/WCF RIA Service	439
-
+==================
 Part III: Advance with Media
-———————————————-
+==================
 9. Play with Media
-———————————————-
+==================
 Work with Rich Media	451
 Create a Rich Video Experience	452
 Work with Media State and Full Screen Mode	457
@@ -232,9 +235,9 @@ Embed Image into Media	497
 Embed Video into Media (Picture in Picture)	500
 Embed XAML into Media	501
 
-———————————————-
+==================
 10. Fun with Advanced Media
-———————————————-
+==================
 Create an Advanced Media Player	505
 Custom Media Player with Timeline	506
 Use Media Player Object with Media Skins	510
@@ -251,11 +254,11 @@ Use Silverlight Media Frameworks (SMF)	545
 SMF Simple Media Player	546
 SMF Progressive Download Player	549
 SMF Smooth Streaming Player 551
-
+==================
 Part IV: Appendix
-———————————————-
+==================
 11. Silverlight:A Beginner’s Guide
-———————————————-
+==================
 Silverlight Basics	560
 Silverlight Plug-in	561
 Steps for rendering Silverlight on a web page	562
@@ -268,4 +271,4 @@ Silverlight and .NET Framework	574
 Understand the Embedded CLR 575
 NET Framework Libraries for Silverlight 575
 
-———————————————-
+==================
