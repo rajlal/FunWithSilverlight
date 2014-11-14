@@ -3,6 +3,11 @@ FunWithSilverlight
 
 Source code for the book Fun with Silverlight 4: Illustrated Guide to Creating Rich Internet Applications with Examples in C#, ASP.NET, XAML, Media, Webcam, AJAX, REST and Web Services
 
+![Fun with Silverlight 4](http://ecx.images-amazon.com/images/I/51xN7N6Sp5L.jpg)
+
+<http://www.amazon.com/Fun-Silverlight-Illustrated-Creating-Applications/dp/1463506023/>
+
+
 Contents at a Glance
 Introduction………………………. 1
 ==================
